@@ -15,6 +15,5 @@ char **mx_dir_arr(char **files) {
 				}
 		}
 		dir[q] = NULL;
-		mx_bubble_sort(dir, count);
 		return dir;
 }

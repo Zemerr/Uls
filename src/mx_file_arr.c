@@ -15,6 +15,5 @@ char **mx_file_arr(char **files) {
 				}
 		}
 		reg_file[q] = NULL;
-		mx_bubble_sort(reg_file, count);
 		return reg_file;
 }

@@ -6,16 +6,16 @@ int mx_files_quantity(char **files, int trig) {
 	int count = 0;
 
 	if (trig == 1) {
-		for (int i = 0; files[i] != NULL; i++) {
+		for (int i = 0; files[i]; i++) {
 			if (mx_file_mode_check(files[i]) == 1) {
-				count++;
+				count += 1;
 			}
 		}
 	}
 	if (trig == 2) {
 		for (int i = 0; files[i]; i++) {
 			if (mx_file_mode_check(files[i]) == 2)
-				count++;
+				count += 1;
 		}
 	}
 	return count;
