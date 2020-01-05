@@ -46,7 +46,8 @@ int main(int argc, char **argv) {
 		files = files_fill_in(argc, argv);
 		flags = flags_fill_in(argv);
 		mx_file_specified(files);
+		mx_del_strarr(&files);
 	}
-	mx_del_strarr(&files);
+	//test
 	// system ("leaks uls");
 }
