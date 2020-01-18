@@ -132,7 +132,7 @@ int main(int argc, char **argv) {
 			// for (int i = 0; files[i]; i++) {
 			// 	printf("%s, ", files[i]);
 			// }
-		mx_file_specified(files, flags);
+		mx_file_specified(files, flags, ".");
 		mx_del_strarr(&files);
 	}
 	// system ("leaks uls");

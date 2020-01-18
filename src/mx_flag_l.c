@@ -12,7 +12,9 @@
 #include <time.h>
 #include <unistd.h>
 
-void mx_flag_l(char **sort_arr) {
+void mx_flag_l(char **sort_arr, char *dir_name) {
+
+
 
     struct stat sb;
 
@@ -23,6 +25,10 @@ void mx_flag_l(char **sort_arr) {
     char **time_arr = NULL;
     char **hour_arr = NULL;
     char *hour;
+
+    char *path_name_1 = NULL;
+    char *path_name_2 = NULL;
+
 
     int l_flag = 0;
     int dev_flag = 0;
@@ -50,6 +56,7 @@ void mx_flag_l(char **sort_arr) {
     int minor_len = 0;
     int major_len = 0;
 
+
     int minor_major_len = 0;
     
     
@@ -59,7 +66,12 @@ void mx_flag_l(char **sort_arr) {
     
 
     for (int i = 0; sort_arr[i] != NULL; i++) {
-        lstat(sort_arr[i], &sb);
+        path_name_1 = mx_strjoin(dir_name, "/");
+        path_name_2 = mx_strjoin(path_name_1, sort_arr[i]);
+
+
+
+        lstat(path_name_2, &sb);
         if (first_len < mx_intlen(sb.st_nlink))
             first_len = mx_intlen(sb.st_nlink);
         user_info = getpwuid(sb.st_uid);
@@ -97,7 +109,9 @@ void mx_flag_l(char **sort_arr) {
         if (forth_len < mx_intlen(sb.st_size))
             forth_len = mx_intlen(sb.st_size);
 
-        blocks += sb.st_blocks;        
+        blocks += sb.st_blocks;
+        mx_strdel(&path_name_1);
+        mx_strdel(&path_name_2);     
         }
 
         minor_major_len = 3 + major_len + minor_len;
@@ -115,7 +129,10 @@ void mx_flag_l(char **sort_arr) {
 
     for (int i = 0; sort_arr[i] != NULL; i++) {
 
-        lstat(sort_arr[i], &sb);
+        path_name_1 = mx_strjoin(dir_name, "/");
+        path_name_2 = mx_strjoin(path_name_1, sort_arr[i]);
+
+        lstat(path_name_2, &sb);
 
         if ((sb.st_mode & S_IFIFO) == S_IFIFO) {
             my_acl_line[0] = 'p';
@@ -320,6 +337,8 @@ void mx_flag_l(char **sort_arr) {
         mx_del_strarr(&time_arr);
         mx_del_strarr(&hour_arr);
         mx_strdel(&hour);
+        mx_strdel(&path_name_1);
+        mx_strdel(&path_name_2);
 
         if (l_flag == 1) {
             mx_printstr("-> %s");

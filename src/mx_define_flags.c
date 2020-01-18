@@ -38,8 +38,12 @@ static char **data(t_flags *flag, char *file_name) {
 void mx_define_flags(char *file_name, t_flags *flags) {
 	char **obj_arr = data(flags, file_name);
 	int size = determine_size(obj_arr);
-	printf("%d\n", size);
-	mx_print_cols(obj_arr, size);
+		if ((*flags).l == 1) {
+			mx_flag_l(obj_arr, file_name);
+		}
+		else
+	// printf("%d\n", size);
+			mx_print_cols(obj_arr, size);
 }
 
 //if flag 'G' -> use spaces while print;

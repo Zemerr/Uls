@@ -93,7 +93,7 @@ int main() {
 
 
   closedir(dir);
-  mx_flag_l(files);
+  mx_flag_l(files, NULL);
   system("leaks -q uls");
 
   

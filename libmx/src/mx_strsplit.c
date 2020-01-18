@@ -1,53 +1,42 @@
 #include "../inc/libmx.h"
 
-static char **arr_creation(const char *s, char c, int quantity) {
-    int j = 0;
-    int i = 0;
-    int k = 0;
-    char **arr = (char **)malloc(sizeof(char *) * quantity + 1);
-
-    while(j < quantity && s[i] != '\0') {
-        while (s[i] == c) {
-            i++;
-        }
-        while (s[i] != c) {
-            k++;
-            i++;
-        }
-        arr[j] = (char *)malloc(sizeof(char ) * k + 1);
-        k = 0;
-        j++;
-    }
-    arr[j] = NULL;
-    return arr;
-} 
-
-static void fill_arr(char **arr, int quantity, const char *s, char c) {
-    int i = 0;
-    int k = 0;
-
-    for (int j = 0; j < quantity && s[i] != '\0'; j++) {
-        while (s[i] == c) {
-            i++;
-        }
-        while (s[i] != c) {
-            arr[j][k] = s[i];
-            k++;
-            i++;
-        }
-        arr[j][k] = '\0';
-        k = 0;
-    }
-}
-
 char **mx_strsplit(const char *s, char c) {
-    int quantity = mx_count_words(s, c);
+    const char *first;
     char **arr = NULL;
+    int count = 0;
+    int len;
+    int st;
+    int l = 0;
 
-	if (quantity == -1) {
-		return NULL;
-	}
-    arr = arr_creation(s, c, quantity);
-    fill_arr(arr, quantity, s, c);
-	return arr;
+    if (s == NULL) {
+        return NULL;
+    }
+    int word = mx_count_words(s, c);
+    
+    first = s;
+    arr = (char **)malloc(sizeof (char *) * word + 1);
+    
+    for (int i = 0; first[i] != '\0'; i++) {
+        if ((first[i] == c &&  first[i+1] != c && first[i+1] != '\0') || (i == 0 && first[i] != c))  {
+            if (i != 0 || (i == 0 && first[i]  == c))
+                i++;
+            count = i;
+            while (first[count]  != c && first[count]  != '\0')
+                count++;
+            len = count - i;
+            arr[l] = mx_strnew(len);
+            st = 0;
+            while (first[i] !=c && first[i]  != '\0') {
+                arr[l][st] = first[i];
+                st++;
+                i++;
+            }
+            i--;
+            l++;
+        }
+    }
+    arr[l] = NULL;
+    return arr;
+    
 }
+
