@@ -12,6 +12,7 @@ SRC = src/main.c \
 	src/mx_file_arr.c \
 	src/mx_file_mode_check.c \
 	src/mx_str_copy.c \
+	src/mx_define_flags.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -23,6 +24,7 @@ OUT = main.o \
 	mx_file_arr.o \
 	mx_file_mode_check.o \
 	mx_str_copy.o \
+	mx_define_flags.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

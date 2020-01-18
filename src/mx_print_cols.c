@@ -14,12 +14,12 @@ static int max_len(char **arr) {
 
 static void print_item(char *s, int sp) {
 	//вивід назви файла і відповідної кількості спейсбарів після нього;
-	char c = ' ';
+	char c = '\t';
 
 	mx_printstr(s);
 		while (sp > 0) {
 			write(1, &c, 1);
-			sp--;
+			sp -= 8;
 		}
 } 
 
@@ -46,15 +46,19 @@ void mx_print_cols(char **arr, int count) {
 
 	if (count % rows != 0)
 		wd_per_line += 1;
+	printf("%d\n", rows);
 	for (int j = 0; j < rows; j++) {
 		cycle = 0;
-		for (int i = j; cycle < wd_per_line && arr[i]; i += rows) {
+		for (int i = j; cycle < wd_per_line && i < count; i += rows) {
+			if (!arr[i])
+				break;
 			cur_len = mx_strlen(arr[i]);
 			spacing = ((m_l / 8) * 8) - cur_len + 8;
 			print_item(arr[i], spacing);
 			cycle++;
 		}
 		w_s = mx_get_ws();
+
 		write(1, "\n", 1);
 	}
 	mx_del_strarr(&arr);
