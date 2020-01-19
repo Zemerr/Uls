@@ -47,7 +47,7 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
     ssize_t len;
     ssize_t buflen;
 
-    char buf_link[30];
+    char buf_link[1000];;
 
     int first_len = 0;
     int second_len = 0;
@@ -201,20 +201,16 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
             my_acl_line[9] = 't';
         }
 
-        my_acl = acl_get_file(sort_arr[i], ACL_TYPE_EXTENDED);
+        my_acl = acl_get_file(path_name_2, ACL_TYPE_EXTENDED);
         text_acl = acl_to_text(my_acl, &len);
-        buflen = listxattr(sort_arr[i], NULL, 0, XATTR_NOFOLLOW);
+        buflen = listxattr(path_name_2, NULL, 0, XATTR_NOFOLLOW);
 
         //my_acl_line[10] = '';
 
         if (text_acl != NULL)
             my_acl_line[10] = '+';
         if (buflen > 0)
-            my_acl_line[10] = '@';
-
-        if (l_flag == 1) {
-            readlink(sort_arr[i], buf_link, sizeof(buf_link));
-        }
+            my_acl_line[10] = '@';   
 
         if (dev_flag == 1) {
             minor = minor(sb.st_rdev);
@@ -338,15 +334,22 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
         mx_del_strarr(&hour_arr);
         mx_strdel(&hour);
         mx_strdel(&path_name_1);
-        mx_strdel(&path_name_2);
+       // mx_strdel(&path_name_2);
+
+        if (l_flag == 1) {            
+            readlink(path_name_2, buf_link, sizeof(buf_link));
+            //buf_link[sb.st_size] = '\0';
+        }
 
         if (l_flag == 1) {
-            mx_printstr("-> %s");
+            mx_printstr(" -> ");
             mx_printstr(buf_link);
+            //printf("  %s", buf_link);
             l_flag = 0;
         }
 
         mx_printchar('\n');
+        mx_strdel(&path_name_2);
 
         my_acl_line[0] = '-';
         my_acl_line[1] = '-';
