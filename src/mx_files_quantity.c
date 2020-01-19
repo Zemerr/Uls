@@ -7,14 +7,14 @@ int mx_files_quantity(char **files, int trig) {
 
 	if (trig == 1) {
 		for (int i = 0; files[i]; i++) {
-			if (mx_file_mode_check(files[i]) == 1) {
+			if (mx_file_mode_check(files[i]) == 'f') {
 				count += 1;
 			}
 		}
 	}
 	if (trig == 2) {
 		for (int i = 0; files[i]; i++) {
-			if (mx_file_mode_check(files[i]) == 2)
+			if (mx_file_mode_check(files[i]) == 'd')
 				count += 1;
 		}
 	}

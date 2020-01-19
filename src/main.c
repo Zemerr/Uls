@@ -69,6 +69,8 @@ static t_flags *flags_filter(char **argv, int count) {
 			case('l'):
 				(*flag).l = 1;
 				break;
+			case('G'):
+				(*flag).G = 1;
 		}
 	}
 	return flag;

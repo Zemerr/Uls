@@ -12,12 +12,18 @@ static int max_len(char **arr) {
 	return len;
 }
 
-static void print_item(char *s, int sp) {
+static void print_item(char *s, int sp, t_flags *flag) {
 	//вивід назви файла і відповідної кількості спейсбарів після нього;
 	char c = '\t';
-
-	mx_printstr(s);
+	// printf("%s---\n", s);
+	// mx_printstr(s);
+	if ((*flag).G == 1)
+		mx_colour_out(s);
+	else
+		write(1, s, mx_strlen(s));
+	// printf("%d\t", mx_strlen(s));
 		while (sp > 0) {
+			// printf("%d\t", sp);
 			write(1, &c, 1);
 			sp -= 8;
 		}
@@ -34,7 +40,7 @@ static int get_rows(int count, int max_len, int w_s) {
 	return rows;
 }
 
-void mx_print_cols(char **arr, int count) {
+void mx_print_cols(char **arr, int count, t_flags *flag) {
 	//вивід колонками;
 	int m_l = max_len(arr);
 	int cur_len = 0;
@@ -56,7 +62,7 @@ void mx_print_cols(char **arr, int count) {
 			spacing = ((m_l / 8) * 8) - cur_len + 8;
 			if (cycle + 1 == wd_per_line)
 				spacing = 0;
-			print_item(arr[i], spacing);
+			print_item(arr[i], spacing, flag);
 			cycle++;
 		}
 		w_s = mx_get_ws();

@@ -43,7 +43,7 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 		}
 		else
 	// printf("%d\n", size);
-			mx_print_cols(obj_arr, size);
+			mx_print_cols(obj_arr, size, flags);
 }
 
 //if flag 'G' -> use spaces while print;
