@@ -152,6 +152,7 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
         }
         if ((sb.st_mode & S_IFREG) == S_IFREG) {
             my_acl_line[0] = '-';
+            dev_flag = 0;
         }
         if ((sb.st_mode & S_IFLNK) == S_IFLNK) {
             my_acl_line[0] = 'l';
@@ -320,31 +321,18 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
         mx_printstr(hour_arr[1]);
         mx_printstr(" ");
         mx_printstr(sort_arr[i]);
-
-        // printf("%s  ", time_arr[1]);
-        // printf("%s   ", time_arr[2]);
-
-        // printf("%s", hour_arr[0]);
-        // printf(":");
-        // printf("%s   ", hour_arr[1]);
-
-        // printf("%s ", sort_arr[i]);
-
         mx_del_strarr(&time_arr);
         mx_del_strarr(&hour_arr);
         mx_strdel(&hour);
         mx_strdel(&path_name_1);
-       // mx_strdel(&path_name_2);
-
+       
         if (l_flag == 1) {            
-            readlink(path_name_2, buf_link, sizeof(buf_link));
-            //buf_link[sb.st_size] = '\0';
+            readlink(path_name_2, buf_link, sizeof(buf_link)); 
         }
 
         if (l_flag == 1) {
             mx_printstr(" -> ");
-            mx_printstr(buf_link);
-            //printf("  %s", buf_link);
+            mx_printstr(buf_link);            
             l_flag = 0;
         }
 
