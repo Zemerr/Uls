@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "types.h": "c",
-        "_useconds_t.h": "c"
+        "_useconds_t.h": "c",
+        "libmx.h": "c"
     }
 }

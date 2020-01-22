@@ -135,5 +135,5 @@ int main(int argc, char **argv) {
 		mx_file_specified(files, flags, ".");
 		mx_del_strarr(&files);
 	}
-	// system ("leaks uls");
+	 //system ("leaks uls");
 }

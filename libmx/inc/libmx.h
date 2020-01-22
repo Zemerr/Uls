@@ -32,6 +32,9 @@ char *mx_strncpy(char *dst, const char *src, int len);
 void mx_printint(int n);
 void mx_printchar(char c);
 int mx_intlen(signed long long num);
+char *mx_strjoin_one( char *s1,  char *s2);
+char *mx_strjoin_two( char *s1,  char *s2);
+void mx_strdel_three(char **str1, char **str2, char **str3);
 
 
 #endif

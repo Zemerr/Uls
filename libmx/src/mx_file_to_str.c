@@ -16,18 +16,18 @@ char *mx_file_to_str(const char *file){
     char c;
     char *str = NULL;
 
-        if (p < 0) {
-            close(p);
-            return NULL;
-        }
-        if (p > 0) {
-            while (read(p, &c, 1)) {
-                size++;
-            }
-            close(p);
-            str = str_fill(file, size);
-            return str;
-        }
+    if (p < 0) {
         close(p);
         return NULL;
+    }
+    if (p > 0) {
+        while (read(p, &c, 1)) {
+            size++;
+        }
+        close(p);
+        str = str_fill(file, size);
+        return str;
+    }
+    close(p);
+    return NULL;
 }

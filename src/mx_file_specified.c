@@ -7,7 +7,6 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
 	int count = 0;
 
 	reg_file = mx_file_arr(files);
-		if (reg_file != NULL) {
 			count = mx_files_quantity(files, 1);
 			if (count != 0) {
 				mx_bubble_sort(reg_file, count);
@@ -18,9 +17,7 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
 					mx_print_cols(reg_file, count);
 				}
 			}
-		}
 	dir = mx_dir_arr(files);
-		if (dir != NULL) {
 			count = mx_files_quantity(files, 2);
 			mx_bubble_sort(dir, count);
 			for (int i = 0; dir[i]; i++) {
@@ -33,5 +30,4 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
 				// mx_files_in_dir(dir[i]);
 			}
 			mx_del_strarr(&dir);
-		}
 }
