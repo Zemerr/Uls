@@ -16,6 +16,14 @@ SRC = src/main.c \
 	src/mx_flag_l.c \
 	src/mx_intlen.c \
 	src/mx_colour_out.c \
+	src/mx_for_flagl_one.c \
+	src/mx_for_flagl_two.c \
+	src/mx_acl_line.c \
+	src/mx_print_size_mm.c \
+	src/mx_print_name_acl.c \
+	src/mx_print_link_update.c \
+
+
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -31,6 +39,14 @@ OUT = main.o \
 	mx_flag_l.o \
 	mx_intlen.o \
 	mx_colour_out.o \
+	mx_for_flagl_one.o \
+	mx_for_flagl_two.o \
+	mx_acl_line.o \
+	mx_print_size_mm.o \
+	mx_print_name_acl.o \
+	mx_print_link_update.o \
+	
+
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
