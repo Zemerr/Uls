@@ -15,6 +15,7 @@ SRC = src/main.c \
 	src/mx_define_flags.c \
 	src/mx_flag_l.c \
 	src/mx_intlen.c \
+	src/mx_colour_out.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -29,6 +30,7 @@ OUT = main.o \
 	mx_define_flags.o \
 	mx_flag_l.o \
 	mx_intlen.o \
+	mx_colour_out.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
