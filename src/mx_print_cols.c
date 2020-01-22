@@ -12,21 +12,18 @@ static int max_len(char **arr) {
 	return len;
 }
 
-static void print_item(char *s, int sp, t_flags *flag) {
+static void print_item(char *s, int sp) {
 	//вивід назви файла і відповідної кількості спейсбарів після нього;
 	char c = '\t';
 	// printf("%s---\n", s);
 	// mx_printstr(s);
-	if ((*flag).G == 1)
-		mx_colour_out(s);
-	else
 		write(1, s, mx_strlen(s));
 	// printf("%d\t", mx_strlen(s));
-		while (sp > 0) {
-			// printf("%d\t", sp);
-			write(1, &c, 1);
-			sp -= 8;
-		}
+			while (sp > 0) {
+				// printf("%d\t", sp);
+				write(1, &c, 1);
+				sp -= 8;
+			}
 } 
 
 static int get_rows(int count, int max_len, int w_s) {
@@ -40,7 +37,7 @@ static int get_rows(int count, int max_len, int w_s) {
 	return rows;
 }
 
-void mx_print_cols(char **arr, int count, t_flags *flag) {
+void mx_print_cols(char **arr, int count) {
 	//вивід колонками;
 	int m_l = max_len(arr);
 	int cur_len = 0;
@@ -60,14 +57,15 @@ void mx_print_cols(char **arr, int count, t_flags *flag) {
 				break;
 			cur_len = mx_strlen(arr[i]);
 			spacing = ((m_l / 8) * 8) - cur_len + 8;
-			if (cycle + 1 == wd_per_line)
+			if ((cycle + 1) == wd_per_line || (i + rows) == count) {
 				spacing = 0;
-			print_item(arr[i], spacing, flag);
+			}
+			print_item(arr[i], spacing);
 			cycle++;
 		}
 		w_s = mx_get_ws();
 
 		write(1, "\n", 1);
 	}
-	mx_del_strarr(&arr);
+	// mx_del_strarr(&arr);
 }

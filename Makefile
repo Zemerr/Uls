@@ -22,8 +22,9 @@ SRC = src/main.c \
 	src/mx_print_size_mm.c \
 	src/mx_print_name_acl.c \
 	src/mx_print_link_update.c \
-
-
+	src/mx_flag_g.c \
+	src/mx_recursion_call.c \
+	src/mx_flags_filter.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -45,8 +46,9 @@ OUT = main.o \
 	mx_print_size_mm.o \
 	mx_print_name_acl.o \
 	mx_print_link_update.o \
-	
-
+	mx_flag_g.o \
+	mx_recursion_call.o \
+	mx_flags_filter.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
