@@ -1,0 +1,4 @@
+main.c			mx_del_timearr.c	mx_file_specified.c	mx_flag_l.c		mx_recursion_call.c
+main_l.c		mx_dir_arr.c		mx_files_in_dir.c	mx_get_ws.cmx_str_copy.c
+mx_colour_out.c		mx_file_arr.c		mx_files_quantity.c	mx_intlen.c
+mx_define_flags.c	mx_file_mode_check.c	mx_flag_g.c		mx_print_cols.c		

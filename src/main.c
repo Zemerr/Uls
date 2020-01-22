@@ -6,7 +6,10 @@ static int files_count(int argc, char **argv) {
 	if (argc == 0)
 		return 0;
 	for (int i = 1; argv[i]; i++) {
-		if (argv[i][0] != '-') {
+		if (count > 0 && argv[i][0] == '-') { //if there is such mistake as "./uls -a inc -R"
+			return -1;						 //the output should be :
+		}								    //"./uls -R: No such file or directory"
+		if (argv[i][0] != '-') {		   //and uls continues working;
 			count++;
 		}
 	}
@@ -30,72 +33,6 @@ static int flags_count(char **argv) {
 	return count;	
 }
 
-static char *flags_fill_in(char **argv, int count) {
-	char *flags = NULL;
-	int o = 0;
-
-	if (count == -1) {
-		return NULL;
-	}
-	flags = (char *)malloc(sizeof(char) * count + 1);
-		for (int j = 1; argv[j] != NULL; j++) {
-			if (argv[j][0] == '-') {
-				for (int i = 1; argv[j][i] != '\0'; i++, o++) {
-					flags[o] = argv[j][i];
-				}
-			}
-		}
-		flags[o] = '\0';
-
-		return flags;
-}
-
-static t_flags *flags_filter(char **argv, int count) {
-	char *str = flags_fill_in(argv, count);
-	t_flags *flag = (t_flags *)malloc(sizeof(t_flags));
-
-	for (int i = 0; str[i] != '\0'; i++) {
-		switch (str[i])
-		{
-			case('A'):
-				if ((*flag).a == 0) {
-					(*flag).A = 1;
-				}
-				break;
-			case('a'):
-				(*flag).a = 1;
-				(*flag).A = 0;
-				break;
-			case('l'):
-				(*flag).l = 1;
-				break;
-			case('G'):
-				(*flag).G = 1;
-		}
-	}
-	return flag;
-}
-
-// static char *flags_fill_in(char **argv, int count) {
-// 	char *flags = NULL;
-// 	int o = 0;
-
-// 	if (count == -1) {
-// 		return NULL;
-// 	}
-// 	flags = (char *)malloc(sizeof(char) * count + 1);
-// 		for (int j = 1; argv[j] != NULL; j++) {
-// 			if (argv[j][0] == '-') {
-// 				for (int i = 1; argv[j][i] != '\0'; i++, o++) {
-// 					flags[o] = argv[j][i];
-// 				}
-// 			}
-// 		}
-// 		flags[o] = '\0';
-
-// 		return flags;
-// }
-
 static char **files_fill_in(int argc, char **argv) {
 	//створюю масив введенних файлів(флаги не враховуються);
 	char **files = (char **)malloc(sizeof(char *) * argc);
@@ -103,7 +40,8 @@ static char **files_fill_in(int argc, char **argv) {
 	int j = 1;
 
 		for ( ; argv[j]; j++) {
-			files[q] = mx_str_copy(argv[j]);
+			if (argv[j][0] != '-')
+				files[q] = mx_str_copy(argv[j]);
 			q++;
 		}
 		files[q] = NULL;
@@ -114,28 +52,18 @@ int main(int argc, char **argv) {
 	int filec = files_count(argc, argv); 
 	char **files = NULL;
 	int flagc = flags_count(argv);
-	t_flags *flags = flags_filter(argv, flagc);
+	t_flags *flags = mx_flags_filter(argv, flagc);
 
-
-	if (flagc == -1) {
-			write(2, "usage: uls [-l] [file ...]\n",
-				mx_strlen("usage: uls [-l] [file ...]\n"));//якщо в одному аргументі
-				return 0;								//2 флага і між ними "-"	
+	if (flagc == -1 || filec == -1) {
+			write(2, "usage: uls [-lGRAa] [file ...]\n",
+				mx_strlen("usage: uls [-lGRAa] [file ...]\n"));//error for such cases:
+				return 0;	                    //1. "./uls -a-A"; 2. "./uls -a inc -l"
 	}
-	if (filec == 0) {
-		// printf("there is no given file\n");
-		//якщо аргумента немає, працюємо з директорією, де знаходимось;
-		mx_define_flags(".", flags);
-		// mx_files_in_dir(".");
+	if (filec == 0) {                //if there is no files/directories among arguments
+		mx_define_flags(".", flags);//but may be some flags;
 	}
-	if (filec != 0) {
-		files = files_fill_in(argc, (argv));
-		// printf("there is some files\n");
-			// for (int i = 0; files[i]; i++) {
-			// 	printf("%s, ", files[i]);
-			// }
+	if (filec != 0) {                               //if there is any file/directory
+		files = files_fill_in(argc, (argv));       //from among arguments except flags;
 		mx_file_specified(files, flags, ".");
-		mx_del_strarr(&files);
 	}
-	// system ("leaks uls");
 }
