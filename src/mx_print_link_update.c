@@ -35,6 +35,6 @@ char *my_acl_line, char *sort_arr, int flag, t_flags *flags) {
         mx_colour_out(sort_arr, NULL, path_name_1);
     else
         mx_printstr(sort_arr);
-    print_link(path_name_1, trigers, flag);
+    print_link(path_name_1, trigers, flag);    
     upadate(my_acl_line);
 }
