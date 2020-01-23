@@ -25,6 +25,7 @@ SRC = src/mx_del_strarr.c \
   src/mx_del_two_arr.c \
   src/mx_strdup.c \
   src/mx_strcpy.c \
+  src/mx_strncpy.c \
 
 OUT = mx_file_to_str.o \
   mx_strlen.o \
@@ -49,6 +50,7 @@ OUT = mx_file_to_str.o \
   mx_del_two_arr.o \
   mx_strdup.o \
   mx_strcpy.o \
+  mx_strncpy.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
