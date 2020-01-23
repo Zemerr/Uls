@@ -35,8 +35,8 @@ static char **data(t_flags *flag, char *file_name) {
 //if you print : ls -Cl you get output for 'l' flag;
 //same works with flag '1';
 
-void mx_define_flags(char *file_name, t_flags *flags) {
-	char **obj_arr = data(flags, file_name);
+void mx_define_flags(char *file_name, t_flags *flags) {    
+	char **obj_arr = data(flags, file_name);    
 
 	int size = determine_size(obj_arr);
 		if ((*flags).R == 1) {
@@ -55,8 +55,8 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 			// 	mx_print_cols(obj_arr, size);
 			// mx_recursion_call(obj_arr, flags, file_name);
 		}
-		else if ((*flags).l == 1) {
-			mx_flag_l(obj_arr, file_name);
+		else if ((*flags).l == 1) {            
+			mx_flag_l(obj_arr, file_name);            
 		}
 		else if ((*flags).G == 1) {
 			mx_flag_g(obj_arr, size, file_name);

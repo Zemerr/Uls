@@ -59,19 +59,29 @@ static t_lens *create_struckt() {
 
 t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name) {
     //підрахунок довжин між колонками
-    char *path_name_1 = NULL;
+    // char *path_name_1 = NULL;
     struct stat sb;
     t_lens *my_lens = create_struckt();
+    int flag = 0;
 
     for (int i = 0; sort_arr[i] != NULL; i++) {
-        path_name_1 = mx_strjoin(dir_name, "/");
-        path_name_1 = mx_strjoin_two(path_name_1, sort_arr[i]);
+        char *path_name_1 = NULL;
+        if (sort_arr[i][0] != '/') {
+            path_name_1 = mx_strjoin(dir_name, "/");
+            path_name_1 = mx_strjoin_two(path_name_1, sort_arr[i]);
+            flag = 1;
+        }
+        else
+            path_name_1 = sort_arr[i];
         lstat(path_name_1, &sb);
         count_first_colum(my_lens, sb);
         count_second_colum(my_lens, sb);
         my_lens->blocks += sb.st_blocks;
-        mx_strdel(&path_name_1);
+        if (flag == 1) {
+            mx_strdel(&path_name_1);
+            flag = 0;
         }
+    }
         my_lens->minor_major_len = 3 + my_lens->major_len + my_lens->minor_len;
         return my_lens;
 }

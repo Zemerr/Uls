@@ -52,21 +52,27 @@ static void print_block(char *my_acl_line, t_lens *my_lens) {
 
 
 void mx_flag_l(char **sort_arr, char *dir_name) {
-    printf("%s -- %s", sort_arr[0], dir_name);
     struct stat sb;
     char my_acl_line[] = "-----------";
     t_lens *my_lens =  mx_for_flagl_one(sort_arr, dir_name);
     t_acl_trig *trigers = create_trig();
 
     print_block(my_acl_line, my_lens);
-    for (; *sort_arr != NULL; sort_arr++) {
-        char *path_name_1 = mx_strjoin(dir_name, "/");
-        path_name_1 = mx_strjoin_two(path_name_1, *sort_arr);
+    for ( ; *sort_arr != NULL; sort_arr++) {
+        char *path_name_1 = NULL;
+        int flag = 0;
+        if ((*sort_arr)[0] != '/') {
+            path_name_1 = mx_strjoin(dir_name, "/");
+            path_name_1 = mx_strjoin_two(path_name_1, *sort_arr);
+            flag = 1;
+        }
+        else
+            path_name_1 = *sort_arr;
         lstat(path_name_1, &sb);
         mx_for_flagl_two(sb, trigers, path_name_1, my_acl_line);
         mx_print_name_acl(sb, my_acl_line, my_lens);
         mx_print_size_mm(my_lens, sb, trigers);
         print_time(sb);
-        mx_print_link_update(path_name_1, trigers, my_acl_line, *sort_arr);
+        mx_print_link_update(path_name_1, trigers, my_acl_line, *sort_arr, flag);
     }
 }

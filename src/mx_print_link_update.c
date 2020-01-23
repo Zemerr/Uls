@@ -1,6 +1,6 @@
 #include "../inc/header.h"
 
-static void print_link(char *path_name_1, t_acl_trig *trigers) {
+static void print_link(char *path_name_1, t_acl_trig *trigers, int flag) {
     char buf_link[1000];
 
     if (trigers->l_flag == 1) {
@@ -10,7 +10,9 @@ static void print_link(char *path_name_1, t_acl_trig *trigers) {
         trigers -> l_flag = 0;
     }
     mx_printchar('\n');
-    mx_strdel(&path_name_1);
+    if (flag == 1) {
+        mx_strdel(&path_name_1);
+    }
 }
 
 static void upadate(char *my_acl_line) {
@@ -28,8 +30,8 @@ static void upadate(char *my_acl_line) {
 }
 
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
-char *my_acl_line, char *sort_arr) {
+char *my_acl_line, char *sort_arr, int flag) {
     mx_printstr(sort_arr);
-    print_link(path_name_1, trigers);
+    print_link(path_name_1, trigers, flag);
     upadate(my_acl_line);
 }

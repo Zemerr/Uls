@@ -48,7 +48,7 @@ static char **files_fill_in(int argc, char **argv) {
 		return files;
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv) {    
 	int filec = files_count(argc, argv); 
 	char **files = NULL;
 	int flagc = flags_count(argv);
@@ -64,6 +64,8 @@ int main(int argc, char **argv) {
 	}
 	if (filec != 0) {                               //if there is any file/directory
 		files = files_fill_in(argc, (argv));       //from among arguments except flags;
+        //printf("chek main\n");
+
 		mx_file_specified(files, flags, ".");
 	}
 }
