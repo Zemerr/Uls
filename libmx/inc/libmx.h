@@ -35,6 +35,7 @@ int mx_intlen(signed long long num);
 char *mx_strjoin_one( char *s1,  char *s2);
 char *mx_strjoin_two( char *s1,  char *s2);
 void mx_strdel_three(char **str1, char **str2, char **str3);
-
+char *mx_strdup(const char *str);
+char *mx_strcpy(char *dst, const char *src);
 
 #endif

@@ -6,7 +6,6 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 	struct dirent *entry;
 	char **arr = NULL;
 	int i = 0;
-	int j = 0;
 	int count = 0;
 
 	if (dirp != NULL) {
@@ -26,7 +25,9 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 			entry = readdir(dirp);
 		}
 		closedir(dirp);
-		// printf("%d\n", count);
+		if (count == 0) {
+			return NULL;
+		}
 		dirp = opendir(dir_name);
 		arr = (char **)malloc(sizeof(char*) * count + 1);
 		entry = readdir(dirp);
@@ -34,32 +35,15 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 				if ((*entry).d_name[0] == '.'
 					&& ((*entry).d_name[1] != '\0' && (*entry).d_name[1] != '.')
 					&& trig == 'A') {
-					arr[i] =(char *)malloc(sizeof(char) * mx_strlen((*entry).d_name) + 1);
-					for (j = 0; j < mx_strlen((*entry).d_name); j++) {
-						arr[i][j] = (*entry).d_name[j];
-					}
-					arr[i][j] = '\0';
+					arr[i] = mx_strdup((*entry).d_name);
 					i++;
 				}
 				else if (trig == 'a') {
-					arr[i] =(char *)malloc(sizeof(char) * mx_strlen((*entry).d_name) + 1);
-						for (j = 0; j < mx_strlen((*entry).d_name); j++) {
-							arr[i][j] = (*entry).d_name[j];
-						}
-						arr[i][j] = '\0';
-						i++;
+					arr[i] = mx_strdup((*entry).d_name);
+					i++;
 				}
 				else if ((*entry).d_name[0] != '.') {
-					arr[i] =(char *)malloc(sizeof(char) * mx_strlen((*entry).d_name) + 1);
-
-					for (j = 0; j < mx_strlen((*entry).d_name); j++) {
-
-						arr[i][j] = (*entry).d_name[j];
-
-					}
-
-					arr[i][j] = '\0';
-
+					arr[i] = mx_strdup((*entry).d_name);
 					i++;
 				}
 				entry = readdir(dirp);

@@ -1,7 +1,6 @@
 #include "../inc/header.h"
 
 char **mx_file_arr(char **files) {
-	//повертає масив звичайних файлів;
 	char **reg_file = NULL;
 	int count = mx_files_quantity(files, 1);
 	int i = 0;

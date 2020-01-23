@@ -38,18 +38,15 @@ t_flags *mx_flags_filter(char **argv, int count) {
 				break;
 			case('l'):
 				(*flag).l = 1;
-				(*flag).G = 0;
 				break;
 			case('G'):
 				(*flag).G = 1;
 				break;
 			case('R'):
-				if ((*flag).l != 1) {
-					(*flag).R = 1;
-				}
+				(*flag).R = 1;
 				break;
 		}
 	}
-	mx_strdel(&str);
+	// mx_strdel(&str);
 	return flag;
 }

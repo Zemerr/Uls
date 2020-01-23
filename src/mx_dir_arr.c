@@ -1,7 +1,6 @@
 #include "../inc/header.h"
 
 char **mx_dir_arr(char **files) {
-	///створює масив з папками і сортує за алфавітом;
 	char **dir = NULL;
 	int count = mx_files_quantity(files, 2);
 	int i = 0;
