@@ -7,7 +7,7 @@ static int reg_file_out(char **files, t_flags *flags, char *file_name) {
     if (file_count != 0) {
         mx_bubble_sort(reg_file, file_count);
             if ((*flags).l == 1)
-                mx_flag_l(reg_file, file_name);
+                mx_flag_l(reg_file, file_name, flags);
             else if ((*flags).G == 1)
                 mx_flag_g(reg_file, file_count, file_name);
             else

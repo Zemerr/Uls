@@ -51,7 +51,7 @@ static void print_block(char *my_acl_line, t_lens *my_lens) {
 }
 
 
-void mx_flag_l(char **sort_arr, char *dir_name) {
+void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags) {
     struct stat sb;
     char my_acl_line[] = "-----------";
     t_lens *my_lens =  mx_for_flagl_one(sort_arr, dir_name);
@@ -73,6 +73,6 @@ void mx_flag_l(char **sort_arr, char *dir_name) {
         mx_print_name_acl(sb, my_acl_line, my_lens);
         mx_print_size_mm(my_lens, sb, trigers);
         print_time(sb);
-        mx_print_link_update(path_name_1, trigers, my_acl_line, *sort_arr, flag);
+        mx_print_link_update(path_name_1, trigers, my_acl_line, *sort_arr, flag, flags);
     }
 }

@@ -80,15 +80,19 @@ static char one_mode_unit(struct stat buf) {
     return c;
 }
 
-char mx_file_mode_check(char *file, char *file_name) {
+char mx_file_mode_check(char *file, char *file_name, char *path_name) {
     char c;
     char *filepath1 = NULL;
     char *filepath2 = file;
     struct stat buf;
 
-    if (mx_strcmp(file_name, file) != 0) {
-        filepath1 = mx_strjoin(file_name, "/");
-        filepath2 = mx_strjoin(filepath1, file);
+    if (file_name == NULL)
+        filepath2 = path_name;
+    else {
+        if (mx_strcmp(file_name, file) != 0) {
+            filepath1 = mx_strjoin(file_name, "/");
+            filepath2 = mx_strjoin(filepath1, file);
+        }
     }
     lstat(filepath2, &buf);
     c = one_mode_unit(buf);

@@ -54,7 +54,7 @@ void mx_flag_g(char **arr, int count, char *file_name) {
 				spacing = m_l - cur_len + 1;
 					if (cycle + 1 == wd_per_line)
 						spacing = 0;
-					mx_colour_out(arr[i], file_name);
+					mx_colour_out(arr[i], file_name, NULL);
 					spacing_print(spacing);
 					cycle++;
 			}

@@ -47,8 +47,8 @@ static void color_mode_one(char c) {
     }
 }
 
-void mx_colour_out(char *file, char *file_name) {
-    char c = mx_file_mode_check(file, file_name);
+void mx_colour_out(char *file, char *file_name, char *path_name) {
+    char c = mx_file_mode_check(file, file_name, path_name);
     write(1, "\33[0m", mx_strlen("\33[0m"));
     color_mode_one(c);
     color_mode_two(c);
