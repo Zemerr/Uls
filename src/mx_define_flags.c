@@ -34,7 +34,7 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 		return;
 	}
 	if ((*flags).l == 1) {
-		mx_flag_l(obj_arr, file_name);
+		mx_flag_l(obj_arr, file_name, flags);
 	}
 	else if ((*flags).G == 1) {
 		mx_flag_g(obj_arr, size, file_name);

@@ -30,8 +30,11 @@ static void upadate(char *my_acl_line) {
 }
 
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
-char *my_acl_line, char *sort_arr, int flag) {
-    mx_printstr(sort_arr);
+char *my_acl_line, char *sort_arr, int flag, t_flags *flags) {
+    if ((*flags).G == 1)
+        mx_colour_out(sort_arr, NULL, path_name_1);
+    else
+        mx_printstr(sort_arr);
     print_link(path_name_1, trigers, flag);
     upadate(my_acl_line);
 }
