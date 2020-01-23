@@ -79,7 +79,6 @@ void mx_colour_out(char *file, char *file_name);
 void mx_flag_g(char **arr, int count, char *file_name);
 void mx_recursion_call(char **obj, t_flags *flags, char *file_name);
 t_flags *mx_flags_filter(char **argv, int count);
-
 t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name);
 char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1, 
 char *my_asl_line);

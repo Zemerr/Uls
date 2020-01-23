@@ -17,13 +17,14 @@ SRC = src/mx_del_strarr.c \
   src/mx_strcat.c \
   src/mx_nbr_to_hex.c \
   src/mx_strndup.c \
-  src/mx_strncpy.c \
   src/mx_printint.c \
   src/mx_printchar.c \
   src/mx_strjoin_one.c \
   src/mx_strjoin_two.c \
   src/mx_strdel_three.c \
   src/mx_del_two_arr.c \
+  src/mx_strdup.c \
+  src/mx_strcpy.c \
 
 OUT = mx_file_to_str.o \
   mx_strlen.o \
@@ -40,13 +41,14 @@ OUT = mx_file_to_str.o \
   mx_strcat.o \
   mx_nbr_to_hex.o \
   mx_strndup.o \
-  mx_strncpy.o \
   mx_printint.o \
   mx_printchar.o \
   mx_strjoin_one.o \
   mx_strjoin_two.o \
   mx_strdel_three.o \
   mx_del_two_arr.o \
+  mx_strdup.o \
+  mx_strcpy.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
