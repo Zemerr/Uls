@@ -47,15 +47,17 @@ void mx_print_size_mm(t_lens *lens, struct stat sb, t_acl_trig *trigers) {
         print_minor(lens, trigers);
         trigers -> dev_flag = 0;
     } 
-    else if (lens->flag_device == 1) {
-        if (lens->forth_len < lens->minor_major_len) {
-            for (int j = 0; j < lens->minor_major_len - mx_intlen(sb.st_size); j++) 
-                mx_printstr(" ");
-        }
-    }
     else {
-        for (int j = 0; j < lens->forth_len - mx_intlen(sb.st_size); j++)
-            mx_printstr(" ");
+        if (lens->flag_device == 1) {
+            if (lens->forth_len < lens->minor_major_len) {
+                for (int j = 0; j < lens->minor_major_len - mx_intlen(sb.st_size); j++) 
+                    mx_printstr(" ");
+            }
+        }
+        else {
+            for (int j = 0; j < lens->forth_len - mx_intlen(sb.st_size); j++)
+                mx_printstr(" ");
+            }
         mx_printint(sb.st_size);
     }
     mx_printstr(" ");
