@@ -3,20 +3,14 @@
 static char dir_check(struct stat buf) {
     char c = '-';
 
-    switch (buf.st_mode & S_IFMT)
+    if ((buf.st_mode & S_IFMT) == S_IFDIR)
     {
-        case (S_IFDIR):
+        c = 'd';
             if ((buf.st_mode & S_ISVTX) == S_ISVTX
-                && (buf.st_mode & S_IWOTH) == S_IWOTH) {
+                && (buf.st_mode & S_IWOTH) == S_IWOTH)
                 c = 'x';
-                break;
-            }
-            if ((buf.st_mode & S_IWOTH) == S_IWOTH) {
+            else if ((buf.st_mode & S_IWOTH) == S_IWOTH)
                 c = 'n';
-                break;
-            }
-            c = 'd';
-            break;
     }
     return c;
 }
@@ -44,20 +38,15 @@ static char second_mode_unit(struct stat buf) {
 static char file_check(struct stat buf) {
     char c = '-';
 
-    switch (buf.st_mode & S_IFMT)
+    if ((buf.st_mode & S_IFMT) == S_IFREG)
     {
-        case (S_IFREG):
+        c = 'f';
             if ((buf.st_mode & S_IXUSR) == S_IXUSR) {
-                if ((buf.st_mode & S_ISUID) == S_ISUID) {
-                    c = 'u';
-                }
-                if ((buf.st_mode & S_ISGID) == S_ISGID) {
-                    c = 'g';
-                }
                 c = 'e';
-            }
-            else {
-                c = 'f';
+                    if ((buf.st_mode & S_ISUID) == S_ISUID)
+                        c = 'u';
+                    else if ((buf.st_mode & S_ISGID) == S_ISGID)
+                        c = 'g';
             }
     }
     return c;
@@ -82,27 +71,14 @@ static char one_mode_unit(struct stat buf) {
 
 char mx_file_mode_check(char *file, char *file_name, char *path_name) {
     char c;
-    char *filepath1 = NULL;
-    char *filepath2 = file;
+    char *filepath = mx_find_path(file, file_name, path_name);
     struct stat buf;
 
-    if (mx_strcmp(file_name, ".") == 0)
-        filepath2 = file;
-    else if (file_name == NULL)
-        filepath2 = path_name;
-    else {
-        if (mx_strcmp(file_name, file) != 0) {
-            filepath1 = mx_strjoin(file_name, "/");
-            filepath2 = mx_strjoin(filepath1, file);
-        }
-    }
-    lstat(filepath2, &buf);
+    lstat(filepath, &buf);
     c = one_mode_unit(buf);
         if (c == '-')
             c = second_mode_unit(buf);
-        if (file_name != NULL && mx_strcmp(file_name, ".") != 0) {
-            mx_strdel(&filepath1);
-            mx_strdel(&filepath2);
-        }
+        if (file_name != NULL && mx_strcmp(file_name, ".") != 0)
+            mx_strdel(&filepath);
         return c;
 }

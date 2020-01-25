@@ -1,0 +1,21 @@
+Makefile	libmx		obj		test.txt	uls.txt
+inc		ls.txt		src		uls
+Process:         uls [2388]
+Path:            /Volumes/VOLUME/*/uls
+Load Address:    0x103e6f000
+Identifier:      uls
+Version:         ???
+Code Type:       X86-64
+Parent Process:  zsh [70323]
+
+Date/Time:       2020-01-25 19:56:35.021 +0200
+Launch Time:     2020-01-25 19:56:34.867 +0200
+OS Version:      Mac OS X 10.14.5 (18F132)
+Report Version:  7
+Analysis Tool:   /usr/bin/leaks
+----
+
+leaks Report Version: 4.0
+Process 2388: 156 nodes malloced for 13 KB
+Process 2388: 0 leaks for 0 total leaked bytes.
+
