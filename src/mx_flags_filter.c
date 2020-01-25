@@ -24,29 +24,27 @@ t_flags *mx_flags_filter(char **argv, int count) {
 	char *str = flags_fill_in(argv, count);
 	t_flags *flag = (t_flags *)malloc(sizeof(t_flags));
 
-	// flag = &((t_flags){.a = 0, .A = 0, .l = 0, .G = 0, .R = 0});
-		for (int i = 0; str[i] != '\0'; i++) {
-			switch (str[i])
-			{
-				case('A'):
-					if ((*flag).a == 0) {
-						(*flag).A = 1;
-					}
-					break;
-				case('a'):
-					(*flag).a = 1;
-					(*flag).A = 0;
-					break;
-				case('l'):
-					(*flag).l = 1;
-					break;
-				case('G'):
-					(*flag).G = 1;
-					break;
-				case('R'):
-					(*flag).R = 1;
-					break;
-			}
+	for (int i = 0; str[i] != '\0'; i++) {
+		switch (str[i])
+		{
+			case('A'):
+				if ((*flag).a == 0) {
+					(*flag).A = 1;
+				}
+				break;
+			case('a'):
+				(*flag).a = 1;
+				(*flag).A = 0;
+				break;
+			case('l'):
+				(*flag).l = 1;
+				break;
+			case('G'):
+				(*flag).G = 1;
+				break;
+			case('R'):
+				(*flag).R = 1;
+				break;		
 		}
 	mx_strdel(&str);
 	return flag;
