@@ -30,6 +30,8 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 	char **obj_arr = data(flags, file_name);
 	int size = determine_size(obj_arr);
 
+	//  printf("------  ------------\n");
+
 	if (!obj_arr) {
 		return;
 	}
@@ -44,9 +46,22 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 	}
 	if ((*flags).R == 1) {
 		if ((*flags).a == 1) {
-			obj_arr = mx_files_in_dir(file_name, 'A');
+			obj_arr = mx_files_in_dir(file_name, 'A');			
 		}
+		// system("leaks uls");
 		mx_recursion_call(obj_arr, flags, file_name);
+		// system("leaks uls");
 	}
-	//mx_del_strarr(&obj_arr);
+	// system("leaks uls");
+//				|      |
+//				|      |
+//				|      |
+//				|      |
+//				|      |
+//			\				/
+//			 \			   /
+//			  \			  /
+//			   \		 /
+//	            seg fault
+	mx_del_strarr(&obj_arr); //there is a seg fault
 }

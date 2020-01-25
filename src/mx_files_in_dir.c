@@ -11,16 +11,16 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 	if (dirp != NULL) {
 		entry = readdir(dirp);
 		while (entry) {
-			if ((*entry).d_name[0] == '.'
-				&& ((*entry).d_name[1] != '\0' && (*entry).d_name[1] != '.')
+			if (((*entry).d_name[1] != '\0' && (*entry).d_name[1] != '.')
 				&& trig == 'A') {
 				count++;
 			}
 			else if (trig == 'a') {
 				count++;
 			}
-			else if ((*entry).d_name[0] != '.') {
-				count++;
+			else {
+				if ((*entry).d_name[0] != '.')
+					count++;
 			}
 			entry = readdir(dirp);
 		}
@@ -32,19 +32,21 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 		arr = (char **)malloc(sizeof(char *) * (count + 1));
 		entry = readdir(dirp);
 			while (entry) {
-				if ((*entry).d_name[0] == '.'
-					&& ((*entry).d_name[1] != '\0' && (*entry).d_name[1] != '.')
+				if (((*entry).d_name[1] != '\0' && (*entry).d_name[1] != '.')
 					&& trig == 'A') {
 					arr[i] = mx_strdup((*entry).d_name);
 					i++;
 				}
 				else if (trig == 'a') {
 					arr[i] = mx_strdup((*entry).d_name);
+					printf("%s\n", arr[i]);
 					i++;
 				}
-				else if ((*entry).d_name[0] != '.') {
-					arr[i] = mx_strdup((*entry).d_name);
-					i++;
+				else {
+					if ((*entry).d_name[0] != '.') {
+						arr[i] = mx_strdup((*entry).d_name);
+						i++;
+					}
 				}
 				entry = readdir(dirp);
 			}

@@ -61,5 +61,5 @@ int main(int argc, char **argv) {
         files = files_fill_in(argc, (argv));
         mx_file_specified(files, flags, ".");
     }
-    // system("leaks uls");
+    system("leaks uls");
 }

@@ -86,7 +86,9 @@ char mx_file_mode_check(char *file, char *file_name, char *path_name) {
     char *filepath2 = file;
     struct stat buf;
 
-    if (file_name == NULL)
+    if (mx_strcmp(file_name, ".") == 0)
+        filepath2 = file;
+    else if (file_name == NULL)
         filepath2 = path_name;
     else {
         if (mx_strcmp(file_name, file) != 0) {
@@ -98,7 +100,9 @@ char mx_file_mode_check(char *file, char *file_name, char *path_name) {
     c = one_mode_unit(buf);
         if (c == '-')
             c = second_mode_unit(buf);
-        // mx_strdel(&filepath1);
-        // mx_strdel(&filepath2);
+        if (file_name != NULL && mx_strcmp(file_name, ".") != 0) {
+            mx_strdel(&filepath1);
+            mx_strdel(&filepath2);
+        }
         return c;
 }
