@@ -17,6 +17,7 @@ static void print_link(char *path_name_1, t_acl_trig *trigers) {
     //      mx_strdel(&path_name_1);
     // }
    // mx_strdel(&buf_link);
+   
 }
 
 static void upadate(char *my_acl_line) {

@@ -44,22 +44,26 @@ static char **files_fill_in(int argc, char **argv) {
 }
 
 int main(int argc, char **argv) {
-    int filec = files_count(argc, argv);
-    char **files = NULL;
-    int flagc = flags_count(argv);
-    t_flags *flags = mx_flags_filter(argv, flagc);
+    // int filec = files_count(argc, argv);
+    // char **files = NULL;
+    // int flagc = flags_count(argv);
+    // t_flags *flags = mx_flags_filter(argv, flagc);
 
-    if (flagc == -1 || filec == -1) {
-            write(2, "usage: uls [-lGRAa] [file ...]\n",
-                mx_strlen("usage: uls [-lGRAa] [file ...]\n"));
-                return 0;
-    }
-    if (filec == 0) {
-        mx_define_flags(".", flags);
-    }
-    if (filec != 0) {
-        files = files_fill_in(argc, (argv));
-        mx_file_specified(files, flags, ".");
-    }
-    system("leaks uls");
+    // if (flagc == -1 || filec == -1) {
+    //         write(2, "usage: uls [-lGRAa] [file ...]\n",
+    //             mx_strlen("usage: uls [-lGRAa] [file ...]\n"));
+    //             return 0;
+    // }
+    // if (filec == 0) {
+    //     mx_define_flags(".", flags);
+    // }
+    // if (filec != 0) {
+    //     files = files_fill_in(argc, (argv));
+    //     mx_file_specified(files, flags, ".");
+    // }
+    int i = 1184;
+    int v = 1024;
+    double n = (double) i/(double) v;
+    printf("%f", n);
+//    system("leaks uls");
 }

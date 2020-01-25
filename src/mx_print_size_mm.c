@@ -1,5 +1,20 @@
 #include "../inc/header.h"
 
+//static for_flag_h(int i) {
+// if (i < 1024)
+//     //B
+
+// if (i >= 1024 && i < 1048576 )
+//     //Kb
+// if (i >= 1048576 && i < 1073741824 )
+//     //Mb
+// if (i >= 1073741824 && i < 1099511627776 )
+//     //Gb
+
+// }
+
+
+
 
 static void print_major(t_lens *my_lens, t_acl_trig *trigers) {
     int j = 0;
@@ -58,6 +73,7 @@ void mx_print_size_mm(t_lens *lens, struct stat sb, t_acl_trig *trigers) {
             for (int j = 0; j < lens->forth_len - mx_intlen(sb.st_size); j++)
                 mx_printstr(" ");
             }
+        
         mx_printint(sb.st_size);
     }
     mx_printstr(" ");

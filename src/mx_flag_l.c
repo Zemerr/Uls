@@ -74,5 +74,8 @@ void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags) {
         mx_print_size_mm(my_lens, sb, trigers);
         print_time(sb);
         mx_print_link_update(path_name_1, trigers, my_acl_line, *sort_arr, flag, flags);
+        
     }
+    free(my_lens);
+    free(trigers);
 }

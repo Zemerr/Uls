@@ -63,5 +63,5 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 //			  \			  /
 //			   \		 /
 //	            seg fault
-//	mx_del_strarr(&obj_arr); //there is a seg fault
+	mx_del_strarr(&obj_arr); //there is a seg fault
 }
