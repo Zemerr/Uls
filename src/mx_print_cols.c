@@ -47,8 +47,6 @@ void mx_print_cols(char **arr, int count) {
 	int cycle = 0;
 	int wd_per_line = count / rows;
 
-
-	printf("%d\n", rows);
 	if (count % rows != 0)
 		wd_per_line += 1;
 
@@ -59,7 +57,7 @@ void mx_print_cols(char **arr, int count) {
 				break;
 			cur_len = mx_strlen(arr[i]);
 			spacing = ((m_l / 8) * 8) - cur_len + 8;
-			if ((cycle + 1) == wd_per_line || (i + rows) == count) {
+			if ((cycle + 1) == wd_per_line || (i + rows) >= count) {
 				spacing = 0;
 			}
 			print_item(arr[i], spacing);
