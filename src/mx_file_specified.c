@@ -38,6 +38,4 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
             mx_define_flags(dir[i], flags);
         }
         mx_del_strarr(&dir);
-        // mx_del_strarr(&files);
-
 }

@@ -87,7 +87,7 @@ char *my_acl_line);
 void mx_print_size_mm(t_lens *my_lens, struct stat sb, t_acl_trig *trigers);
 void mx_print_name_acl(struct stat sb, char *my_acl_line, t_lens *my_lens);
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
-char *my_acl_line, char *sort_arr, int flag, t_flags *flags, struct stat sb);
+char *my_acl_line, char *sort_arr, int flag, t_flags *flags);
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str);
 
 #endif
