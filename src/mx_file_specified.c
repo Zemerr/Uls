@@ -17,8 +17,6 @@ static int reg_file_out(char **files, t_flags *flags, char *file_name) {
     return file_count;
 }
 
-
-	
 void mx_file_specified(char **files, t_flags *flags, char *file_name) {
     char **dir = NULL;
     int dir_count = 0;

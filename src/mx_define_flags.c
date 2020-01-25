@@ -1,67 +1,49 @@
 #include "../inc/header.h"
 
 static int determine_size(char **arr) {
-	int size = 0;
+    int size = 0;
 
-	if (!arr)
-		return 0;
-	for (int i = 0; arr[i] != NULL; i++) {
-		size++;
-	}
-	return size;
+    if (!arr)
+        return 0;
+    for (int i = 0; arr[i] != NULL; i++) {
+        size++;
+    }
+    return size;
 }
 
 static char **data(t_flags *flag, char *file_name) {
-	char trig;
-	char **obj_arr = NULL;
+    char trig;
+    char **obj_arr = NULL;
 
-		if ((*flag).a == 1) {
-			trig = 'a';
-		}
-		if ((*flag).A == 1) {
-			trig = 'A';
-		}
-	obj_arr = mx_files_in_dir(file_name, trig);
-	return obj_arr;
+        if ((*flag).a == 1) {
+            trig = 'a';
+        }
+        if ((*flag).A == 1) {
+            trig = 'A';
+        }
+        obj_arr = mx_files_in_dir(file_name, trig);
+        return obj_arr;
 }
 
 
 void mx_define_flags(char *file_name, t_flags *flags) {
-	char **obj_arr = data(flags, file_name);
-	int size = determine_size(obj_arr);
+    char **obj_arr = data(flags, file_name);
+    int size = determine_size(obj_arr);
 
-	//  printf("------  ------------\n");
-
-	if (!obj_arr) {
-		return;
-	}
-	if ((*flags).l == 1) {
-		mx_flag_l(obj_arr, file_name, flags);
-	}
-	else if ((*flags).G == 1) {
-		mx_flag_g(obj_arr, size, file_name);
-	}
-	else {
-		mx_print_cols(obj_arr, size);
-	}
-	if ((*flags).R == 1) {
-		if ((*flags).a == 1) {
-			obj_arr = mx_files_in_dir(file_name, 'A');			
-		}
-		// system("leaks uls");
-		mx_recursion_call(obj_arr, flags, file_name);
-		// system("leaks uls");
-	}
-	// system("leaks uls");
-//				|      |
-//				|      |
-//				|      |
-//				|      |
-//				|      |
-//			\				/
-//			 \			   /
-//			  \			  /
-//			   \		 /
-//	            seg fault
-	mx_del_strarr(&obj_arr); //there is a seg fault
+    if (!obj_arr) {
+        return;
+    }
+    if ((*flags).l == 1) {
+        mx_flag_l(obj_arr, file_name, flags);
+    }
+    else if ((*flags).G == 1) {
+        mx_flag_g(obj_arr, size, file_name);
+    }
+    else {
+        mx_print_cols(obj_arr, size);
+    }
+    if ((*flags).R == 1) {
+            mx_recursion_call(obj_arr, flags, file_name);
+    }
+    mx_del_strarr(&obj_arr);
 }

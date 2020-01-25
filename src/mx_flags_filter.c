@@ -46,6 +46,7 @@ t_flags *mx_flags_filter(char **argv, int count) {
 				(*flag).R = 1;
 				break;
 		}
-		mx_strdel(&str);
-		return flag;
+	}
+	mx_strdel(&str);
+	return flag;
 }
