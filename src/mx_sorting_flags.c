@@ -3,17 +3,13 @@
 
 char *mx_create_path(char *files, char *dir_name) {
 	char *path = NULL;
-	//for ( ; *files != NULL; files++) {
-		
 
-        
-        if (files[0] != '/') {
-            path = mx_strjoin(dir_name, "/");
-            path = mx_strjoin_two(path, files);
-        }
-        else
-            path = files;
-   // }
+    if (files[0] != '/') {
+        path = mx_strjoin(dir_name, "/");
+        path = mx_strjoin_two(path, files);
+    }
+    else
+        path = files;
     return path;
 }
 
@@ -31,6 +27,7 @@ t_sort *mx_pasre_struct(char **files, char *file_name, int dir_count) {
 		info_file[i].name = mx_strdup(files[i]);
 		info_file[i].path = mx_strdup(path_name);
 		lstat(path_name, &sb);
+		free(path_name);
 		info_file[i].size = sb.st_size;
 	}
 	return info_file;
@@ -50,6 +47,16 @@ static void swap(char **s1, char **s2) {
 	*s2 = tmp;
 }
 
+void mx_dell_stuct(t_sort **info_file, int dir_count) {
+    if (info_file && *info_file) {
+        for (int i = 0; i < dir_count; i++) {
+        	mx_strdel(&(*info_file)[i].name);
+        	mx_strdel(&(*info_file)[i].path);
+        }
+        free(*info_file);
+        *info_file = NULL;
+    }
+}
 
 void mx_sort_S(char **files, int dir_count, char *file_name) {
 	int i = 0;
@@ -67,4 +74,7 @@ void mx_sort_S(char **files, int dir_count, char *file_name) {
 			size--;
 		} 
 	}
+	mx_dell_stuct(&info_file, dir_count);
 }
+
+
