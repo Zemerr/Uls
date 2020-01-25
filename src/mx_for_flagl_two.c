@@ -24,9 +24,9 @@ char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1,
 char *my_acl_line) {
     mx_acl_line( sb, trigers, my_acl_line);
     acl_get_f(path_name_1, my_acl_line);
-    if (trigers -> dev_flag == 1) {
-        trigers -> minor = minor(sb.st_rdev);
-        trigers -> major = major(sb.st_rdev);
+    if (trigers->dev_flag == 1) {
+        trigers->minor = minor(sb.st_rdev);
+        trigers->major = major(sb.st_rdev);
     }
     return my_acl_line;
 

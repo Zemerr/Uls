@@ -23,7 +23,7 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
 				if ((buff.st_mode & S_IFDIR) == S_IFDIR)
 					count++;
 			}
-			mx_strdel(&path);
+			// mx_strdel(&path);
 	}
 	dir = (char **)malloc(sizeof(char *) * (count + 1));
 		for (int i = 0; obj[i]; i++) {
@@ -36,7 +36,7 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
 							q++;
 						}
 					}
-					mx_strdel(&path);
+					// mx_strdel(&path);
 		}
 		dir[q] = NULL;
 		// mx_del_strarr(&obj);
@@ -47,9 +47,9 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
 					write(1, ":", 1);
 					write(1, "\n", 1);
 					mx_define_flags(path, flags);
-					mx_strdel(&path);
+					// mx_strdel(&path);
 			}
-			mx_del_strarr(&dir);
-			mx_strdel(&str);
+			// mx_del_strarr(&dir);
+			// mx_strdel(&str);
 			// system("leaks uls");
 }

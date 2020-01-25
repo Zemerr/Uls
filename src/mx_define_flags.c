@@ -43,12 +43,10 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 		mx_print_cols(obj_arr, size);
 	}
 	if ((*flags).R == 1) {
-		if ((*flags).a == 1)
+		if ((*flags).a == 1) {
 			obj_arr = mx_files_in_dir(file_name, 'A');
+		}
 		mx_recursion_call(obj_arr, flags, file_name);
 	}
-	mx_del_strarr(&obj_arr);
-	// if (malloc_size(flags))
-	// 	free(flags);
-	// system("leaks uls");
+	//mx_del_strarr(&obj_arr);
 }

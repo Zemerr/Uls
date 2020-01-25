@@ -24,8 +24,8 @@ static void print_minor(t_lens *my_lens, t_acl_trig *trigers) {
     int n = 0;
     int j = 0;
 
-    if (trigers -> minor > 255) {
-        nbr = mx_nbr_to_hex(trigers -> minor);
+    if (trigers->minor > 255) {
+        nbr = mx_nbr_to_hex(trigers->minor);
         n = 8 - mx_strlen(nbr);
         need_nul = mx_strndup("0x00000000", n + 2);
         binar = mx_strjoin(need_nul, nbr);
