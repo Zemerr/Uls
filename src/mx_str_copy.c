@@ -5,7 +5,7 @@ char *mx_str_copy(char *src) {
 	int size = mx_strlen(src);
 	int i = 0;
 
-	copy = (char *)malloc(sizeof(char) * size + 1);
+	copy = (char *)malloc(sizeof(char) * (size + 1));
 		for (i = 0; i < size; i++) {
 			copy[i] = src[i];
 		}

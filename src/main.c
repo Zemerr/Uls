@@ -60,10 +60,11 @@ int main(int argc, char **argv) {
     if (filec != 0) {
         files = files_fill_in(argc, (argv));
         mx_file_specified(files, flags, ".");
+        // mx_del_strarr(&files);
     }
     // if (flagc != 0) {
-    //     if (malloc_size(flags))
-    //         free(flags);
+        // if (malloc_size(flags))
+        //     free(flags);
     // }
-    // system("leaks uls");
+    system("leaks uls");
 }

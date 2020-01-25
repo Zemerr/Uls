@@ -7,11 +7,11 @@ char **mx_dir_arr(char **files) {
 	int q = 0;
 	struct stat buf;
 
-	dir = (char **)malloc(sizeof(char *) * count + 1);
+	dir = (char **)malloc(sizeof(char *) * (count + 1));
 		for (i = 0; files[i]; i++) {
 			stat(files[i], &buf);
 				if ((buf.st_mode & S_IFMT) == S_IFDIR) {
-					dir[q] = mx_str_copy(files[i]);
+					dir[q] = mx_strdup(files[i]);
 					q++;
 				}
 		}

@@ -98,7 +98,7 @@ char mx_file_mode_check(char *file, char *file_name, char *path_name) {
     c = one_mode_unit(buf);
         if (c == '-')
             c = second_mode_unit(buf);
-        // mx_strdel(&filepath1);
-        // mx_strdel(&filepath2);
+        mx_strdel(&filepath1);
+        mx_strdel(&filepath2);
         return c;
 }

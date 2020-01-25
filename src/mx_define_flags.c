@@ -5,7 +5,7 @@ static int determine_size(char **arr) {
 
 	if (!arr)
 		return 0;
-	while (arr[size]) {
+	for (int i = 0; arr[i] != NULL; i++) {
 		size++;
 	}
 	return size;
@@ -47,5 +47,8 @@ void mx_define_flags(char *file_name, t_flags *flags) {
 			obj_arr = mx_files_in_dir(file_name, 'A');
 		mx_recursion_call(obj_arr, flags, file_name);
 	}
-	// mx_del_strarr(&obj_arr);
+	mx_del_strarr(&obj_arr);
+	// if (malloc_size(flags))
+	// 	free(flags);
+	// system("leaks uls");
 }

@@ -47,6 +47,8 @@ void mx_print_cols(char **arr, int count) {
 	int cycle = 0;
 	int wd_per_line = count / rows;
 
+
+	printf("%d\n", rows);
 	if (count % rows != 0)
 		wd_per_line += 1;
 

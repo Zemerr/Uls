@@ -29,13 +29,13 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
         for (int i = 0; dir[i]; i++) {
             if (i > 0 || file_count != 0)
                 write(1, "\n", 1);
-            if (dir_count > 1 || (*flags).R == 1 || file_count > 0) {
+            if (dir_count != 1 || (*flags).R == 1 || file_count > 0) {
                 write(1, dir[i], mx_strlen(dir[i]));
                 write(1, ":", 1);
                 write(1, "\n", 1);
             }
             mx_define_flags(dir[i], flags);
         }
-        // mx_del_strarr(&dir);
+        // mx_del_strarr(&files);
 
 }

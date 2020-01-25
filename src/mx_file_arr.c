@@ -8,11 +8,11 @@ char **mx_file_arr(char **files) {
 	struct stat buf;
 
 
-	reg_file = (char **)malloc(sizeof(char *) * count + 1);
+	reg_file = (char **)malloc(sizeof(char *) * (count + 1));
 		for (i = 0; files[i]; i++) {
 			stat(files[i], &buf);
 				if ((buf.st_mode & S_IFMT) == S_IFREG) {
-					reg_file[q] = mx_str_copy(files[i]);
+					reg_file[q] = mx_strdup(files[i]);
 					q++;
 				}
 		}

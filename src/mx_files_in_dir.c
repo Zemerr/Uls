@@ -29,7 +29,7 @@ char **mx_files_in_dir(char *dir_name, char trig) {
 			return NULL;
 		}
 		dirp = opendir(dir_name);
-		arr = (char **)malloc(sizeof(char*) * count + 1);
+		arr = (char **)malloc(sizeof(char *) * (count + 1));
 		entry = readdir(dirp);
 			while (entry) {
 				if ((*entry).d_name[0] == '.'

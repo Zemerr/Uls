@@ -50,7 +50,7 @@ OUT = main.o \
 	mx_recursion_call.o \
 	mx_flags_filter.o \
 
-CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
+CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic# -g -fsanitize=address
 
 INC = inc/header.h
 
@@ -58,7 +58,9 @@ LIBMX = libmx/libmx.a
 
 all: install
 
-install:
+install: pathfinder
+
+pathfinder: $(SRC) $(INC)
 	@mkdir -p $(DIROBJ)
 	@clang $(CLANG) -c $(SRC) -I $(INC)
 	@mv $(OUT) $(DIROBJ)
