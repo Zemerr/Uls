@@ -24,6 +24,7 @@ t_flags *mx_flags_filter(char **argv, int count) {
 	char *str = flags_fill_in(argv, count);
 	t_flags *flag = (t_flags *)malloc(sizeof(t_flags));
 
+	mx_memset(flag, 0, sizeof(t_flags));
 	for (int i = 0; str[i] != '\0'; i++) {
 		switch (str[i])
 		{
@@ -45,8 +46,11 @@ t_flags *mx_flags_filter(char **argv, int count) {
 			case('R'):
 				(*flag).R = 1;
 				break;
+			case('S'):
+				(*flag).S = 1;
+				break;
 		}
-    }
-		mx_strdel(&str);
-		return flag;
+	}
+	mx_strdel(&str);
+	return flag;
 }
