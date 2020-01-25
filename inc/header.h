@@ -38,6 +38,7 @@ typedef struct s_flags {
 	int l;
 	int G;
 	int R;
+    int S;
 } t_flags;
 
 typedef struct s_lens {
@@ -62,8 +63,15 @@ typedef struct s_acl_trig {
 } t_acl_trig;
 
 
+typedef struct s_sort {
+    char *name;
+    char *path;
 
-char **mx_files_in_dir(char *dir_name, char trig);
+    long long size;
+}               t_sort;
+
+void mx_sort_S(char **files, int dir_count, char *file_name);
+char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags);
 int mx_get_ws();
 void mx_print_cols(char **arr, int count);
 void mx_file_specified(char **files, t_flags *flags, char *file_name);

@@ -44,7 +44,7 @@ static char **obj_arr(DIR *dirp, struct dirent *ent, char **arr, char trig) {
     return arr;
 }
 
-char **mx_files_in_dir(char *dir_name, char trig) {
+char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags) {
     DIR *dirp = opendir(dir_name);
     struct dirent *entry;
     char **arr = NULL;
@@ -60,7 +60,10 @@ char **mx_files_in_dir(char *dir_name, char trig) {
         arr = obj_arr(dirp, entry, arr, trig);
         arr[count] = NULL;
         closedir(dirp);
-        mx_bubble_sort(arr, count);
+        if ((*flags).S == 1)
+            mx_sort_S(arr, count, dir_name);
+        else 
+            mx_bubble_sort(arr, count);
     }
     return arr;
 }

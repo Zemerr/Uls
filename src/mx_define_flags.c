@@ -21,7 +21,7 @@ static char **data(t_flags *flag, char *file_name) {
         if ((*flag).A == 1) {
             trig = 'A';
         }
-        obj_arr = mx_files_in_dir(file_name, trig);
+        obj_arr = mx_files_in_dir(file_name, trig, flag);
         return obj_arr;
 }
 
