@@ -67,5 +67,4 @@ void mx_print_cols(char **arr, int count) {
 
 		write(1, "\n", 1);
 	}
-	// mx_del_strarr(&arr);
 }

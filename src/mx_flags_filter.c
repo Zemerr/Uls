@@ -48,6 +48,6 @@ t_flags *mx_flags_filter(char **argv, int count) {
 					break;
 			}
 		}
-	//mx_strdel(&str);
+	mx_strdel(&str);
 	return flag;
 }
