@@ -27,7 +27,8 @@ t_sort *mx_pasre_struct(char **files, char *file_name, int dir_count) {
 		info_file[i].name = mx_strdup(files[i]);
 		info_file[i].path = mx_strdup(path_name);
 		lstat(path_name, &sb);
-		free(path_name);
+		if (files[i][0] != '/')
+			free(path_name);
 		info_file[i].size = sb.st_size;
 	}
 	return info_file;

@@ -60,8 +60,10 @@ char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags) {
         arr = obj_arr(dirp, entry, arr, trig);
         arr[count] = NULL;
         closedir(dirp);
-        if ((*flags).S == 1)
-            mx_sort_S(arr, count, dir_name);
+        if ((*flags).S == 1 || (*flags).t == 1) {
+            mx_flag_sort(dir_name, arr, count, flags);
+            // mx_sort_S(arr, count, dir_name);
+        }
         else 
             mx_bubble_sort(arr, count);
     }
