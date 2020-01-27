@@ -46,7 +46,7 @@ void mx_flag_g(char **arr, int count, char *file_name) {
             spacing = m_l - mx_strlen(arr[i]) + 1;
                 if ((i + rows) >= count)
                     spacing = 0;
-                mx_colour_out(arr[i], file_name, NULL);
+                mx_colour_out(arr[i], file_name);
                 spacing_print(spacing);
         }
         write(1, "\n", 1);

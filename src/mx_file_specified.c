@@ -5,8 +5,11 @@ static int reg_file_out(char **files, t_flags *flags, char *file_name) {
     int file_count = mx_files_quantity(files, 1);
 
     if (file_count != 0) {
-        if ((*flags).S == 1)
-            mx_sort_S(files, file_count, file_name);
+        if ((*flags).S == 1 || (*flags).t == 1) {
+            mx_flag_sort(file_name, reg_file, file_count, flags);
+        }
+            // mx_sort_S(reg_file, file_count, file_name);
+        // }
         else
             mx_bubble_sort(reg_file, file_count);
         if ((*flags).l == 1)
@@ -27,8 +30,11 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name) {
 
     dir = mx_dir_arr(files);
     dir_count = mx_files_quantity(files, 2);
-    if ((*flags).S == 1)
-        mx_sort_S(dir, dir_count, file_name);
+    if ((*flags).S == 1 || (*flags).t == 1) {
+        mx_flag_sort(file_name, dir, dir_count, flags);
+    }
+        // mx_sort_S(dir, dir_count, file_name);
+    // }
     else
         mx_bubble_sort(dir, dir_count);
     for (int i = 0; dir[i]; i++) {

@@ -48,6 +48,11 @@ t_flags *mx_flags_filter(char **argv, int count) {
 				break;
 			case('S'):
 				(*flag).S = 1;
+				(*flag).t = 0;
+				break;
+			case('t'):
+				if ((*flag).S == 0)
+					(*flag).t = 1;
 				break;
 		}
 	}

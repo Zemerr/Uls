@@ -69,9 +69,9 @@ static char one_mode_unit(struct stat buf) {
     return c;
 }
 
-char mx_file_mode_check(char *file, char *file_name, char *path_name) {
+char mx_file_mode_check(char *file, char *file_name) {
     char c;
-    char *filepath = mx_find_path(file, file_name, path_name);
+    char *filepath = mx_find_path(file, file_name);
     struct stat buf;
 
     lstat(filepath, &buf);
