@@ -39,6 +39,7 @@ typedef struct s_flags {
 	int G;
 	int R;
     int S;
+    int h;
 } t_flags;
 
 typedef struct s_lens {
@@ -92,11 +93,13 @@ char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1,
 char *my_asl_line);
 void mx_acl_line(struct stat sb, t_acl_trig *trigers,
 char *my_acl_line);
-void mx_print_size_mm(t_lens *my_lens, struct stat sb, t_acl_trig *trigers);
+void mx_print_size_mm(t_lens *my_lens,
+struct stat sb, t_acl_trig *trigers, t_flags *flags);
 void mx_print_name_acl(struct stat sb, char *my_acl_line, t_lens *my_lens);
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
 char *my_acl_line, char *sort_arr, int flag, t_flags *flags);
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str);
 char *mx_find_path(char *file, char *file_name, char *path_name);
+
 
 #endif

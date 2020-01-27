@@ -54,7 +54,7 @@ OUT = main.o \
 	mx_find_path.o \
 	mx_sorting_flags.o
 
-CLANG = -std=c11 #-Wall -Wextra -Werror -Wpedantic# -g -fsanitize=address
+CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic -g -fsanitize=address
 
 INC = inc/header.h
 

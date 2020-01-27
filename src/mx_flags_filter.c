@@ -49,6 +49,9 @@ t_flags *mx_flags_filter(char **argv, int count) {
 			case('S'):
 				(*flag).S = 1;
 				break;
+            case('h'):
+				(*flag).h = 1;
+				break;
 		}
 	}
 	mx_strdel(&str);

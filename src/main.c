@@ -65,5 +65,5 @@ int main(int argc, char **argv) {
     // int v = 1024;
     // double n = (double) i/(double) v;
     // printf("%f", n);
-//    system("leaks uls");
+    //system("leaks -q uls");
 }
