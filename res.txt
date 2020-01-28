@@ -1,0 +1,3 @@
+Makefile	ls.txt		src		uls.dSYM
+inc		obj		test.txt	uls.txt
+libmx		res.txt		uls

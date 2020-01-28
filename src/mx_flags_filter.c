@@ -39,6 +39,7 @@ t_flags *mx_flags_filter(char **argv, int count) {
 				break;
 			case('l'):
 				(*flag).l = 1;
+				(*flag).m = 0;
 				break;
 			case('G'):
 				(*flag).G = 1;
@@ -49,15 +50,46 @@ t_flags *mx_flags_filter(char **argv, int count) {
 			case('S'):
 				(*flag).S = 1;
 				(*flag).t = 0;
+				(*flag).u = 0;
 				break;
 			case('t'):
-				if ((*flag).S == 0)
+				if ((*flag).S == 0) {
 					(*flag).t = 1;
+				}
 				break;
             case('h'):
 				(*flag).h = 1;
 				break;
+			case('u'):
+				if ((*flag).S == 0) {
+					(*flag).u = 1;
+				}
+				break;
+			case('r'):
+				(*flag).r = 1;
+				break;
+			case('C'):
+				(*flag).C = 1;
+				(*flag).one = 0;
+				(*flag).l = 0;
+				break;
+			case('1'):
+				(*flag).one = 1;
+				(*flag).C = 0;
+				(*flag).m = 0;
+				break;
+			case('m'):
+				(*flag).m = 1;
+				(*flag).one = 0;
+				(*flag).C = 0;
+				(*flag).l = 0;
+				break;
 		}
+	}
+	if (isatty(1) == 0) {
+		(*flag).G = 0;
+		if ((*flag).C == 0 && (*flag).m == 0)
+			(*flag).one = 1;
 	}
 	mx_strdel(&str);
 	return flag;

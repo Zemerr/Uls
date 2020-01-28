@@ -35,9 +35,11 @@ static char **files_fill_in(int argc, char **argv) {
     int j = 1;
 
     for ( ; argv[j]; j++) {
-        if (argv[j][0] != '-')
+        if (argv[j][0] != '-') {
             files[q] = mx_str_copy(argv[j]);
-        q++;
+            q++;
+        }
+        //q++;
     }
     files[q] = NULL;
     return files;
@@ -49,6 +51,9 @@ int main(int argc, char **argv) {
     int flagc = flags_count(argv);
     t_flags *flags = mx_flags_filter(argv, flagc);
 
+
+    // if (isatty(1) == 0)
+        // printf("hello");
     if (flagc == -1 || filec == -1) {
             write(2, "usage: uls [-lGRAa] [file ...]\n",
                 mx_strlen("usage: uls [-lGRAa] [file ...]\n"));

@@ -36,11 +36,14 @@ void mx_define_flags(char *file_name, t_flags *flags) {
     if ((*flags).l == 1) {
         mx_flag_l(obj_arr, file_name, flags);
     }
-    else if ((*flags).G == 1) {
+    else if ((*flags).G == 1 && ((*flags).m == 0 && (*flags).one == 0)) {
         mx_flag_g(obj_arr, size, file_name);
     }
+    else if ((*flags).m == 1 || (*flags).one == 1) {
+        mx_simple_out(obj_arr, flags, file_name);
+    }
     else {
-        mx_print_cols(obj_arr, size);
+        mx_print_cols(obj_arr, size, flags);
     }
     if ((*flags).R == 1) {
             mx_recursion_call(obj_arr, flags, file_name);

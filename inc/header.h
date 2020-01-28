@@ -39,8 +39,14 @@ typedef struct s_flags {
 	int G;
 	int R;
     int S;
-    int h;
     int t;
+    int h;
+    int u;
+    int r;
+    int C;
+    int c;
+    int one;
+    int m;
 } t_flags;
 
 typedef struct s_lens {
@@ -75,7 +81,7 @@ typedef struct s_sort {
 void mx_sort_S(char **files, int dir_count, char *file_name);
 char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags);
 int mx_get_ws();
-void mx_print_cols(char **arr, int count);
+void mx_print_cols(char **arr, int count, t_flags *flags);
 void mx_file_specified(char **files, t_flags *flags, char *file_name);
 int mx_files_quantity(char **files, int trig);
 char **mx_dir_arr(char **files);
@@ -94,14 +100,14 @@ char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1,
 char *my_asl_line);
 void mx_acl_line(struct stat sb, t_acl_trig *trigers,
 char *my_acl_line);
-void mx_print_size_mm(t_lens *my_lens,
-struct stat sb, t_acl_trig *trigers, t_flags *flags);
+void mx_print_size_mm(t_lens *my_lens, struct stat sb, t_acl_trig *trigers, t_flags *flags);
 void mx_print_name_acl(struct stat sb, char *my_acl_line, t_lens *my_lens);
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
 char *my_acl_line, char *sort_arr, int flag, t_flags *flags, char *dir_name);
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str);
 char *mx_find_path(char *file, char *file_name);
 void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags);
-
+void mx_upgraded_sort(struct stat *info, t_flags *flags, char **files);
+void mx_simple_out(char **files, t_flags *flag, char *file_name);
 
 #endif

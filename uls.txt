@@ -1,327 +1,2426 @@
-total 9
-dr-xr-xr-x   3 root        wheel               Jan 22 21:34 [0m[0;34m.[0m
-drwxr-xr-x  30 root        wheel                Aug 12 10:11 [0m[0;34m..[0m
-crw-------   1 root        wheel           19,   1 Jan 22 21:34 [0m[0;34;43mafsc_type5[0m
-crw-------   1 root        wheel           10,   0 Jan 22 21:34 [0m[0;34;43mauditpipe[0m
-crw-r--r--   1 root        wheel            9,   3 Jan 22 21:34 [0m[0;34;43mauditsessions[0m
-crw-------   1 root        wheel           21,   0 Jan 22 21:35 [0m[0;34;43mautofs[0m
-crw-------   1 root        wheel           33,   0 Jan 22 21:35 [0m[0;34;43mautofs_control[0m
-crw-rw-rw-   1 root        wheel           32,  53 Jan 22 21:35 [0m[0;34;43mautofs_homedirmounter[0m
-crw-rw-rw-   1 root        wheel           31,  53 Jan 22 21:35 [0m[0;34;43mautofs_notrigger[0m
-crw-rw-rw-   1 root        wheel           22, 0x00001e35 Jan 22 21:35 [0m[0;34;43mautofs_nowait[0m
-crw-------   1 root        wheel           23,   0 Jan 22 21:35 [0m[0;34;43mbpf0[0m
-crw-------   1 root        wheel           23,   1 Jan 22 21:34 [0m[0;34;43mbpf1[0m
-crw-------   1 root        wheel           23,   2 Jan 22 21:34 [0m[0;34;43mbpf2[0m
-crw-------   1 root        wheel           23,   3 Jan 22 21:34 [0m[0;34;43mbpf3[0m
-crw-------   1 ostanislav  4242             0,   0 Jan 22 21:34 [0m[0;34;43mconsole[0m
-crw-rw-rw-   1 root        wheel           18,   1 Jan 22 21:35 [0m[0;34;43mcu.Bluetooth-Incoming-Port[0m
-brw-r-----   1 root        operator         1,   0 Jan 22 21:34 [0m[0;34;46mdisk0[0m
-brw-r-----   1 root        operator         1,   3 Jan 22 21:34 [0m[0;34;46mdisk0s1[0m
-brw-r-----   1 root        operator         1,   4 Jan 22 21:34 [0m[0;34;46mdisk0s2[0m
-brw-r-----   1 root        operator         1,   1 Jan 22 21:34 [0m[0;34;46mdisk1[0m
-brw-r-----   1 root        operator         1,   2 Jan 22 21:34 [0m[0;34;46mdisk1s1[0m
-brw-r-----   1 root        operator         1,   5 Jan 22 21:34 [0m[0;34;46mdisk1s2[0m
-brw-r-----   1 root        operator         1,   6 Jan 22 21:34 [0m[0;34;46mdisk1s3[0m
-brw-r-----   1 root        operator         1,   7 Jan 22 21:34 [0m[0;34;46mdisk2[0m
-brw-r-----   1 root        operator         1,   8 Jan 22 21:34 [0m[0;34;46mdisk2s1[0m
-brw-r-----   1 root        operator         1,   9 Jan 22 21:34 [0m[0;34;46mdisk2s2[0m
-brw-r-----   1 root        operator         1,  10 Jan 22 21:34 [0m[0;34;46mdisk2s3[0m
-brw-r-----   1 root        operator         1,  11 Jan 22 21:34 [0m[0;34;46mdisk2s4[0m
-brw-r-----   1 root        operator         1,  12 Jan 23 19:41 [0m[0;34;46mdisk3[0m
-crw-rw-rw-   1 root        wheel           24,   1 Jan 22 21:34 [0m[0;34;43mdtrace[0m
-crw-rw-rw-   1 root        wheel           25,   0 Jan 22 21:34 [0m[0;34;43mdtracehelper[0m
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43mfbt[0m
-dr-xr-xr-x   1 root        wheel                  Jan 22 21:34 [0m[0;34mfd[0m
-crw-r--r--   1 root        wheel           13,   0 Jan 22 21:34 [0m[0;34;43mfsevents[0m
-crw-------   1 root        wheel            6,   0 Jan 22 21:34 [0m[0;34;43mklog[0m
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43mlockstat[0m
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43mmachtrace[0m
-crw-rw-rw-   1 root        wheel           34,   0 Jan 22 21:37 [0m[0;34;43mnsmb0[0m
-crw-rw-rw-   1 root        wheel            3,   2 Jan 23 21:51 [0m[0;34;43mnull[0m
-crw-------   1 root        wheel            7,   0 Jan 22 21:34 [0m[0;34;43moslog[0m
-crw-------   1 root        wheel            8,   0 Jan 22 21:34 [0m[0;34;43moslog_stream[0m
-crw-------   1 root        wheel           11,   0 Jan 22 21:34 [0m[0;34;43mpf[0m
-crw-------   1 root        wheel           11,   1 Jan 22 21:34 [0m[0;34;43mpfm[0m
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43mprofile[0m
-crw-rw-rw-   1 root        tty             15,   1 Jan 23 21:51 [0m[0;34;43mptmx[0m
-crw-rw-rw-   1 root        wheel            5,   0 Jan 22 21:34 [0m[0;34;43mptyp0[0m
-crw-rw-rw-   1 root        wheel            5,   1 Jan 22 21:34 [0m[0;34;43mptyp1[0m
-crw-rw-rw-   1 root        wheel            5,   2 Jan 22 21:34 [0m[0;34;43mptyp2[0m
-crw-rw-rw-   1 root        wheel            5,   3 Jan 22 21:34 [0m[0;34;43mptyp3[0m
-crw-rw-rw-   1 root        wheel            5,   4 Jan 22 21:34 [0m[0;34;43mptyp4[0m
-crw-rw-rw-   1 root        wheel            5,   5 Jan 22 21:34 [0m[0;34;43mptyp5[0m
-crw-rw-rw-   1 root        wheel            5,   6 Jan 22 21:34 [0m[0;34;43mptyp6[0m
-crw-rw-rw-   1 root        wheel            5,   7 Jan 22 21:34 [0m[0;34;43mptyp7[0m
-crw-rw-rw-   1 root        wheel            5,   8 Jan 22 21:34 [0m[0;34;43mptyp8[0m
-crw-rw-rw-   1 root        wheel            5,   9 Jan 22 21:34 [0m[0;34;43mptyp9[0m
-crw-rw-rw-   1 root        wheel            5,  10 Jan 22 21:34 [0m[0;34;43mptypa[0m
-crw-rw-rw-   1 root        wheel            5,  11 Jan 22 21:34 [0m[0;34;43mptypb[0m
-crw-rw-rw-   1 root        wheel            5,  12 Jan 22 21:34 [0m[0;34;43mptypc[0m
-crw-rw-rw-   1 root        wheel            5,  13 Jan 22 21:34 [0m[0;34;43mptypd[0m
-crw-rw-rw-   1 root        wheel            5,  14 Jan 22 21:34 [0m[0;34;43mptype[0m
-crw-rw-rw-   1 root        wheel            5,  15 Jan 22 21:34 [0m[0;34;43mptypf[0m
-crw-rw-rw-   1 root        wheel            5,  16 Jan 22 21:34 [0m[0;34;43mptyq0[0m
-crw-rw-rw-   1 root        wheel            5,  17 Jan 22 21:34 [0m[0;34;43mptyq1[0m
-crw-rw-rw-   1 root        wheel            5,  18 Jan 22 21:34 [0m[0;34;43mptyq2[0m
-crw-rw-rw-   1 root        wheel            5,  19 Jan 22 21:34 [0m[0;34;43mptyq3[0m
-crw-rw-rw-   1 root        wheel            5,  20 Jan 22 21:34 [0m[0;34;43mptyq4[0m
-crw-rw-rw-   1 root        wheel            5,  21 Jan 22 21:34 [0m[0;34;43mptyq5[0m
-crw-rw-rw-   1 root        wheel            5,  22 Jan 22 21:34 [0m[0;34;43mptyq6[0m
-crw-rw-rw-   1 root        wheel            5,  23 Jan 22 21:34 [0m[0;34;43mptyq7[0m
-crw-rw-rw-   1 root        wheel            5,  24 Jan 22 21:34 [0m[0;34;43mptyq8[0m
-crw-rw-rw-   1 root        wheel            5,  25 Jan 22 21:34 [0m[0;34;43mptyq9[0m
-crw-rw-rw-   1 root        wheel            5,  26 Jan 22 21:34 [0m[0;34;43mptyqa[0m
-crw-rw-rw-   1 root        wheel            5,  27 Jan 22 21:34 [0m[0;34;43mptyqb[0m
-crw-rw-rw-   1 root        wheel            5,  28 Jan 22 21:34 [0m[0;34;43mptyqc[0m
-crw-rw-rw-   1 root        wheel            5,  29 Jan 22 21:34 [0m[0;34;43mptyqd[0m
-crw-rw-rw-   1 root        wheel            5,  30 Jan 22 21:34 [0m[0;34;43mptyqe[0m
-crw-rw-rw-   1 root        wheel            5,  31 Jan 22 21:34 [0m[0;34;43mptyqf[0m
-crw-rw-rw-   1 root        wheel            5,  32 Jan 22 21:34 [0m[0;34;43mptyr0[0m
-crw-rw-rw-   1 root        wheel            5,  33 Jan 22 21:34 [0m[0;34;43mptyr1[0m
-crw-rw-rw-   1 root        wheel            5,  34 Jan 22 21:34 [0m[0;34;43mptyr2[0m
-crw-rw-rw-   1 root        wheel            5,  35 Jan 22 21:34 [0m[0;34;43mptyr3[0m
-crw-rw-rw-   1 root        wheel            5,  36 Jan 22 21:34 [0m[0;34;43mptyr4[0m
-crw-rw-rw-   1 root        wheel            5,  37 Jan 22 21:34 [0m[0;34;43mptyr5[0m
-crw-rw-rw-   1 root        wheel            5,  38 Jan 22 21:34 [0m[0;34;43mptyr6[0m
-crw-rw-rw-   1 root        wheel            5,  39 Jan 22 21:34 [0m[0;34;43mptyr7[0m
-crw-rw-rw-   1 root        wheel            5,  40 Jan 22 21:34 [0m[0;34;43mptyr8[0m
-crw-rw-rw-   1 root        wheel            5,  41 Jan 22 21:34 [0m[0;34;43mptyr9[0m
-crw-rw-rw-   1 root        wheel            5,  42 Jan 22 21:34 [0m[0;34;43mptyra[0m
-crw-rw-rw-   1 root        wheel            5,  43 Jan 22 21:34 [0m[0;34;43mptyrb[0m
-crw-rw-rw-   1 root        wheel            5,  44 Jan 22 21:34 [0m[0;34;43mptyrc[0m
-crw-rw-rw-   1 root        wheel            5,  45 Jan 22 21:34 [0m[0;34;43mptyrd[0m
-crw-rw-rw-   1 root        wheel            5,  46 Jan 22 21:34 [0m[0;34;43mptyre[0m
-crw-rw-rw-   1 root        wheel            5,  47 Jan 22 21:34 [0m[0;34;43mptyrf[0m
-crw-rw-rw-   1 root        wheel            5,  48 Jan 22 21:34 [0m[0;34;43mptys0[0m
-crw-rw-rw-   1 root        wheel            5,  49 Jan 22 21:34 [0m[0;34;43mptys1[0m
-crw-rw-rw-   1 root        wheel            5,  50 Jan 22 21:34 [0m[0;34;43mptys2[0m
-crw-rw-rw-   1 root        wheel            5,  51 Jan 22 21:34 [0m[0;34;43mptys3[0m
-crw-rw-rw-   1 root        wheel            5,  52 Jan 22 21:34 [0m[0;34;43mptys4[0m
-crw-rw-rw-   1 root        wheel            5,  53 Jan 22 21:34 [0m[0;34;43mptys5[0m
-crw-rw-rw-   1 root        wheel            5,  54 Jan 22 21:34 [0m[0;34;43mptys6[0m
-crw-rw-rw-   1 root        wheel            5,  55 Jan 22 21:34 [0m[0;34;43mptys7[0m
-crw-rw-rw-   1 root        wheel            5,  56 Jan 22 21:34 [0m[0;34;43mptys8[0m
-crw-rw-rw-   1 root        wheel            5,  57 Jan 22 21:34 [0m[0;34;43mptys9[0m
-crw-rw-rw-   1 root        wheel            5,  58 Jan 22 21:34 [0m[0;34;43mptysa[0m
-crw-rw-rw-   1 root        wheel            5,  59 Jan 22 21:34 [0m[0;34;43mptysb[0m
-crw-rw-rw-   1 root        wheel            5,  60 Jan 22 21:34 [0m[0;34;43mptysc[0m
-crw-rw-rw-   1 root        wheel            5,  61 Jan 22 21:34 [0m[0;34;43mptysd[0m
-crw-rw-rw-   1 root        wheel            5,  62 Jan 22 21:34 [0m[0;34;43mptyse[0m
-crw-rw-rw-   1 root        wheel            5,  63 Jan 22 21:34 [0m[0;34;43mptysf[0m
-crw-rw-rw-   1 root        wheel            5,  64 Jan 22 21:34 [0m[0;34;43mptyt0[0m
-crw-rw-rw-   1 root        wheel            5,  65 Jan 22 21:34 [0m[0;34;43mptyt1[0m
-crw-rw-rw-   1 root        wheel            5,  66 Jan 22 21:34 [0m[0;34;43mptyt2[0m
-crw-rw-rw-   1 root        wheel            5,  67 Jan 22 21:34 [0m[0;34;43mptyt3[0m
-crw-rw-rw-   1 root        wheel            5,  68 Jan 22 21:34 [0m[0;34;43mptyt4[0m
-crw-rw-rw-   1 root        wheel            5,  69 Jan 22 21:34 [0m[0;34;43mptyt5[0m
-crw-rw-rw-   1 root        wheel            5,  70 Jan 22 21:34 [0m[0;34;43mptyt6[0m
-crw-rw-rw-   1 root        wheel            5,  71 Jan 22 21:34 [0m[0;34;43mptyt7[0m
-crw-rw-rw-   1 root        wheel            5,  72 Jan 22 21:34 [0m[0;34;43mptyt8[0m
-crw-rw-rw-   1 root        wheel            5,  73 Jan 22 21:34 [0m[0;34;43mptyt9[0m
-crw-rw-rw-   1 root        wheel            5,  74 Jan 22 21:34 [0m[0;34;43mptyta[0m
-crw-rw-rw-   1 root        wheel            5,  75 Jan 22 21:34 [0m[0;34;43mptytb[0m
-crw-rw-rw-   1 root        wheel            5,  76 Jan 22 21:34 [0m[0;34;43mptytc[0m
-crw-rw-rw-   1 root        wheel            5,  77 Jan 22 21:34 [0m[0;34;43mptytd[0m
-crw-rw-rw-   1 root        wheel            5,  78 Jan 22 21:34 [0m[0;34;43mptyte[0m
-crw-rw-rw-   1 root        wheel            5,  79 Jan 22 21:34 [0m[0;34;43mptytf[0m
-crw-rw-rw-   1 root        wheel            5,  80 Jan 22 21:34 [0m[0;34;43mptyu0[0m
-crw-rw-rw-   1 root        wheel            5,  81 Jan 22 21:34 [0m[0;34;43mptyu1[0m
-crw-rw-rw-   1 root        wheel            5,  82 Jan 22 21:34 [0m[0;34;43mptyu2[0m
-crw-rw-rw-   1 root        wheel            5,  83 Jan 22 21:34 [0m[0;34;43mptyu3[0m
-crw-rw-rw-   1 root        wheel            5,  84 Jan 22 21:34 [0m[0;34;43mptyu4[0m
-crw-rw-rw-   1 root        wheel            5,  85 Jan 22 21:34 [0m[0;34;43mptyu5[0m
-crw-rw-rw-   1 root        wheel            5,  86 Jan 22 21:34 [0m[0;34;43mptyu6[0m
-crw-rw-rw-   1 root        wheel            5,  87 Jan 22 21:34 [0m[0;34;43mptyu7[0m
-crw-rw-rw-   1 root        wheel            5,  88 Jan 22 21:34 [0m[0;34;43mptyu8[0m
-crw-rw-rw-   1 root        wheel            5,  89 Jan 22 21:34 [0m[0;34;43mptyu9[0m
-crw-rw-rw-   1 root        wheel            5,  90 Jan 22 21:34 [0m[0;34;43mptyua[0m
-crw-rw-rw-   1 root        wheel            5,  91 Jan 22 21:34 [0m[0;34;43mptyub[0m
-crw-rw-rw-   1 root        wheel            5,  92 Jan 22 21:34 [0m[0;34;43mptyuc[0m
-crw-rw-rw-   1 root        wheel            5,  93 Jan 22 21:34 [0m[0;34;43mptyud[0m
-crw-rw-rw-   1 root        wheel            5,  94 Jan 22 21:34 [0m[0;34;43mptyue[0m
-crw-rw-rw-   1 root        wheel            5,  95 Jan 22 21:34 [0m[0;34;43mptyuf[0m
-crw-rw-rw-   1 root        wheel            5,  96 Jan 22 21:34 [0m[0;34;43mptyv0[0m
-crw-rw-rw-   1 root        wheel            5,  97 Jan 22 21:34 [0m[0;34;43mptyv1[0m
-crw-rw-rw-   1 root        wheel            5,  98 Jan 22 21:34 [0m[0;34;43mptyv2[0m
-crw-rw-rw-   1 root        wheel            5,  99 Jan 22 21:34 [0m[0;34;43mptyv3[0m
-crw-rw-rw-   1 root        wheel            5, 100 Jan 22 21:34 [0m[0;34;43mptyv4[0m
-crw-rw-rw-   1 root        wheel            5, 101 Jan 22 21:34 [0m[0;34;43mptyv5[0m
-crw-rw-rw-   1 root        wheel            5, 102 Jan 22 21:34 [0m[0;34;43mptyv6[0m
-crw-rw-rw-   1 root        wheel            5, 103 Jan 22 21:34 [0m[0;34;43mptyv7[0m
-crw-rw-rw-   1 root        wheel            5, 104 Jan 22 21:34 [0m[0;34;43mptyv8[0m
-crw-rw-rw-   1 root        wheel            5, 105 Jan 22 21:34 [0m[0;34;43mptyv9[0m
-crw-rw-rw-   1 root        wheel            5, 106 Jan 22 21:34 [0m[0;34;43mptyva[0m
-crw-rw-rw-   1 root        wheel            5, 107 Jan 22 21:34 [0m[0;34;43mptyvb[0m
-crw-rw-rw-   1 root        wheel            5, 108 Jan 22 21:34 [0m[0;34;43mptyvc[0m
-crw-rw-rw-   1 root        wheel            5, 109 Jan 22 21:34 [0m[0;34;43mptyvd[0m
-crw-rw-rw-   1 root        wheel            5, 110 Jan 22 21:34 [0m[0;34;43mptyve[0m
-crw-rw-rw-   1 root        wheel            5, 111 Jan 22 21:34 [0m[0;34;43mptyvf[0m
-crw-rw-rw-   1 root        wheel            5, 112 Jan 22 21:34 [0m[0;34;43mptyw0[0m
-crw-rw-rw-   1 root        wheel            5, 113 Jan 22 21:34 [0m[0;34;43mptyw1[0m
-crw-rw-rw-   1 root        wheel            5, 114 Jan 22 21:34 [0m[0;34;43mptyw2[0m
-crw-rw-rw-   1 root        wheel            5, 115 Jan 22 21:34 [0m[0;34;43mptyw3[0m
-crw-rw-rw-   1 root        wheel            5, 116 Jan 22 21:34 [0m[0;34;43mptyw4[0m
-crw-rw-rw-   1 root        wheel            5, 117 Jan 22 21:34 [0m[0;34;43mptyw5[0m
-crw-rw-rw-   1 root        wheel            5, 118 Jan 22 21:34 [0m[0;34;43mptyw6[0m
-crw-rw-rw-   1 root        wheel            5, 119 Jan 22 21:34 [0m[0;34;43mptyw7[0m
-crw-rw-rw-   1 root        wheel            5, 120 Jan 22 21:34 [0m[0;34;43mptyw8[0m
-crw-rw-rw-   1 root        wheel            5, 121 Jan 22 21:34 [0m[0;34;43mptyw9[0m
-crw-rw-rw-   1 root        wheel            5, 122 Jan 22 21:34 [0m[0;34;43mptywa[0m
-crw-rw-rw-   1 root        wheel            5, 123 Jan 22 21:34 [0m[0;34;43mptywb[0m
-crw-rw-rw-   1 root        wheel            5, 124 Jan 22 21:34 [0m[0;34;43mptywc[0m
-crw-rw-rw-   1 root        wheel            5, 125 Jan 22 21:34 [0m[0;34;43mptywd[0m
-crw-rw-rw-   1 root        wheel            5, 126 Jan 22 21:34 [0m[0;34;43mptywe[0m
-crw-rw-rw-   1 root        wheel            5, 127 Jan 22 21:34 [0m[0;34;43mptywf[0m
-crw-rw-rw-   1 root        wheel           14,   0 Jan 22 22:04 [0m[0;34;43mrandom[0m
-crw-r-----   1 root        operator         1,   0 Jan 22 21:34 [0m[0;34;43mrdisk0[0m
-crw-r-----   1 root        operator         1,   3 Jan 22 21:34 [0m[0;34;43mrdisk0s1[0m
-crw-r-----   1 root        operator         1,   4 Jan 22 21:34 [0m[0;34;43mrdisk0s2[0m
-crw-r-----   1 root        operator         1,   1 Jan 22 21:34 [0m[0;34;43mrdisk1[0m
-crw-r-----   1 root        operator         1,   2 Jan 22 21:34 [0m[0;34;43mrdisk1s1[0m
-crw-r-----   1 root        operator         1,   5 Jan 22 21:34 [0m[0;34;43mrdisk1s2[0m
-crw-r-----   1 root        operator         1,   6 Jan 22 21:34 [0m[0;34;43mrdisk1s3[0m
-crw-r-----   1 root        operator         1,   7 Jan 22 21:34 [0m[0;34;43mrdisk2[0m
-crw-r-----   1 root        operator         1,   8 Jan 22 21:34 [0m[0;34;43mrdisk2s1[0m
-crw-r-----   1 root        operator         1,   9 Jan 22 21:34 [0m[0;34;43mrdisk2s2[0m
-crw-r-----   1 root        operator         1,  10 Jan 22 21:34 [0m[0;34;43mrdisk2s3[0m
-crw-r-----   1 root        operator         1,  11 Jan 22 21:34 [0m[0;34;43mrdisk2s4[0m
-crw-r-----   1 root        operator         1,  12 Jan 23 19:41 [0m[0;34;43mrdisk3[0m
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43msdt[0m
-lr-xr-xr-x   1 root        wheel                  Jan 22 21:34 [0m[0;35mstderr[0m -> fd/2
-lr-xr-xr-x   1 root        wheel                  Jan 22 21:34 [0m[0;35mstdin[0m -> fd/0
-lr-xr-xr-x   1 root        wheel                  Jan 22 21:34 [0m[0;35mstdout[0m -> fd/1
-crw-rw-rw-   1 root        wheel            0,   0 Jan 22 21:34 [0m[0;34;43msystrace[0m
-crw-rw-rw-   1 root        wheel            2,   0 Jan 22 21:34 [0m[0;34;43mtty[0m
-crw-rw-rw-   1 root        wheel           18,   0 Jan 22 21:35 [0m[0;34;43mtty.Bluetooth-Incoming-Port[0m
-crw-rw-rw-   1 root        wheel            4,   0 Jan 22 21:34 [0m[0;34;43mttyp0[0m
-crw-rw-rw-   1 root        wheel            4,   1 Jan 22 21:34 [0m[0;34;43mttyp1[0m
-crw-rw-rw-   1 root        wheel            4,   2 Jan 22 21:34 [0m[0;34;43mttyp2[0m
-crw-rw-rw-   1 root        wheel            4,   3 Jan 22 21:34 [0m[0;34;43mttyp3[0m
-crw-rw-rw-   1 root        wheel            4,   4 Jan 22 21:34 [0m[0;34;43mttyp4[0m
-crw-rw-rw-   1 root        wheel            4,   5 Jan 22 21:34 [0m[0;34;43mttyp5[0m
-crw-rw-rw-   1 root        wheel            4,   6 Jan 22 21:34 [0m[0;34;43mttyp6[0m
-crw-rw-rw-   1 root        wheel            4,   7 Jan 22 21:34 [0m[0;34;43mttyp7[0m
-crw-rw-rw-   1 root        wheel            4,   8 Jan 22 21:34 [0m[0;34;43mttyp8[0m
-crw-rw-rw-   1 root        wheel            4,   9 Jan 22 21:34 [0m[0;34;43mttyp9[0m
-crw-rw-rw-   1 root        wheel            4,  10 Jan 22 21:34 [0m[0;34;43mttypa[0m
-crw-rw-rw-   1 root        wheel            4,  11 Jan 22 21:34 [0m[0;34;43mttypb[0m
-crw-rw-rw-   1 root        wheel            4,  12 Jan 22 21:34 [0m[0;34;43mttypc[0m
-crw-rw-rw-   1 root        wheel            4,  13 Jan 22 21:34 [0m[0;34;43mttypd[0m
-crw-rw-rw-   1 root        wheel            4,  14 Jan 22 21:34 [0m[0;34;43mttype[0m
-crw-rw-rw-   1 root        wheel            4,  15 Jan 22 21:34 [0m[0;34;43mttypf[0m
-crw-rw-rw-   1 root        wheel            4,  16 Jan 22 21:34 [0m[0;34;43mttyq0[0m
-crw-rw-rw-   1 root        wheel            4,  17 Jan 22 21:34 [0m[0;34;43mttyq1[0m
-crw-rw-rw-   1 root        wheel            4,  18 Jan 22 21:34 [0m[0;34;43mttyq2[0m
-crw-rw-rw-   1 root        wheel            4,  19 Jan 22 21:34 [0m[0;34;43mttyq3[0m
-crw-rw-rw-   1 root        wheel            4,  20 Jan 22 21:34 [0m[0;34;43mttyq4[0m
-crw-rw-rw-   1 root        wheel            4,  21 Jan 22 21:34 [0m[0;34;43mttyq5[0m
-crw-rw-rw-   1 root        wheel            4,  22 Jan 22 21:34 [0m[0;34;43mttyq6[0m
-crw-rw-rw-   1 root        wheel            4,  23 Jan 22 21:34 [0m[0;34;43mttyq7[0m
-crw-rw-rw-   1 root        wheel            4,  24 Jan 22 21:34 [0m[0;34;43mttyq8[0m
-crw-rw-rw-   1 root        wheel            4,  25 Jan 22 21:34 [0m[0;34;43mttyq9[0m
-crw-rw-rw-   1 root        wheel            4,  26 Jan 22 21:34 [0m[0;34;43mttyqa[0m
-crw-rw-rw-   1 root        wheel            4,  27 Jan 22 21:34 [0m[0;34;43mttyqb[0m
-crw-rw-rw-   1 root        wheel            4,  28 Jan 22 21:34 [0m[0;34;43mttyqc[0m
-crw-rw-rw-   1 root        wheel            4,  29 Jan 22 21:34 [0m[0;34;43mttyqd[0m
-crw-rw-rw-   1 root        wheel            4,  30 Jan 22 21:34 [0m[0;34;43mttyqe[0m
-crw-rw-rw-   1 root        wheel            4,  31 Jan 22 21:34 [0m[0;34;43mttyqf[0m
-crw-rw-rw-   1 root        wheel            4,  32 Jan 22 21:34 [0m[0;34;43mttyr0[0m
-crw-rw-rw-   1 root        wheel            4,  33 Jan 22 21:34 [0m[0;34;43mttyr1[0m
-crw-rw-rw-   1 root        wheel            4,  34 Jan 22 21:34 [0m[0;34;43mttyr2[0m
-crw-rw-rw-   1 root        wheel            4,  35 Jan 22 21:34 [0m[0;34;43mttyr3[0m
-crw-rw-rw-   1 root        wheel            4,  36 Jan 22 21:34 [0m[0;34;43mttyr4[0m
-crw-rw-rw-   1 root        wheel            4,  37 Jan 22 21:34 [0m[0;34;43mttyr5[0m
-crw-rw-rw-   1 root        wheel            4,  38 Jan 22 21:34 [0m[0;34;43mttyr6[0m
-crw-rw-rw-   1 root        wheel            4,  39 Jan 22 21:34 [0m[0;34;43mttyr7[0m
-crw-rw-rw-   1 root        wheel            4,  40 Jan 22 21:34 [0m[0;34;43mttyr8[0m
-crw-rw-rw-   1 root        wheel            4,  41 Jan 22 21:34 [0m[0;34;43mttyr9[0m
-crw-rw-rw-   1 root        wheel            4,  42 Jan 22 21:34 [0m[0;34;43mttyra[0m
-crw-rw-rw-   1 root        wheel            4,  43 Jan 22 21:34 [0m[0;34;43mttyrb[0m
-crw-rw-rw-   1 root        wheel            4,  44 Jan 22 21:34 [0m[0;34;43mttyrc[0m
-crw-rw-rw-   1 root        wheel            4,  45 Jan 22 21:34 [0m[0;34;43mttyrd[0m
-crw-rw-rw-   1 root        wheel            4,  46 Jan 22 21:34 [0m[0;34;43mttyre[0m
-crw-rw-rw-   1 root        wheel            4,  47 Jan 22 21:34 [0m[0;34;43mttyrf[0m
-crw-rw-rw-   1 root        wheel            4,  48 Jan 22 21:34 [0m[0;34;43mttys0[0m
-crw--w----   1 ostanislav  tty             16,   0 Jan 23 21:51 [0m[0;34;43mttys000[0m
-crw-rw-rw-   1 root        wheel            4,  49 Jan 22 21:34 [0m[0;34;43mttys1[0m
-crw-rw-rw-   1 root        wheel            4,  50 Jan 22 21:34 [0m[0;34;43mttys2[0m
-crw-rw-rw-   1 root        wheel            4,  51 Jan 22 21:34 [0m[0;34;43mttys3[0m
-crw-rw-rw-   1 root        wheel            4,  52 Jan 22 21:34 [0m[0;34;43mttys4[0m
-crw-rw-rw-   1 root        wheel            4,  53 Jan 22 21:34 [0m[0;34;43mttys5[0m
-crw-rw-rw-   1 root        wheel            4,  54 Jan 22 21:34 [0m[0;34;43mttys6[0m
-crw-rw-rw-   1 root        wheel            4,  55 Jan 22 21:34 [0m[0;34;43mttys7[0m
-crw-rw-rw-   1 root        wheel            4,  56 Jan 22 21:34 [0m[0;34;43mttys8[0m
-crw-rw-rw-   1 root        wheel            4,  57 Jan 22 21:34 [0m[0;34;43mttys9[0m
-crw-rw-rw-   1 root        wheel            4,  58 Jan 22 21:34 [0m[0;34;43mttysa[0m
-crw-rw-rw-   1 root        wheel            4,  59 Jan 22 21:34 [0m[0;34;43mttysb[0m
-crw-rw-rw-   1 root        wheel            4,  60 Jan 22 21:34 [0m[0;34;43mttysc[0m
-crw-rw-rw-   1 root        wheel            4,  61 Jan 22 21:34 [0m[0;34;43mttysd[0m
-crw-rw-rw-   1 root        wheel            4,  62 Jan 22 21:34 [0m[0;34;43mttyse[0m
-crw-rw-rw-   1 root        wheel            4,  63 Jan 22 21:34 [0m[0;34;43mttysf[0m
-crw-rw-rw-   1 root        wheel            4,  64 Jan 22 21:34 [0m[0;34;43mttyt0[0m
-crw-rw-rw-   1 root        wheel            4,  65 Jan 22 21:34 [0m[0;34;43mttyt1[0m
-crw-rw-rw-   1 root        wheel            4,  66 Jan 22 21:34 [0m[0;34;43mttyt2[0m
-crw-rw-rw-   1 root        wheel            4,  67 Jan 22 21:34 [0m[0;34;43mttyt3[0m
-crw-rw-rw-   1 root        wheel            4,  68 Jan 22 21:34 [0m[0;34;43mttyt4[0m
-crw-rw-rw-   1 root        wheel            4,  69 Jan 22 21:34 [0m[0;34;43mttyt5[0m
-crw-rw-rw-   1 root        wheel            4,  70 Jan 22 21:34 [0m[0;34;43mttyt6[0m
-crw-rw-rw-   1 root        wheel            4,  71 Jan 22 21:34 [0m[0;34;43mttyt7[0m
-crw-rw-rw-   1 root        wheel            4,  72 Jan 22 21:34 [0m[0;34;43mttyt8[0m
-crw-rw-rw-   1 root        wheel            4,  73 Jan 22 21:34 [0m[0;34;43mttyt9[0m
-crw-rw-rw-   1 root        wheel            4,  74 Jan 22 21:34 [0m[0;34;43mttyta[0m
-crw-rw-rw-   1 root        wheel            4,  75 Jan 22 21:34 [0m[0;34;43mttytb[0m
-crw-rw-rw-   1 root        wheel            4,  76 Jan 22 21:34 [0m[0;34;43mttytc[0m
-crw-rw-rw-   1 root        wheel            4,  77 Jan 22 21:34 [0m[0;34;43mttytd[0m
-crw-rw-rw-   1 root        wheel            4,  78 Jan 22 21:34 [0m[0;34;43mttyte[0m
-crw-rw-rw-   1 root        wheel            4,  79 Jan 22 21:34 [0m[0;34;43mttytf[0m
-crw-rw-rw-   1 root        wheel            4,  80 Jan 22 21:34 [0m[0;34;43mttyu0[0m
-crw-rw-rw-   1 root        wheel            4,  81 Jan 22 21:34 [0m[0;34;43mttyu1[0m
-crw-rw-rw-   1 root        wheel            4,  82 Jan 22 21:34 [0m[0;34;43mttyu2[0m
-crw-rw-rw-   1 root        wheel            4,  83 Jan 22 21:34 [0m[0;34;43mttyu3[0m
-crw-rw-rw-   1 root        wheel            4,  84 Jan 22 21:34 [0m[0;34;43mttyu4[0m
-crw-rw-rw-   1 root        wheel            4,  85 Jan 22 21:34 [0m[0;34;43mttyu5[0m
-crw-rw-rw-   1 root        wheel            4,  86 Jan 22 21:34 [0m[0;34;43mttyu6[0m
-crw-rw-rw-   1 root        wheel            4,  87 Jan 22 21:34 [0m[0;34;43mttyu7[0m
-crw-rw-rw-   1 root        wheel            4,  88 Jan 22 21:34 [0m[0;34;43mttyu8[0m
-crw-rw-rw-   1 root        wheel            4,  89 Jan 22 21:34 [0m[0;34;43mttyu9[0m
-crw-rw-rw-   1 root        wheel            4,  90 Jan 22 21:34 [0m[0;34;43mttyua[0m
-crw-rw-rw-   1 root        wheel            4,  91 Jan 22 21:34 [0m[0;34;43mttyub[0m
-crw-rw-rw-   1 root        wheel            4,  92 Jan 22 21:34 [0m[0;34;43mttyuc[0m
-crw-rw-rw-   1 root        wheel            4,  93 Jan 22 21:34 [0m[0;34;43mttyud[0m
-crw-rw-rw-   1 root        wheel            4,  94 Jan 22 21:34 [0m[0;34;43mttyue[0m
-crw-rw-rw-   1 root        wheel            4,  95 Jan 22 21:34 [0m[0;34;43mttyuf[0m
-crw-rw-rw-   1 root        wheel            4,  96 Jan 22 21:34 [0m[0;34;43mttyv0[0m
-crw-rw-rw-   1 root        wheel            4,  97 Jan 22 21:34 [0m[0;34;43mttyv1[0m
-crw-rw-rw-   1 root        wheel            4,  98 Jan 22 21:34 [0m[0;34;43mttyv2[0m
-crw-rw-rw-   1 root        wheel            4,  99 Jan 22 21:34 [0m[0;34;43mttyv3[0m
-crw-rw-rw-   1 root        wheel            4, 100 Jan 22 21:34 [0m[0;34;43mttyv4[0m
-crw-rw-rw-   1 root        wheel            4, 101 Jan 22 21:34 [0m[0;34;43mttyv5[0m
-crw-rw-rw-   1 root        wheel            4, 102 Jan 22 21:34 [0m[0;34;43mttyv6[0m
-crw-rw-rw-   1 root        wheel            4, 103 Jan 22 21:34 [0m[0;34;43mttyv7[0m
-crw-rw-rw-   1 root        wheel            4, 104 Jan 22 21:34 [0m[0;34;43mttyv8[0m
-crw-rw-rw-   1 root        wheel            4, 105 Jan 22 21:34 [0m[0;34;43mttyv9[0m
-crw-rw-rw-   1 root        wheel            4, 106 Jan 22 21:34 [0m[0;34;43mttyva[0m
-crw-rw-rw-   1 root        wheel            4, 107 Jan 22 21:34 [0m[0;34;43mttyvb[0m
-crw-rw-rw-   1 root        wheel            4, 108 Jan 22 21:34 [0m[0;34;43mttyvc[0m
-crw-rw-rw-   1 root        wheel            4, 109 Jan 22 21:34 [0m[0;34;43mttyvd[0m
-crw-rw-rw-   1 root        wheel            4, 110 Jan 22 21:34 [0m[0;34;43mttyve[0m
-crw-rw-rw-   1 root        wheel            4, 111 Jan 22 21:34 [0m[0;34;43mttyvf[0m
-crw-rw-rw-   1 root        wheel            4, 112 Jan 22 21:34 [0m[0;34;43mttyw0[0m
-crw-rw-rw-   1 root        wheel            4, 113 Jan 22 21:34 [0m[0;34;43mttyw1[0m
-crw-rw-rw-   1 root        wheel            4, 114 Jan 22 21:34 [0m[0;34;43mttyw2[0m
-crw-rw-rw-   1 root        wheel            4, 115 Jan 22 21:34 [0m[0;34;43mttyw3[0m
-crw-rw-rw-   1 root        wheel            4, 116 Jan 22 21:34 [0m[0;34;43mttyw4[0m
-crw-rw-rw-   1 root        wheel            4, 117 Jan 22 21:34 [0m[0;34;43mttyw5[0m
-crw-rw-rw-   1 root        wheel            4, 118 Jan 22 21:34 [0m[0;34;43mttyw6[0m
-crw-rw-rw-   1 root        wheel            4, 119 Jan 22 21:34 [0m[0;34;43mttyw7[0m
-crw-rw-rw-   1 root        wheel            4, 120 Jan 22 21:34 [0m[0;34;43mttyw8[0m
-crw-rw-rw-   1 root        wheel            4, 121 Jan 22 21:34 [0m[0;34;43mttyw9[0m
-crw-rw-rw-   1 root        wheel            4, 122 Jan 22 21:34 [0m[0;34;43mttywa[0m
-crw-rw-rw-   1 root        wheel            4, 123 Jan 22 21:34 [0m[0;34;43mttywb[0m
-crw-rw-rw-   1 root        wheel            4, 124 Jan 22 21:34 [0m[0;34;43mttywc[0m
-crw-rw-rw-   1 root        wheel            4, 125 Jan 22 21:34 [0m[0;34;43mttywd[0m
-crw-rw-rw-   1 root        wheel            4, 126 Jan 22 21:34 [0m[0;34;43mttywe[0m
-crw-rw-rw-   1 root        wheel            4, 127 Jan 22 21:34 [0m[0;34;43mttywf[0m
-crw-rw-rw-   1 root        wheel           14,   1 Jan 22 21:34 [0m[0;34;43murandom[0m
-crw-rw----   1 root        _windowserver   20,   0 Jan 22 21:34 [0m[0;34;43mxcpm[0m
-crw-rw-rw-   1 root        wheel            3,   3 Jan 22 21:34 [0m[0;34;43mzero[0m
+total 552
+-rw-r--r--   1 akrasnosel  4242      10 Jan 28 17:41 uls.txt
+-rw-r--r--   1 akrasnosel  4242      78 Jan 28 17:21 res.txt
+drwxr-xr-x   3 akrasnosel  4242     102 Jan 27 16:43 uls.dSYM
+drwxr-xr-x   3 akrasnosel  4242     102 Jan 27 16:18 inc
+drwxr-xr-x   8 akrasnosel  4242     272 Jan 28 17:34 libmx
+drwxr-xr-x   8 akrasnosel  4242     272 Jan 23 20:32 .idea
+drwx------  13 akrasnosel  4242     442 Jan 26 20:02 ..
+drwxr-xr-x  15 akrasnosel  4242     510 Jan 27 16:18 .git
+drwxr-xr-x  16 akrasnosel  4242     544 Jan 28 17:34 .
+-rw-r--r--   1 akrasnosel  4242     564 Jan 25 21:20 test.txt
+drwxr-xr-x  30 akrasnosel  4242    1020 Jan 28 17:34 obj
+drwxr-xr-x  32 akrasnosel  4242    1088 Jan 28 17:16 src
+-rw-r--r--   1 akrasnosel  4242    1727 Jan 28 14:06 Makefile
+-rw-r--r--   1 akrasnosel  4242    8196 Jan 27 17:26 .DS_Store
+-rw-r--r--   1 akrasnosel  4242  122243 Jan 28 17:41 ls.txt
+-rwxr-xr-x   1 akrasnosel  4242  133368 Jan 28 17:34 uls
+
+./uls.dSYM:
+total 0
+drwxr-xr-x   3 akrasnosel  4242  102 Jan 27 16:43 .
+drwxr-xr-x   4 akrasnosel  4242  136 Jan 27 16:43 Contents
+drwxr-xr-x  16 akrasnosel  4242  544 Jan 28 17:34 ..
+
+./uls.dSYM/Contents:
+total 8
+drwxr-xr-x  3 akrasnosel  4242  102 Jan 27 16:43 Resources
+drwxr-xr-x  3 akrasnosel  4242  102 Jan 27 16:43 ..
+drwxr-xr-x  4 akrasnosel  4242  136 Jan 27 16:43 .
+-rw-r--r--  1 akrasnosel  4242  632 Jan 28 17:34 Info.plist
+
+./uls.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 akrasnosel  4242  102 Jan 27 16:43 DWARF
+drwxr-xr-x  3 akrasnosel  4242  102 Jan 27 16:43 .
+drwxr-xr-x  4 akrasnosel  4242  136 Jan 27 16:43 ..
+
+./uls.dSYM/Contents/Resources/DWARF:
+total 168
+drwxr-xr-x  3 akrasnosel  4242    102 Jan 27 16:43 ..
+drwxr-xr-x  3 akrasnosel  4242    102 Jan 27 16:43 .
+-rw-r--r--  1 akrasnosel  4242  82747 Jan 28 17:34 uls
+
+./inc:
+total 8
+drwxr-xr-x   3 akrasnosel  4242   102 Jan 27 16:18 .
+drwxr-xr-x  16 akrasnosel  4242   544 Jan 28 17:34 ..
+-rw-r--r--   1 akrasnosel  4242  2942 Jan 28 17:20 header.h
+
+./libmx:
+total 80
+drwxr-xr-x   3 akrasnosel  4242    102 Jan 27 16:18 inc
+drwxr-xr-x   8 akrasnosel  4242    272 Jan 28 17:34 .
+drwxr-xr-x  16 akrasnosel  4242    544 Jan 28 17:34 ..
+drwxr-xr-x  27 akrasnosel  4242    918 Jan 28 17:34 obj
+drwxr-xr-x  28 akrasnosel  4242    952 Jan 27 16:18 src
+-rw-r--r--   1 akrasnosel  4242   1349 Jan 26 14:48 Makefile
+-rw-r--r--   1 akrasnosel  4242   6148 Jan 27 16:18 .DS_Store
+-rw-r--r--   1 akrasnosel  4242  25712 Jan 28 17:34 libmx.a
+
+./libmx/inc:
+total 8
+drwxr-xr-x  3 akrasnosel  4242   102 Jan 27 16:18 .
+drwxr-xr-x  8 akrasnosel  4242   272 Jan 28 17:34 ..
+-rw-r--r--  1 akrasnosel  4242  1249 Jan 27 16:18 libmx.h
+
+./libmx/obj:
+total 200
+drwxr-xr-x   8 akrasnosel  4242   272 Jan 28 17:34 ..
+-rw-r--r--   1 akrasnosel  4242   688 Jan 28 17:34 mx_printchar.o
+-rw-r--r--   1 akrasnosel  4242   692 Jan 28 17:34 mx_strdel.o
+-rw-r--r--   1 akrasnosel  4242   692 Jan 28 17:34 mx_memset.o
+-rw-r--r--   1 akrasnosel  4242   700 Jan 28 17:34 mx_strcpy.o
+-rw-r--r--   1 akrasnosel  4242   708 Jan 28 17:34 mx_strlen.o
+-rw-r--r--   1 akrasnosel  4242   728 Jan 28 17:34 mx_printstr.o
+-rw-r--r--   1 akrasnosel  4242   748 Jan 28 17:34 mx_strcat.o
+-rw-r--r--   1 akrasnosel  4242   748 Jan 28 17:34 mx_del_two_arr.o
+-rw-r--r--   1 akrasnosel  4242   764 Jan 28 17:34 mx_strnew.o
+-rw-r--r--   1 akrasnosel  4242   776 Jan 28 17:34 mx_strncpy.o
+-rw-r--r--   1 akrasnosel  4242   776 Jan 28 17:34 mx_strdup.o
+-rw-r--r--   1 akrasnosel  4242   780 Jan 28 17:34 mx_strndup.o
+-rw-r--r--   1 akrasnosel  4242   796 Jan 28 17:34 mx_del_strarr.o
+-rw-r--r--   1 akrasnosel  4242   800 Jan 28 17:34 mx_strdel_three.o
+-rw-r--r--   1 akrasnosel  4242   876 Jan 28 17:34 mx_bubble_sort.o
+-rw-r--r--   1 akrasnosel  4242   900 Jan 28 17:34 mx_strcmp.o
+drwxr-xr-x  27 akrasnosel  4242   918 Jan 28 17:34 .
+-rw-r--r--   1 akrasnosel  4242   948 Jan 28 17:34 mx_printint.o
+-rw-r--r--   1 akrasnosel  4242   948 Jan 28 17:34 mx_count_words.o
+-rw-r--r--   1 akrasnosel  4242  1040 Jan 28 17:34 mx_strjoin.o
+-rw-r--r--   1 akrasnosel  4242  1124 Jan 28 17:34 mx_nbr_to_hex.o
+-rw-r--r--   1 akrasnosel  4242  1220 Jan 28 17:34 mx_file_to_str.o
+-rw-r--r--   1 akrasnosel  4242  1280 Jan 28 17:34 mx_strjoin_one.o
+-rw-r--r--   1 akrasnosel  4242  1332 Jan 28 17:34 mx_strjoin_two.o
+-rw-r--r--   1 akrasnosel  4242  1340 Jan 28 17:34 mx_strsplit.o
+-rw-r--r--   1 akrasnosel  4242  1596 Jan 28 17:34 mx_itoa.o
+
+./libmx/src:
+total 216
+-rw-r--r--   1 akrasnosel  4242    78 Jan 19 18:01 mx_printchar.c
+-rw-r--r--   1 akrasnosel  4242   115 Jan 19 14:54 mx_printstr.c
+-rw-r--r--   1 akrasnosel  4242   128 Jan 25 16:14 mx_strdel.c
+-rw-r--r--   1 akrasnosel  4242   156 Jan 23 19:42 mx_strdup.c
+-rw-r--r--   1 akrasnosel  4242   161 Jan 22 12:11 mx_del_two_arr.c
+-rw-r--r--   1 akrasnosel  4242   171 Jan 25 16:14 mx_del_strarr.c
+-rw-r--r--   1 akrasnosel  4242   177 Jan 19 18:01 mx_strndup.c
+-rw-r--r--   1 akrasnosel  4242   184 Jan 23 19:42 mx_strcpy.c
+-rw-r--r--   1 akrasnosel  4242   190 Jan 25 14:50 mx_strlen.c
+-rw-r--r--   1 akrasnosel  4242   192 Jan 26 14:48 mx_memset.c
+-rw-r--r--   1 akrasnosel  4242   222 Jan 19 18:01 mx_strcat.c
+-rw-r--r--   1 akrasnosel  4242   223 Jan 24 14:15 mx_strncpy.c
+-rw-r--r--   1 akrasnosel  4242   254 Jan 19 18:01 mx_printint.c
+-rw-r--r--   1 akrasnosel  4242   257 Jan  2 17:56 mx_strnew.c
+drwxr-xr-x   8 akrasnosel  4242   272 Jan 28 17:34 ..
+-rw-r--r--   1 akrasnosel  4242   310 Jan 22 12:11 mx_strdel_three.c
+-rw-r--r--@  1 akrasnosel  4242   417 Jan  3 16:47 mx_bubble_sort.c
+-rw-r--r--   1 akrasnosel  4242   440 Jan 25 14:50 mx_strcmp.c
+-rw-r--r--   1 akrasnosel  4242   508 Jan 19 18:01 mx_strjoin.c
+-rw-r--r--   1 akrasnosel  4242   534 Jan 19 14:54 mx_count_words.c
+-rw-r--r--   1 akrasnosel  4242   616 Jan 22 12:11 mx_file_to_str.c
+-rw-r--r--   1 akrasnosel  4242   649 Jan 22 12:11 mx_strjoin_one.c
+-rw-r--r--   1 akrasnosel  4242   699 Jan 19 18:01 mx_nbr_to_hex.c
+-rw-r--r--   1 akrasnosel  4242   712 Jan 27 16:18 mx_strjoin_two.c
+drwxr-xr-x  28 akrasnosel  4242   952 Jan 27 16:18 .
+-rw-r--r--   1 akrasnosel  4242  1008 Jan 19 18:01 mx_strsplit.c
+-rw-r--r--   1 akrasnosel  4242  1044 Jan  2 17:56 mx_itoa.c
+-rw-r--r--   1 akrasnosel  4242  6148 Jan 19 18:01 .DS_Store
+
+./.idea:
+total 56
+-rw-r--r--   1 akrasnosel  4242    39 Jan 23 19:42 .gitignore
+-rw-r--r--   1 akrasnosel  4242   174 Jan 23 19:42 misc.xml
+-rw-r--r--   1 akrasnosel  4242   180 Jan 23 19:42 vcs.xml
+-rw-r--r--   1 akrasnosel  4242   268 Jan 23 19:42 modules.xml
+drwxr-xr-x   8 akrasnosel  4242   272 Jan 23 20:32 .
+-rw-r--r--   1 akrasnosel  4242   281 Jan 23 19:42 ucode_ls.iml
+drwxr-xr-x  16 akrasnosel  4242   544 Jan 28 17:34 ..
+-rw-r--r--   1 akrasnosel  4242  5323 Jan 23 20:32 workspace.xml
+
+./.git:
+total 72
+-rw-r--r--    1 akrasnosel  4242    16 Jan 27 16:08 COMMIT_EDITMSG
+-rw-r--r--    1 akrasnosel  4242    23 Jan 27 16:17 HEAD
+-rw-r--r--    1 akrasnosel  4242    41 Jan 27 16:18 ORIG_HEAD
+-rw-r--r--    1 akrasnosel  4242    73 Jan  5 15:00 description
+-rw-r--r--    1 akrasnosel  4242    91 Jan 27 16:17 FETCH_HEAD
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 15:00 info
+-rw-r--r--    1 akrasnosel  4242   114 Jan  5 15:00 packed-refs
+drwxr-xr-x    4 akrasnosel  4242   136 Jan  5 15:00 logs
+drwxr-xr-x    5 akrasnosel  4242   170 Jan  5 15:00 refs
+-rw-r--r--    1 akrasnosel  4242   303 Jan  5 15:00 config
+drwxr-xr-x   13 akrasnosel  4242   442 Jan  5 15:00 hooks
+drwxr-xr-x   15 akrasnosel  4242   510 Jan 27 16:18 .
+drwxr-xr-x   16 akrasnosel  4242   544 Jan 28 17:34 ..
+-rw-r--r--    1 akrasnosel  4242  6065 Jan 27 16:18 index
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 objects
+
+./.git/info:
+total 8
+drwxr-xr-x   3 akrasnosel  4242  102 Jan  5 15:00 .
+-rw-r--r--   1 akrasnosel  4242  240 Jan  5 15:00 exclude
+drwxr-xr-x  15 akrasnosel  4242  510 Jan 27 16:18 ..
+
+./.git/logs:
+total 40
+drwxr-xr-x   4 akrasnosel  4242    136 Jan  5 15:00 refs
+drwxr-xr-x   4 akrasnosel  4242    136 Jan  5 15:00 .
+drwxr-xr-x  15 akrasnosel  4242    510 Jan 27 16:18 ..
+-rw-r--r--   1 akrasnosel  4242  17453 Jan 27 16:18 HEAD
+
+./.git/logs/refs:
+total 0
+drwxr-xr-x  3 akrasnosel  4242  102 Jan  5 15:00 remotes
+drwxr-xr-x  4 akrasnosel  4242  136 Jan  5 15:01 heads
+drwxr-xr-x  4 akrasnosel  4242  136 Jan  5 15:00 ..
+drwxr-xr-x  4 akrasnosel  4242  136 Jan  5 15:00 .
+
+./.git/logs/refs/remotes:
+total 0
+drwxr-xr-x  3 akrasnosel  4242  102 Jan  5 15:00 .
+drwxr-xr-x  4 akrasnosel  4242  136 Jan  5 15:18 origin
+drwxr-xr-x  4 akrasnosel  4242  136 Jan  5 15:00 ..
+
+./.git/logs/refs/remotes/origin:
+total 24
+drwxr-xr-x  3 akrasnosel  4242   102 Jan  5 15:00 ..
+drwxr-xr-x  4 akrasnosel  4242   136 Jan  5 15:18 .
+-rw-r--r--  1 akrasnosel  4242   198 Jan  5 15:00 HEAD
+-rw-r--r--  1 akrasnosel  4242  4386 Jan 27 16:17 master
+
+./.git/logs/refs/heads:
+total 32
+drwxr-xr-x  4 akrasnosel  4242   136 Jan  5 15:00 ..
+drwxr-xr-x  4 akrasnosel  4242   136 Jan  5 15:01 .
+-rw-r--r--  1 akrasnosel  4242  4207 Jan 27 16:18 Nastia
+-rw-r--r--  1 akrasnosel  4242  5020 Jan 27 16:17 master
+
+./.git/refs:
+total 0
+drwxr-xr-x   2 akrasnosel  4242   68 Jan  5 15:00 tags
+drwxr-xr-x   3 akrasnosel  4242  102 Jan  5 15:00 remotes
+drwxr-xr-x   4 akrasnosel  4242  136 Jan 27 16:18 heads
+drwxr-xr-x   5 akrasnosel  4242  170 Jan  5 15:00 .
+drwxr-xr-x  15 akrasnosel  4242  510 Jan 27 16:18 ..
+
+./.git/refs/tags:
+total 0
+drwxr-xr-x  2 akrasnosel  4242   68 Jan  5 15:00 .
+drwxr-xr-x  5 akrasnosel  4242  170 Jan  5 15:00 ..
+
+./.git/refs/remotes:
+total 0
+drwxr-xr-x  3 akrasnosel  4242  102 Jan  5 15:00 .
+drwxr-xr-x  4 akrasnosel  4242  136 Jan 27 16:17 origin
+drwxr-xr-x  5 akrasnosel  4242  170 Jan  5 15:00 ..
+
+./.git/refs/remotes/origin:
+total 16
+-rw-r--r--  1 akrasnosel  4242   32 Jan  5 15:00 HEAD
+-rw-r--r--  1 akrasnosel  4242   41 Jan 27 16:17 master
+drwxr-xr-x  3 akrasnosel  4242  102 Jan  5 15:00 ..
+drwxr-xr-x  4 akrasnosel  4242  136 Jan 27 16:17 .
+
+./.git/refs/heads:
+total 16
+-rw-r--r--  1 akrasnosel  4242   41 Jan 27 16:17 master
+-rw-r--r--  1 akrasnosel  4242   41 Jan 27 16:18 Nastia
+drwxr-xr-x  4 akrasnosel  4242  136 Jan 27 16:18 .
+drwxr-xr-x  5 akrasnosel  4242  170 Jan  5 15:00 ..
+
+./.git/hooks:
+total 96
+-rwxr-xr-x   1 akrasnosel  4242   189 Jan  5 15:00 post-update.sample
+-rwxr-xr-x   1 akrasnosel  4242   424 Jan  5 15:00 pre-applypatch.sample
+drwxr-xr-x  13 akrasnosel  4242   442 Jan  5 15:00 .
+-rwxr-xr-x   1 akrasnosel  4242   478 Jan  5 15:00 applypatch-msg.sample
+drwxr-xr-x  15 akrasnosel  4242   510 Jan 27 16:18 ..
+-rwxr-xr-x   1 akrasnosel  4242   544 Jan  5 15:00 pre-receive.sample
+-rwxr-xr-x   1 akrasnosel  4242   896 Jan  5 15:00 commit-msg.sample
+-rwxr-xr-x   1 akrasnosel  4242  1348 Jan  5 15:00 pre-push.sample
+-rwxr-xr-x   1 akrasnosel  4242  1492 Jan  5 15:00 prepare-commit-msg.sample
+-rwxr-xr-x   1 akrasnosel  4242  1638 Jan  5 15:00 pre-commit.sample
+-rwxr-xr-x   1 akrasnosel  4242  3327 Jan  5 15:00 fsmonitor-watchman.sample
+-rwxr-xr-x   1 akrasnosel  4242  3610 Jan  5 15:00 update.sample
+-rwxr-xr-x   1 akrasnosel  4242  4898 Jan  5 15:00 pre-rebase.sample
+
+./.git/objects:
+total 0
+drwxr-xr-x    2 akrasnosel  4242    68 Jan  5 15:00 info
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:48 f8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 f5
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 f3
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 20:14 ee
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:46 e9
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 e7
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 e1
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 19 17:59 de
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 27 16:17 d7
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 d6
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 d5
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 d4
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 cd
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:04 c9
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 18:01 c2
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 c0
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:47 b8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 20:13 b6
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 19 18:00 b5
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 b3
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 ab
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 18:01 a4
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:26 a0
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 27 16:08 9a
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 98
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 97
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 20:14 95
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 85
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 80
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:49 74
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 73
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 65
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 64
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 15:35 5a
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 4c
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 47
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 43
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 42
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 3e
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:33 38
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 32
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 15:22 1e
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 1d
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 21:19 19
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:53 0f
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 15:35 0c
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 15:15 0a
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 21:18 06
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:26 04
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 26 14:47 pack
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 fe
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 fc
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:41 fb
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 fa
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 ed
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:36 ea
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 e6
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 e4
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 df
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 db
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:19 da
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 d2
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 cf
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 ce
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 c8
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:08 c7
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 c6
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 c3
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 be
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 b2
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 af
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 a9
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:35 a2
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 a1
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 9f
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 9b
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 99
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 96
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 93
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 92
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 87
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 84
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 82
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 7e
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 7d
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:35 7a
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 78
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 71
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 6f
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 68
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 66
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 5e
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 57
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 52
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 4e
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 4d
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 48
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 3f
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 3c
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 37
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:41 30
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 2e
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 2d
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:08 2b
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 2a
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:48 27
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 25
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 1f
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 1c
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 18
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 14
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 11
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 0b
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:36 09
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 03
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 02
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 00
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 f9
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:47 f7
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 f6
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 f4
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 f1
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 f0
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 ef
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 ec
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 e8
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 e3
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 e2
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 e0
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 d9
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 d1
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 cb
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 ca
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 c5
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 c4
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 c1
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:41 bc
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 b9
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:47 b4
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 b1
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 b0
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 ae
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 ad
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 94
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 88
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 83
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 81
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 7b
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 67
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:14 62
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 61
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 60
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:46 5f
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 5d
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:03 5b
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 59
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 56
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 50
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:42 44
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 3d
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:41 3a
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:08 33
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 31
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 2f
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 29
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 28
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 23
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 1b
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 1a
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 16
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 15
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 13
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 0d
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 07
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:48 fd
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 e5
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 d8
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 d0
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 cc
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 bb
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 ba
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:35 ac
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 9c
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 91
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 90
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 8e
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 8d
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:08 8c
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 8a
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:35 89
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 7f
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 7c
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 79
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 76
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 75
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 72
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 6e
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 6d
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:46 6c
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 6b
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 69
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 58
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 55
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 54
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 51
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 4f
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:36 49
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:19 46
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 3b
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 39
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 2c
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 24
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 20
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 17
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:36 12
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 08
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:08 ff
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 17:46 f2
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 15:36 eb
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 dd
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 22 12:02 a5
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 17:46 6a
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 5c
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 23 20:13 4a
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 22 12:03 45
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 34
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 14:51 22
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:08 01
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 15:35 dc
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 23 19:41 9e
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 21:18 9d
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 14:51 53
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 15:35 4b
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 27 16:17 26
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 17:47 bd
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 15:35 86
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 27 16:17 63
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 14:51 41
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 21:18 35
+drwxr-xr-x   10 akrasnosel  4242   340 Jan 27 16:08 aa
+drwxr-xr-x   15 akrasnosel  4242   510 Jan 27 16:18 ..
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 .
+
+./.git/objects/info:
+total 0
+drwxr-xr-x    2 akrasnosel  4242    68 Jan  5 15:00 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f8:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:48 .
+-r--r--r--    1 akrasnosel  4242   423 Jan 25 17:48 5c303dbf903672ccfe67ef65db8b3f5fe1954d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f5:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 .
+-r--r--r--    1 akrasnosel  4242   417 Jan 18 20:47 07017fe16293ae65efebe8bc533b5631e0e90e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f3:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   373 Jan 22 12:04 790fdeed3b36b07e3c398c1e32bd6d6a82cb6d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ee:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 20:14 .
+-r--r--r--    1 akrasnosel  4242   777 Jan 23 20:14 2cc06fd50e8b44e94e5c42136d4d2becfd200a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e9:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   609 Jan 25 17:48 be774a060e47835a68cf3b1f46f09833aa3d9e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e7:
+total 8
+-r--r--r--    1 akrasnosel  4242    55 Jan 27 16:08 e9d11d4bf243bffe4bb60b4ac1f9392297f4bf
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e1:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 .
+-r--r--r--    1 akrasnosel  4242   342 Jan  5 22:26 d5c21df78c718e3ebe16c3f2bd0605ca699096
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/de:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 19 17:59 .
+-r--r--r--    1 akrasnosel  4242  2413 Jan 19 18:00 6c60e248ef46544f9a34c02ad9f2cedc083f61
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d7:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   829 Jan 27 16:17 70a898c2e47be840a1137016e5fad759b00cc2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d6:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   277 Jan 23 19:41 dd7a84a89c68c42093c6032f033c696a76ef98
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d5:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   471 Jan 27 16:08 ee332fa2aef9901983a61ecab530f8193aea90
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d4:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   470 Jan 22 12:02 5d2f9278f42114f7e740c0aa25de2f3de99063
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/cd:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   271 Jan 25 14:49 8a21b614124de17ee9cc28b664189d658d19b8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c9:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:04 .
+-r--r--r--    1 akrasnosel  4242   625 Jan 22 12:04 8ef4049062b93dd3b662450df80d369ed7dc05
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c2:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 18:01 .
+-r--r--r--    1 akrasnosel  4242   668 Jan 18 18:01 b91c4a3ebb9480e2a3b35bd491d00c2b09234f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c0:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   663 Jan 22 12:04 fe2952152fde552ce5ef586211ed9eeef3f9d9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b8:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 17:47 1c74c4a9f80ed9e425f4ebc0c047ee2e5ae86c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b6:
+total 24
+drwxr-xr-x    3 akrasnosel  4242    102 Jan 23 20:13 .
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  11567 Jan 25 14:51 3c14044e4e95f10f6b773a0ce8d81cf664a2fe
+
+./.git/objects/b5:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 19 18:00 .
+-r--r--r--    1 akrasnosel  4242   171 Jan 19 18:00 3e9bd6eee197234d0c62eec6008ebd221361ce
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b3:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   172 Jan 23 19:41 eedfe8d10709b0cdc41335449cc07097ad2d67
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ab:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 .
+-r--r--r--    1 akrasnosel  4242   490 Jan 25 15:35 2344c1d4522b9e407206b4e2c992c6fc88d205
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a4:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 18:01 .
+-r--r--r--    1 akrasnosel  4242   176 Jan 18 18:01 6d58e61f7c49c5dc8d699f78df9a4350877b88
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a0:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:26 .
+-r--r--r--    1 akrasnosel  4242   407 Jan 18 17:44 baaad74bbe5272108ec57c1a760115be03ffc5
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9a:
+total 64
+drwxr-xr-x    3 akrasnosel  4242    102 Jan 27 16:08 .
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  29469 Jan 27 16:08 169b2884bb6bc4fb2a77358e941d864b73cd5f
+
+./.git/objects/98:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   765 Jan 25 14:51 2b331fa6d4ad0e0c3eb5fe47608b19a13934b6
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/97:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   539 Jan 25 14:49 db527dce248cf815a7c9989a71a99c42bbe222
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/95:
+total 8
+-r--r--r--    1 akrasnosel  4242    53 Jan 25 17:48 d1be59002c4036a6750759f81d6dea2802079a
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 20:14 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/85:
+total 8
+-r--r--r--    1 akrasnosel  4242    48 Jan 25 17:46 013d2b4a4ccc1b7a418f5c30d17ce9ed5a37b8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/80:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   485 Jan 23 19:41 77569929487493e64b727e9be22565d775d3dd
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/74:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   832 Jan 23 19:49 27a72fe2be4243a67a3531d6d6780a830f2f59
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/73:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   467 Jan 25 14:53 bf1b903d86d44207ab922ab463e8b3b4ba1932
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/65:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   361 Jan 25 15:35 6ac3f94a53377ea6f0a83287f1a39f6a07bf75
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/64:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 19:19 .
+-r--r--r--    1 akrasnosel  4242   478 Jan  5 19:19 2a45e753380a27d90a737da4cc5cab4333997a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5a:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   721 Jan 25 15:35 ad97ac8d786ef46ff7a5dc93d1a70e760b1357
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/4c:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   447 Jan 22 12:02 254b20bd7910c4b39cdb618e78528e7b19d215
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/47:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   332 Jan 18 20:47 e945e37ec1769da69dfc50e92a16ecad320b81
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/43:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   484 Jan 25 14:49 661baa45a48fc2ec5a8c432f262a1ba7d0d06a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/42:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242  2583 Jan 27 16:08 d37af11c043d81be3036d320cb799a7c20215a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3e:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242  1324 Jan 18 20:47 c3d122b14e4f964d2c4099b9dd0c43b4ff8064
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/38:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:33 .
+-r--r--r--    1 akrasnosel  4242   378 Jan  5 22:33 00512597b9117035184bfb5c1122ebd9834e29
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/32:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   729 Jan 18 20:47 d475524b5b0a0210c697da852f4668a4be673e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1e:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 15:22 .
+-r--r--r--    1 akrasnosel  4242   164 Jan  5 15:22 100dfae52ae2d61ac3bba57595c7871b3895a9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1d:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   402 Jan 18 20:47 cf2e3d879f81259c7da983aeaaec1a20aa8779
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/19:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 21:19 .
+-r--r--r--    1 akrasnosel  4242   866 Jan 25 21:19 51c5858ddea5a4910cbfebd631b4ea53e9fb04
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/0f:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 14:53 .
+-r--r--r--    1 akrasnosel  4242   425 Jan 25 17:47 f3f75b4f14c8b0f42f3ba6a200c54a68edd0b7
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/0c:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   743 Jan 25 15:35 6f7314f2af1a61b0b21e07e23a8ba3a46f80be
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/0a:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 15:15 .
+-r--r--r--    1 akrasnosel  4242   167 Jan  5 15:15 d1a6eb48ad8162b5ee08652d271943e9c6963c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/06:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   517 Jan 25 21:18 a34959721f4a2954089a7e6c98dbc2654af1f2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/04:
+total 8
+drwxr-xr-x    3 akrasnosel  4242   102 Jan  5 22:26 .
+-r--r--r--    1 akrasnosel  4242   169 Jan  5 22:26 0aec2a1b420890d41abf26ebe38f5f1d8c8fb0
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/pack:
+total 232
+drwxr-xr-x    4 akrasnosel  4242     136 Jan 26 14:47 .
+-r--r--r--    1 akrasnosel  4242    5552 Jan 26 14:47 pack-271878c63a032b55b771a6d906d5cbdc65ba2739.idx
+drwxr-xr-x  243 akrasnosel  4242    8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  107692 Jan 27 16:08 pack-271878c63a032b55b771a6d906d5cbdc65ba2739.pack
+
+./.git/objects/fe:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   229 Jan 18 18:01 a713757c639720cff89a4572c63bc5b02b83fc
+-r--r--r--    1 akrasnosel  4242   716 Jan 25 14:51 8926584bafae2293235f7da9935b38dab558f2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/fc:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   171 Jan 19 18:00 a7f929f6a21985fd9045d397ae5dd99d1424bf
+-r--r--r--    1 akrasnosel  4242   293 Jan 27 16:17 546716387fb4e2cb718e074111896a99871452
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/fb:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   255 Jan 18 20:47 d0352538ad4faecf4e9881d026b54bc6a53ef3
+-r--r--r--    1 akrasnosel  4242   364 Jan 23 19:41 c2f3b6914c0c47f1d00702035f9cde7efd472d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/fa:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   263 Jan 19 18:00 68e4c03772f5831e275729e1640f34f4918edd
+-r--r--r--    1 akrasnosel  4242   413 Jan 25 14:49 b67082ac136bc9978a9f82aadebc7a2332f87b
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ed:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   382 Jan 25 14:51 2b53c32b60233ee9aaed64215cfe2761069a73
+-r--r--r--    1 akrasnosel  4242   412 Jan 27 16:08 66ce1d4fbaa33bcbe75d895885b58818770162
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ea:
+total 16
+-r--r--r--    1 akrasnosel  4242    52 Jan 23 19:49 0e3d65c68ffd4d6ed2ba002dfb3bc079e08ad3
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:36 .
+-r--r--r--    1 akrasnosel  4242   427 Jan 25 15:36 f6e141f8bf25caa6732d8d87714838cbf4792d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e6:
+total 16
+-r--r--r--    1 akrasnosel  4242    15 Jan 23 19:41 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   172 Jan 25 14:51 4c3e2210a6a00b812e82dfd22b7365fafdc01c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e4:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 .
+-r--r--r--    1 akrasnosel  4242   327 Jan  5 19:19 4ea7c7b9bd4a2ba7aee74add75bcca481f0422
+-r--r--r--    1 akrasnosel  4242   455 Jan 18 18:01 99cd7e6877b0a4aba04e9042bb1967961f19b8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/df:
+total 16
+-r--r--r--    1 akrasnosel  4242    53 Jan 23 19:49 9986c4e186be3591d6a16bb530404f0513e26f
+-r--r--r--    1 akrasnosel  4242   117 Jan 27 16:08 7aea4535079a8669c179de184f30eb66277261
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/db:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   832 Jan 25 17:47 8a603a5d9cbcc4c0d75fa164e97709259eab05
+-r--r--r--    1 akrasnosel  4242  1277 Jan 22 12:02 7d5291b1336516389ca4f5cc36c38569f63b67
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/da:
+total 16
+-r--r--r--    1 akrasnosel  4242    42 Jan  5 15:22 6308c896bacb585abdc393b52c84c12c5cc8cb
+-r--r--r--    1 akrasnosel  4242    53 Jan 25 21:19 4c22ade84d714e549c45fc7ab81e70f6480b2d
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:19 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d2:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   170 Jan 18 18:01 521f0695b01537707f17913f51b1cdc92210ab
+-r--r--r--    1 akrasnosel  4242   546 Jan 25 14:51 6c76e5cf7de4f5e5bd1be4c4c84b1635283927
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/cf:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   295 Jan 27 16:08 5b797ee59435794007d3d64cedd7a018fe2e50
+-r--r--r--    1 akrasnosel  4242   724 Jan 22 12:02 f4944a57ce4eb9a0165fd379098947eca38e77
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ce:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   211 Jan 27 16:08 2a203cdc9d74680b672f35d1da36933bda89bf
+-r--r--r--    1 akrasnosel  4242   354 Jan 25 15:35 155bdda85583788b6bb0a92ae1ef8fbfec64e3
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c8:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   368 Jan 25 15:35 48f79448ec8b4c6f954f6080f97ee50a18cd8e
+-r--r--r--    1 akrasnosel  4242   446 Jan 22 12:02 3996707befd346801f68155eb0ff9f627477a8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c7:
+total 16
+-r--r--r--    1 akrasnosel  4242    47 Jan 27 16:08 a4f302101ac0e8e4edb02e78d86b07be1fca20
+-r--r--r--    1 akrasnosel  4242    53 Jan 18 17:47 91a6941b6173f4dfe548399d8ab9dc3f27590b
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:08 .
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c6:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   447 Jan 19 18:00 f9ffc8105457a87dba456a41bf7f70964fb82f
+-r--r--r--    1 akrasnosel  4242   521 Jan 27 16:08 1617e7011785405d0cbe7dca45a4bc9c1cb1a2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c3:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   142 Jan  5 22:33 3d6a068592590d15d27007ff2d20e98f9b6bbe
+-r--r--r--    1 akrasnosel  4242   285 Jan 27 16:08 86c636fb9115ec6395763bacfbaf258feeb09c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/be:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   175 Jan 25 14:51 d781bde98f11ed22e7aeeed8d2446604f499c1
+-r--r--r--    1 akrasnosel  4242   323 Jan 25 14:51 44da7868b20ec550fd6be7c13cbddd026f19b9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b2:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   141 Jan 18 20:47 6402f522636c97dbdc3eaecd0751bb7ccceae6
+-r--r--r--    1 akrasnosel  4242   522 Jan 22 12:08 d2adc5d3966dabb91b26322918d13a6d40acbc
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/af:
+total 16
+-r--r--r--    1 akrasnosel  4242    53 Jan 18 20:47 5d0b147d6ef4525f0dc7629a7cba3b78f4c4be
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   589 Jan 25 14:49 9ebde186173130c018787db21c208e4c4d9e7a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a9:
+total 16
+-r--r--r--    1 akrasnosel  4242    57 Jan 18 20:47 b28ff250774180ac8c6b63b11cf442f1f95073
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   375 Jan 25 15:35 515a2f869ea147dc618e6779948c445382babf
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a2:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   227 Jan 27 16:08 468f15379f8691b1e06562902da8fed18661d1
+-r--r--r--    1 akrasnosel  4242   545 Jan 25 15:35 36b3b140e5e9928dfd4da5a55095a9ee709ded
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a1:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   642 Jan  5 19:19 9c0517d875526a57b9fd6977dab85b5734c2da
+-r--r--r--    1 akrasnosel  4242   687 Jan 23 19:49 7715d82a2662226d6c218d95421fdfd77854d5
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9f:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   203 Jan 22 12:02 4606f593a42a2587bcd39e8567d48ca47bfaaa
+-r--r--r--    1 akrasnosel  4242   880 Jan 27 16:17 ead49e683cc6fbe4173787ec240e761ae45f23
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9b:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   766 Jan 25 14:51 467dbc5f8da97ea43a33d1aeaad171554d0437
+-r--r--r--    1 akrasnosel  4242   831 Jan 23 19:42 04fa889eb865527844229ba8d1050fc23b2977
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/99:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   372 Jan 25 21:18 01fdb861ab7bade41e10cffa36c1b27e826042
+-r--r--r--    1 akrasnosel  4242   473 Jan 27 16:17 9ef793b9894a3d4025d2ec371f18c29f2d06e9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/96:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   149 Jan 27 16:08 625bd6356a77d68938a897f867fcb1ee5c0718
+-r--r--r--    1 akrasnosel  4242   505 Jan 25 17:46 2f07680d5e2a8efa98e5ef98422618f4814ab6
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/93:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   175 Jan 25 14:51 8216381f56c7baf0d281bdd77e5c6fd0fbdf8e
+-r--r--r--    1 akrasnosel  4242   478 Jan 22 12:04 80d6e2ab88a76cee52ac7ca55196c84495d2af
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/92:
+total 16
+-r--r--r--    1 akrasnosel  4242    52 Jan 18 20:47 7735f1d2429494a648e31cf4be55112f6a4bf8
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   739 Jan 25 14:51 3c45846a24496ae3de59a85cd2b8e450202433
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/87:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   362 Jan 25 14:49 2d7457ac0687b7724012adf004cffd0bc57a22
+-r--r--r--    1 akrasnosel  4242   815 Jan 25 14:53 fb20b6d4cfb473ccb79f24316eb46c9b62e6a6
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/84:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 .
+-r--r--r--    1 akrasnosel  4242   170 Jan 27 16:08 e0e00ff2a98343c07ef12cf480092cef509cf2
+-r--r--r--    1 akrasnosel  4242   195 Jan 18 17:44 0a69ee7ff864654e20bfd3c43eb4dc38fd5d78
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/82:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   139 Jan  5 15:00 e3173e4b3cdfd1961057e275f543bc58783f89
+-r--r--r--    1 akrasnosel  4242   491 Jan 25 21:18 1ebdb4bb358faea03f3249d48e299c4025503b
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/7e:
+total 16
+-r--r--r--    1 akrasnosel  4242    48 Jan 25 17:46 c01e423dcf5ae97265b0fbdc399cb6bad4d484
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   615 Jan 25 15:35 d3b232f4cda98cfb9836061a2c708f97fe8cd4
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/7d:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   261 Jan  5 22:33 cc8e2516f2dc1c65f784c174a06b2529b0e57c
+-r--r--r--    1 akrasnosel  4242   407 Jan 23 19:49 c65dc4fed20c8493e7c71eafc56091200718be
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/7a:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   272 Jan 25 15:35 05f8369b37626a294158b5cc2cd163ed4cdddd
+-r--r--r--    1 akrasnosel  4242   639 Jan  5 19:19 cab4ff0d226512f519d3efc70b57b0d62bbe07
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/78:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   169 Jan 27 16:17 39a55041e86f5e5e388230d1f662dd976e27a0
+-r--r--r--    1 akrasnosel  4242   422 Jan 18 17:47 8e3ccdf53f759a5c9326b077b30744cdbda1a3
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/71:
+total 16
+-r--r--r--    1 akrasnosel  4242    53 Jan 19 18:00 4128e5f96784397bc17743dcce0a9e1157229c
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   604 Jan 25 17:46 4884111cedcd94c814c1fb21ecf6af736e7e2c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6f:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   203 Jan 22 12:02 057bb5e9f03615a68e2d555ec0e60feb2bf1cc
+-r--r--r--    1 akrasnosel  4242   207 Jan 25 17:47 eb0cb49c01c05a3f8abdc754fbe35ccecb9560
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/68:
+total 16
+-r--r--r--    1 akrasnosel  4242   126 Jan 27 16:08 90df99f8578e31ebe1d42ceb282085658002a9
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   201 Jan 25 14:51 78195ad2cc3e94b95489ff11be5c1bdc6b7c54
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/66:
+total 16
+-r--r--r--    1 akrasnosel  4242   113 Jan 27 16:08 19dd2235b1694aa99496a2fc3fc99ee53d730b
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   869 Jan 27 16:17 5ea231d272ab9ea27329ff7e548c34fc1a8456
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5e:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   717 Jan 25 15:35 402924f460b020854fd1a0190ae37d89bbf14f
+-r--r--r--    1 akrasnosel  4242  2285 Jan 18 18:01 2eb4747912ee7b60038863fce7f03581346187
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/57:
+total 24
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 18:01 .
+-r--r--r--    1 akrasnosel  4242   492 Jan 25 15:35 10ceaf4874f0039d0ecaab42d14f2a1c007ce3
+-r--r--r--    1 akrasnosel  4242  5312 Jan 18 18:01 ce3302b1e8d896a1bb18327c9505d4d0eea5e6
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/52:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   471 Jan 18 18:01 cf8a5b537bf22e9a30fede97a553532ed8addf
+-r--r--r--    1 akrasnosel  4242   530 Jan 25 17:46 7436bb388aed8afe3e968821a81c5c644ce4c9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/4e:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   176 Jan 22 12:03 c6197f9a4cf1fc9c43f439e7e0b5f6051b2975
+-r--r--r--    1 akrasnosel  4242   782 Jan 25 17:46 9db1d67c8fe9cb470d4ca523e29c0392e41009
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/4d:
+total 16
+-r--r--r--    1 akrasnosel  4242    91 Jan 27 16:17 7980e402b7d513f99e3dcf5381fa34f056bd56
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   458 Jan 25 15:35 43f61a5773256f268ce889e564ff0f7b73203f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/48:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   301 Jan 19 18:00 e96c9390f6e3bd7830267c36f479acbc47ad32
+-r--r--r--    1 akrasnosel  4242   641 Jan 25 14:51 7a85d82ffde6083397dca92c1d2fc9b5d4743e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3f:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   392 Jan 25 15:35 b6b4016a62caea14a6ebf5d0b3642608c29b3e
+-r--r--r--    1 akrasnosel  4242   617 Jan 25 14:53 b7d0e34328de5264d1887393f593c58ea33c56
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3c:
+total 16
+-r--r--r--    1 akrasnosel  4242    89 Jan 27 16:08 69ba7734f6436c9366a23ce12cec2e62951f06
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   621 Jan 25 17:47 46158b3e768bbe8b09adfb2bb194024afc4e41
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/37:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   199 Jan  5 22:26 9b91b5eab082ede577102ce476c7c4a6655ad1
+-r--r--r--    1 akrasnosel  4242  1301 Jan 18 20:47 bb9a54afa292f43abe4469b9a93df9165bc2bc
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/30:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   457 Jan 25 14:49 13b692b95862aef1a8b4a24b81128f0f7553e0
+-r--r--r--    1 akrasnosel  4242   570 Jan 18 20:47 f88d902ec5d293f2cc2671f4387ab2b1c9d6ce
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2e:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   457 Jan 25 17:46 6472841688d376d88cbfc0cd094b929f5a7ed7
+-r--r--r--    1 akrasnosel  4242   597 Jan 18 17:43 b037936ad2d6a26bc5e6065dd19fcf217ea98c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2d:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   404 Jan 18 20:47 0ef4945480c2ac0412a7296ec76707f305255a
+-r--r--r--    1 akrasnosel  4242   569 Jan 18 18:01 f1e2639b47f31ab3117d550383197052006a21
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2b:
+total 16
+-r--r--r--    1 akrasnosel  4242    53 Jan 27 16:08 a479f60ee40557b93b7a7798519dea9f9a6812
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   152 Jan 27 16:08 ae1abfc2008799caa91f39c5a2e14bcca54329
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2a:
+total 16
+-r--r--r--    1 akrasnosel  4242    53 Jan 27 16:17 c1353ab45d6155cf9b78151fa60f0bff06f84a
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   206 Jan 25 14:53 544dba145577e71807d3c398637814a6a5723f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/27:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 17:48 .
+-r--r--r--    1 akrasnosel  4242   494 Jan 25 17:48 9673796b8af5069bfb30efeb4200c92abffe72
+-r--r--r--    1 akrasnosel  4242   783 Jan 25 15:35 4ce34da4f39ddadd2ab623d301bf93227e11d1
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/25:
+total 24
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   541 Jan 25 21:18 1985b777c8f71907e1b6355dcc026a5945265a
+-r--r--r--    1 akrasnosel  4242  7231 Jan 18 18:01 dd33f39ccb4bfe10e1edd5805641dfabe2972c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1f:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   178 Jan 22 12:02 028e455d0f681052027ec1f993a5ce206a4a8e
+-r--r--r--    1 akrasnosel  4242   879 Jan 17 11:12 a17bfa9fb4f3096a7c12fd091051d06c43f2b1
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1c:
+total 16
+-r--r--r--    1 akrasnosel  4242    79 Jan 18 20:47 640c19c801b7352f3d4a45f6fe8591dc04257a
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   782 Jan 22 12:08 c88997a10e11878c7d09849729efcebde38b70
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/18:
+total 16
+-r--r--r--    1 akrasnosel  4242    47 Jan 25 14:51 a3eb4751899db03ee9e3b97debc686d41a2092
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242  3676 Jan 18 17:43 aae95caf66beab026c93116231356097279b30
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/14:
+total 16
+-r--r--r--    1 akrasnosel  4242    60 Jan  5 22:26 8435213af4805626fef2c20cbcd8d59ea5ae2d
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 18 20:47 .
+-r--r--r--    1 akrasnosel  4242   431 Jan 18 20:47 25d111c7bb9b713bd5eb1e0fd7a77d3db4f06f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/11:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   386 Jan 18 18:01 a8ce31325f0960bd065df518688ba5acf30de2
+-r--r--r--    1 akrasnosel  4242  1535 Jan 22 12:02 189f463614637e2b530afc4fa373caa6afcc26
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/0b:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   383 Jan 22 12:04 df6ee5c2f738d9afd37df13ae471a0e805250b
+-r--r--r--    1 akrasnosel  4242   599 Jan 19 18:00 d4a92abb3283090165b46cae176e971c5212e9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/09:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 25 15:36 .
+-r--r--r--    1 akrasnosel  4242   836 Jan 25 15:36 c2bd1862988635ecec876f3999329c13a37d94
+-r--r--r--    1 akrasnosel  4242   927 Jan 25 14:51 287abff8a40b19c8721e16f3f0968db398a50e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/03:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   441 Jan 27 16:08 77f15837fcacf63d6d45c7eb02c64b449613de
+-r--r--r--    1 akrasnosel  4242   487 Jan 25 14:49 292e713e0eb27b87276b2214dae234cc19bb1d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/02:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   174 Jan 23 19:41 c834dbfc03d2b31b0805fce46c4e6bbfa94fc8
+-r--r--r--    1 akrasnosel  4242   660 Jan 27 16:17 17e47f0548ca94181260189e833e5e8b5bbdb8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/00:
+total 16
+drwxr-xr-x    4 akrasnosel  4242   136 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   415 Jan 27 16:08 4403e28f054b2c4a46e263d0f3059fe62453ea
+-r--r--r--    1 akrasnosel  4242   858 Jan 23 19:49 c2da8c5261c8c0944b3df21d6b3af0673737d0
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f9:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   179 Jan 17 11:12 7132140bdc807bec95ae370a5f519bed153cc3
+-r--r--r--    1 akrasnosel  4242   355 Jan 23 19:49 8b9af2e7792a679ef3148d3eaa506ecc2202ab
+-r--r--r--    1 akrasnosel  4242   589 Jan 23 19:41 18f994172edeff0410739444b5bb14d9606676
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f7:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   175 Jan 19 18:00 906306aa0914d9c826e03fdb1ee7d8a772316c
+-r--r--r--    1 akrasnosel  4242   476 Jan 25 21:18 4e18197ff33f71559672111032c5938190f4cd
+-r--r--r--    1 akrasnosel  4242   686 Jan 22 12:02 9056ab3a72d67a55c2174efd4621745c9ab811
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f6:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   175 Jan 19 17:59 10509a0b2c865598b6ae81381d344bbe4d7112
+-r--r--r--    1 akrasnosel  4242   200 Jan 18 17:44 f984a81d1984821db7e0179a09cb1f74dd7407
+-r--r--r--    1 akrasnosel  4242   354 Jan 23 19:49 352a986ab95e3542423922577afdddbb984593
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f4:
+total 24
+-r--r--r--    1 akrasnosel  4242    51 Jan  5 22:26 b37b04318349c255d54e79f087f26157fc62ef
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   288 Jan 27 16:17 9b2515e16c84c625c1d9e7aa13ba543fd11246
+-r--r--r--    1 akrasnosel  4242   325 Jan  5 19:19 6541693bc4b37098b2a2b11881dacb02524459
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f1:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   762 Jan 19 18:00 8b4fc7bd6ca69c2e961e71439c69fff8b03c18
+-r--r--r--    1 akrasnosel  4242   831 Jan 23 19:49 eb5a3c477f7acb179b16d9a9e6ba08bb7f05df
+-r--r--r--    1 akrasnosel  4242  1077 Jan 25 15:35 452f021cfcf9790baec42a571619ad0bb46185
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f0:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   238 Jan 22 12:02 415a418d49549a5d60c7613265d4b92b8134d1
+-r--r--r--    1 akrasnosel  4242   240 Jan 19 18:00 0f2fda65053b809297813068c40ae8fdaa8f9b
+-r--r--r--    1 akrasnosel  4242   815 Jan 19 18:00 062eb56d3af489929264ee2e10f67eac1fb7f2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ef:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   406 Jan 23 19:41 5a5aaaa0d7fb3d5d73347717ffd043df530b15
+-r--r--r--    1 akrasnosel  4242   588 Jan 25 21:18 f6ffb27e780301803b0e9f5b361285bedaa4bf
+-r--r--r--    1 akrasnosel  4242   847 Jan 18 17:43 247ee63fb3657474d563a81d5fcc41279db110
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ec:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   204 Jan 22 12:02 f369bb373824734389e70787c81df0f13faca7
+-r--r--r--    1 akrasnosel  4242   657 Jan  5 22:33 fe0df630308effb30c6f1bce5edf7e3273fcbc
+-r--r--r--    1 akrasnosel  4242   715 Jan 25 15:35 2cfaa7b5fb4de204c0698fee6dbad2d15a18ab
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e8:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   389 Jan 25 15:35 cd0597068efcb5e7a29541a53f4e9f8ad08aa4
+-r--r--r--    1 akrasnosel  4242   456 Jan 22 12:02 6f368402a160ffd4b094b8af07a38fd192ca0e
+-r--r--r--    1 akrasnosel  4242   489 Jan 27 16:17 4ec847d58779a12c314585e2c1f05a558d6e21
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e3:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   297 Jan 22 12:04 ade409693c22047de7f70c98e1408cc9d0ccea
+-r--r--r--    1 akrasnosel  4242   461 Jan 18 20:47 f097b6d785b863a718b3dc44ae87ea7a7276ff
+-r--r--r--    1 akrasnosel  4242   977 Jan 25 15:35 fe1ecd600265843b4f42a2bfdd5427277d487f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e2:
+total 72
+drwxr-xr-x    5 akrasnosel  4242    170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242    178 Jan 22 12:04 918942856cda42489dd3025a1b789fa3e21387
+-r--r--r--    1 akrasnosel  4242    778 Jan 22 12:08 097d74a2332475dc471689c0e2a329da08fcd8
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  25361 Jan 25 14:51 fd7376fabd48082657ef98e035a2d37404cd47
+
+./.git/objects/e0:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   317 Jan 25 17:46 7a739e08a60c35766d3a9a046bd26538db92ab
+-r--r--r--    1 akrasnosel  4242   470 Jan 22 12:04 76e726d5c954bcca080804a0713e0b0bd647b4
+-r--r--r--    1 akrasnosel  4242   485 Jan 23 20:13 4be65b1be1c35ae93bf23131f0a9daade6913c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d9:
+total 24
+-r--r--r--    1 akrasnosel  4242    53 Jan 27 16:17 75b22c21e18200f97d2f7b90dc52b68a8e1ac5
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   322 Jan 23 20:14 83e60ed2a42dc52bbc3d16d5bb86cfda3a4a66
+-r--r--r--    1 akrasnosel  4242   478 Jan 23 19:41 f7980574921a3e0ab22134e771c2d00f8e2887
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d1:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   425 Jan 25 21:18 61074bfbe618a170d6d0f4b66ff1a646ba16ba
+-r--r--r--    1 akrasnosel  4242   465 Jan 25 14:49 6b6d4e6227d3aa251843796abbd1a2585d4b2e
+-r--r--r--    1 akrasnosel  4242  2852 Jan 18 20:47 d4bae98053195a734c3a58c2e91da16547f4f6
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/cb:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   424 Jan 25 21:18 202d4ff2d7d228a74971df6ef165dde7aac074
+-r--r--r--    1 akrasnosel  4242   460 Jan 27 16:17 c8cc0f6e644cedb02a5a2d3b279b0c32577ce0
+-r--r--r--    1 akrasnosel  4242   570 Jan 25 14:51 3a7ee84e679b4d7f8010142d63e60e0726c253
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ca:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   181 Jan 23 19:42 a7f942e09a5474282f6b94ac5897a287c96c9d
+-r--r--r--    1 akrasnosel  4242   412 Jan 23 20:13 5a70a8246ac34f2c968ef31a0009a9b22fadab
+-r--r--r--    1 akrasnosel  4242   509 Jan 25 15:35 6b0b250b69b75ee06466297b5ad1badf0842eb
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c5:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   199 Jan 18 17:32 da697cb893f2029c55fff2426d17d05695eed4
+-r--r--r--    1 akrasnosel  4242   233 Jan 25 14:49 c335578f6e3167a488c5a242e1036c8113bf3f
+-r--r--r--    1 akrasnosel  4242   702 Jan 27 16:08 46f516dd3bba682a969f378272e516af760c22
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c4:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 14:53 c6d06e26f860337de12d560b901c87f87fdd9c
+-r--r--r--    1 akrasnosel  4242   970 Jan 25 15:35 ad56d4a16e266204805f02dc35373e7a126c85
+-r--r--r--    1 akrasnosel  4242  1308 Jan 22 12:02 ed351977dfab670e5ec9b22ef99cff4ac56aeb
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/c1:
+total 24
+-r--r--r--    1 akrasnosel  4242    90 Jan 25 17:46 7918f4a93ba44fe6ac7ce79fc64a581c425bea
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   189 Jan 23 19:41 21df27ff2470f8c7939c66042759ee75671966
+-r--r--r--    1 akrasnosel  4242   601 Jan 22 12:04 67040debf13d8e6b341a73748099799d884c9e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/bc:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   206 Jan 27 16:08 2cd87409057301f546d83bd548111b9a241cb1
+-r--r--r--    1 akrasnosel  4242   296 Jan 22 12:08 6619478e627d2906f34ce03300ad4abd60650e
+-r--r--r--    1 akrasnosel  4242  1307 Jan 19 18:00 e9581f1c8cf5af4ce76d33231be5a258a27d73
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b9:
+total 24
+-r--r--r--    1 akrasnosel  4242   143 Jan 23 20:14 316f1ef5c68cc00c1b0ef0d28140428da45244
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   292 Jan 27 16:08 4c51944505a25d43fbb06122d0e413e03261cf
+-r--r--r--    1 akrasnosel  4242   538 Jan 27 16:08 14fe013d22528816baa9b59f5c18601b9db91a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b4:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   173 Jan 18 20:47 9208f83c74d0b4dee7c24736b93daaf877dab6
+-r--r--r--    1 akrasnosel  4242   501 Jan  5 15:15 e8f3a359235b8ce303f1f92e5ed580a1ad09c9
+-r--r--r--    1 akrasnosel  4242   832 Jan 25 17:47 374f048fcdb34a152e10b430e3edb5896d6724
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b1:
+total 24
+-r--r--r--    1 akrasnosel  4242   149 Jan 27 16:08 8288165970a01afcd6ccf3530b933795a771f7
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   409 Jan 25 15:35 cbbce4c73edf50eb9efca97ca33680e55a4359
+-r--r--r--    1 akrasnosel  4242  1301 Jan 22 12:02 532891b91160121980849835a3987f42e110ad
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/b0:
+total 24
+-r--r--r--    1 akrasnosel  4242    50 Jan 25 14:51 152b131a378c7c398bc07b4e0b914c0c63fbda
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   915 Jan 23 19:41 9128444d5c9f7c27db85c20377a9d5db8e2749
+-r--r--r--    1 akrasnosel  4242  2368 Jan 18 20:47 38099a9b8c71f49838b0a60b02e4d331ae7633
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ae:
+total 32
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   564 Jan 25 21:18 a1e95ca511997fe8d605b751ebf18dee79e9de
+-r--r--r--    1 akrasnosel  4242   606 Jan 25 14:49 e0555dc6a7581e9721afa0e319990b459c7144
+-r--r--r--    1 akrasnosel  4242  6470 Jan 25 15:35 256c95e799b49baefb517765845f6f55f34903
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ad:
+total 24
+-r--r--r--    1 akrasnosel  4242    48 Jan 27 16:08 437c7229d54309b4910f94bd8aeb2028356e37
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   474 Jan 27 16:08 2b490753be57ca7de03d390633b5594b6c8505
+-r--r--r--    1 akrasnosel  4242   477 Jan 25 15:35 f2dddb5e72f15d174a1b95beb91569b828e0e5
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/94:
+total 24
+-r--r--r--    1 akrasnosel  4242   155 Jan 27 16:08 a25f7f4cb416c083d265558da75d457237d671
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   401 Jan 18 17:43 436e06811691c040f4b26167204d150877eb80
+-r--r--r--    1 akrasnosel  4242   507 Jan 27 16:08 06331c813a3641853bfa40f2eeda07334639a1
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/88:
+total 24
+-r--r--r--    1 akrasnosel  4242    53 Jan 22 12:02 201ca7b5c7f0db2e9e03b6da93b089534f9b13
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   202 Jan 23 19:49 44ba0b219b74f6bc9b138bef1799972361435b
+-r--r--r--    1 akrasnosel  4242   589 Jan 25 15:35 cecab5276808772a752b3377e92a3ff8e47965
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/83:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   178 Jan 27 16:08 1d4f5aa56caed6863e0c28d80bf471b41f17de
+-r--r--r--    1 akrasnosel  4242   210 Jan 25 15:36 d3d35cada9baf93f18ce1794f7d51cc7835c4d
+-r--r--r--    1 akrasnosel  4242   324 Jan 23 19:42 3b8436ab3039382e8d6b368f0f688bc00ce455
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/81:
+total 32
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   176 Jan 23 19:49 f29dad2608a3cb539c1047798a09e864d6bdda
+-r--r--r--    1 akrasnosel  4242   338 Jan 27 16:08 fdf82eb8872eda2f6853a33ccb6b41a5e1cbb5
+-r--r--r--    1 akrasnosel  4242  6454 Jan 25 14:51 73fc3672eb0c826d013b18711a234994e46890
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/7b:
+total 24
+-r--r--r--    1 akrasnosel  4242   121 Jan  5 15:15 20bc5001d7b19f775007f852685b4dff587d64
+-r--r--r--    1 akrasnosel  4242   165 Jan  5 19:20 719079da7bea1755ca3c4962f367c0c3a51bfa
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   832 Jan 25 14:49 3fe4033dc286e635c89e85c38475e60315c47a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/67:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   203 Jan 22 12:08 c2704d1f48159bb55ccd45daf88b207847f891
+-r--r--r--    1 akrasnosel  4242   783 Jan 23 19:49 166b1b1086ccca638c6cbbfe3840302c18253c
+-r--r--r--    1 akrasnosel  4242   810 Jan 25 15:35 c4bc449d4b688de337a25bae62400defd81fae
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/62:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 20:14 .
+-r--r--r--    1 akrasnosel  4242   378 Jan  5 19:20 0ce2170db2430b538f9d66471a4e0f89120280
+-r--r--r--    1 akrasnosel  4242   833 Jan 23 20:14 7966fbf03d3d1977392a813ffe4f8c07615b1b
+-r--r--r--    1 akrasnosel  4242  1535 Jan 25 15:35 fcdfac76d7b09c98b816c979ced11e9e66ba4e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/61:
+total 72
+drwxr-xr-x    5 akrasnosel  4242    170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242    276 Jan 27 16:08 879742f5dbf8049b013fde362ecfafa7a20ab1
+-r--r--r--    1 akrasnosel  4242    665 Jan 22 12:02 255da0d217f131c6ad567fc820af179dd15fc3
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  28649 Jan 27 16:17 32a690becf0bd13954002aa032825bff638016
+
+./.git/objects/60:
+total 24
+-r--r--r--    1 akrasnosel  4242    48 Jan 25 14:51 359fdbf94015b2f85a4e9f0bc9ac48cbcc6729
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   423 Jan 25 14:51 b7ecc586e094ca6440de87441a3243ca472e38
+-r--r--r--    1 akrasnosel  4242  1323 Jan 25 15:35 f6a4f2d24af30de99e2911ce90aa68e0b3c3fa
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5f:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   524 Jan 25 17:46 2927f16ff5d01f4c9ac65474e82fa47bbe47d8
+-r--r--r--    1 akrasnosel  4242   579 Jan 19 18:00 3c29d10315a1829220f3faf1ea72374b2ef5ce
+-r--r--r--    1 akrasnosel  4242   682 Jan 23 19:49 36fa7139bc07c676b07ffc718b7abfb77c4992
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5d:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   205 Jan 27 16:08 f793ecc9a145765e462301f9d4d8a586f58672
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 17:48 2b995d489e93cf5e715a42b0941779649bd304
+-r--r--r--    1 akrasnosel  4242   765 Jan 23 19:49 3802253d62261216af6412954401b44d95ee05
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5b:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   228 Jan 22 12:03 e396bf8cad49c81b18cc5e55b2ab7c37d63dd6
+-r--r--r--    1 akrasnosel  4242   518 Jan 22 12:02 c9e649be63dde74eed60b365d948ca89d667ce
+-r--r--r--    1 akrasnosel  4242   855 Jan  5 22:22 a540fbe0415907b6ce14d0bc8d3e1aaa390884
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/59:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   230 Jan 27 16:08 d021a94a3bcb6cc87d9d2e56c39bf45eb2e469
+-r--r--r--    1 akrasnosel  4242   338 Jan 23 19:41 82217bc2d5b8cbccaf612b0b4b3dcec99f3e0c
+-r--r--r--    1 akrasnosel  4242   510 Jan 22 12:08 9dc62174fdf21de8f075099a89cccec0af1921
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/56:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:49 .
+-r--r--r--    1 akrasnosel  4242   262 Jan 18 20:47 f5e6df5d06118993a93cf47a69f15992aabc85
+-r--r--r--    1 akrasnosel  4242   279 Jan 25 14:49 22f30e9aa50949b38b8d30b333f104904ce34f
+-r--r--r--    1 akrasnosel  4242   357 Jan 22 12:04 be5742ff5348d55a729a7e9e690ad1b9570c04
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/50:
+total 32
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   255 Jan 27 16:08 08ddfcf53c02e82d7eee2e57c38e5672ef89f6
+-r--r--r--    1 akrasnosel  4242   572 Jan 22 12:04 4142c721b1a4ebc2f1a63d5315f50516f22d93
+-r--r--r--    1 akrasnosel  4242  6158 Jan 23 19:49 b83e5cc62972f959fffc3074901d9780ed8e92
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/44:
+total 24
+-r--r--r--    1 akrasnosel  4242    52 Jan 25 14:49 12eea8e320a4898cd1f6f6eec08474489e76bb
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:42 .
+-r--r--r--    1 akrasnosel  4242   311 Jan 23 19:41 bf4fcef3ad4b6f281fff9e1be10c6347825c9c
+-r--r--r--    1 akrasnosel  4242   680 Jan 18 20:47 85e295c64277d068207a628bf0504f88db4b9c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3d:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   401 Jan 25 17:46 83aaace9ac9b188cb0057b088f8ab8f87d795d
+-r--r--r--    1 akrasnosel  4242   427 Jan  5 22:26 157f286812393053c5d577c47600f11da45ed4
+-r--r--r--    1 akrasnosel  4242  1093 Jan 25 14:51 e29632d2af269ad6ec4f38f497077266797132
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3a:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   186 Jan 27 16:08 90868d9e7badd86252408c9e9c59d65c21f7ea
+-r--r--r--    1 akrasnosel  4242   321 Jan  5 22:26 0e72282ea02a1f734f75a5a2055744ca1636c0
+-r--r--r--    1 akrasnosel  4242   470 Jan 18 20:47 c3d074de67b85da63046ca15d1158c6ae255e7
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/33:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 22 12:08 .
+-r--r--r--    1 akrasnosel  4242   262 Jan 22 12:02 3d514c94d1146f20ebf8a4a88d262cc369e071
+-r--r--r--    1 akrasnosel  4242   571 Jan 18 20:47 a3c6afe4ff94665d5fc567534e45467f5d6259
+-r--r--r--    1 akrasnosel  4242   858 Jan 22 12:08 2e7f070d66b73761039842ec1bf523b93a089f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/31:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   600 Jan 27 16:08 f1957d4ab362cf3d664eb6347249efffbe94a3
+-r--r--r--    1 akrasnosel  4242   725 Jan 22 12:08 eb87ceec67c257d9afaa12745981cffd645193
+-r--r--r--    1 akrasnosel  4242   793 Jan 23 19:49 bfc54386201c20b753a24ba3a51f17590906ae
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2f:
+total 24
+-r--r--r--    1 akrasnosel  4242    53 Jan  5 19:20 85e27f7bcdfd1a2a2bfa16ecf229f1d79f7a71
+-r--r--r--    1 akrasnosel  4242   143 Jan 27 16:17 94923221824c991df9d39afade982beea99f0c
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   607 Jan 27 16:08 7e0811497b7e17f5db649fe114e54d81234471
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/29:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   376 Jan  5 19:20 369d3f58a3cf2bda09056c03f02175e6c6c81b
+-r--r--r--    1 akrasnosel  4242   566 Jan 27 16:08 dbf1228fb1cd19992d77c03dfca1ef8b949e57
+-r--r--r--    1 akrasnosel  4242   669 Jan 18 20:47 3400ffc0363739ed07a83b4ff30562feb930ba
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/28:
+total 24
+-r--r--r--    1 akrasnosel  4242   145 Jan 27 16:08 a804d8932aba40f168fd757a74cb718a955a1a
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   835 Jan 18 17:43 183956d543cb8ec4a7411c429e344330403602
+-r--r--r--    1 akrasnosel  4242   862 Jan 25 15:35 96cd6c21e49fedbaa47defa7c56fca95144342
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/23:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   281 Jan 18 20:47 446eead275eb7be782dae0f80261e196874d17
+-r--r--r--    1 akrasnosel  4242   597 Jan 27 16:17 c21a04e58e113723e8d2060ee1542253d7cd57
+-r--r--r--    1 akrasnosel  4242   601 Jan 19 18:00 296eadad66d804ed0263cf8ccdd056166d0ac2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1b:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   366 Jan 27 16:08 2b103d56e68482a5e7dd713634feb88097300b
+-r--r--r--    1 akrasnosel  4242   392 Jan 25 15:35 ed3378acac96d1fd2e13e6c45879ac73bfb840
+-r--r--r--    1 akrasnosel  4242   645 Jan 23 19:41 9378a0a5a17ea85cf3fb7006a47114cd047c01
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/1a:
+total 24
+-r--r--r--    1 akrasnosel  4242    52 Jan 27 16:17 2b10e7986ad4fdc94bfd407450456a5c344573
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   176 Jan 23 20:14 ef3ec1a3f853164584e3648b8a3c67498dbaa8
+-r--r--r--    1 akrasnosel  4242   712 Jan 25 14:51 fe26404addd27eb0625644612c15c7ca9e04ea
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/16:
+total 24
+-r--r--r--    1 akrasnosel  4242   121 Jan  5 15:22 f1187648517ecceaa00257355314d8aff07b54
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   320 Jan 27 16:17 23de1e53709d22735e283350bd66c30f13a56b
+-r--r--r--    1 akrasnosel  4242   833 Jan 25 17:48 cfffd9bf0221c67ed6b4db07b518b4905ce010
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/15:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   452 Jan 18 20:47 c4dcbde9d1ba9bc6893c0f3af184ab9e4279f1
+-r--r--r--    1 akrasnosel  4242   578 Jan 25 14:53 60fbe538c8c280ec1dd1c70d9383155d1e561c
+-r--r--r--    1 akrasnosel  4242   924 Jan 27 16:17 4a90f3e7dc9390a895f92e81ccf3ae1b2d7b5f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/13:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   242 Jan 25 14:51 6cfa7bab4258d87b83117cde7ddfce473db9d2
+-r--r--r--    1 akrasnosel  4242   262 Jan 19 17:59 e0f7837fd382708de7e399832d7ac580d862d8
+-r--r--r--    1 akrasnosel  4242   763 Jan 22 12:02 d56658362f74fd11b7069682bcf4b05b0c782e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/0d:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   280 Jan  5 19:19 79da1fb35dd201f7adfbfa057213a72beb3cb3
+-r--r--r--    1 akrasnosel  4242   355 Jan 22 12:03 df6a614e85d2a27c2f019c91dc181f11cd9dff
+-r--r--r--    1 akrasnosel  4242   407 Jan 25 14:51 c1691e21b03a47e37421c7ec6b366e10e0242a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/07:
+total 24
+drwxr-xr-x    5 akrasnosel  4242   170 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   178 Jan 18 17:44 25c4432dd3dc32ae3c65ea8188910911f86651
+-r--r--r--    1 akrasnosel  4242   279 Jan 25 15:35 cdfdc477a3f364e930d42f597f04ea0c688bf5
+-r--r--r--    1 akrasnosel  4242   768 Jan 22 12:02 0aa2973d61c11420c8f010dc2b30a1e15e8a65
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/fd:
+total 32
+-r--r--r--    1 akrasnosel  4242   203 Jan 25 17:48 e30f769ad5ebf60fcfba8465e12179568842ee
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:48 .
+-r--r--r--    1 akrasnosel  4242   344 Jan 25 15:35 bbece23e55cb90c118c1661461db43d3a0406b
+-r--r--r--    1 akrasnosel  4242   590 Jan 22 12:04 8fd972217bcdc7d262c894f5fca1f2c58dc6e5
+-r--r--r--    1 akrasnosel  4242   611 Jan 25 15:35 f8bb3c3882107e37a365ab949c467e73f8bcb7
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/e5:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   324 Jan 23 19:49 e874332c2337769ac9517d031dcf17b80a9323
+-r--r--r--    1 akrasnosel  4242   405 Jan 25 14:51 c0f25fc18597d50d9e80f2f9a8899a041b87ab
+-r--r--r--    1 akrasnosel  4242   521 Jan 19 18:00 15edf4347c2e9e4df72fde28b475a3f6ed8e8a
+-r--r--r--    1 akrasnosel  4242   639 Jan 27 16:08 9976af9636aabd5bb90e69c3928a5569c8f392
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d8:
+total 40
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   229 Jan 19 18:00 d237523ac774f8270d0ee3d47cb9b7fb0529d7
+-r--r--r--    1 akrasnosel  4242   325 Jan 18 18:01 0eed35c3b8a4f25bf363caa897b722e760a6b6
+-r--r--r--    1 akrasnosel  4242   634 Jan  5 19:19 b617801255d22d265f85c90828b3e6ef8e3e01
+-r--r--r--    1 akrasnosel  4242  6454 Jan 25 14:51 0fdba08270fda0b75b1e8c30af20f6117836bf
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/d0:
+total 32
+-r--r--r--    1 akrasnosel  4242    88 Jan 23 19:41 690572189fc1c5e292dc9e54d1ac6fb2a4f5ce
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   296 Jan 23 19:49 9fe4f10225a4527e024cb5ea33eb31fcee4569
+-r--r--r--    1 akrasnosel  4242   379 Jan 18 17:32 7510ea5e141581218d5b4bf17b31c7b5a62077
+-r--r--r--    1 akrasnosel  4242  3676 Jan  5 22:22 33f5ca1f410b573a6b3418fe749a676b0788ce
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/cc:
+total 56
+drwxr-xr-x    6 akrasnosel  4242    204 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242    896 Jan 27 16:17 6a81eddd29d6193262aed12a9290aa1c777109
+-r--r--r--    1 akrasnosel  4242    967 Jan 17 11:12 7f54eea8e8061df0aee9d8d81a8dd90f31b478
+-r--r--r--    1 akrasnosel  4242   6480 Jan 23 20:13 22c81fe3e6e540501da43d36d5a2ac85a50303
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  11498 Jan 25 14:51 17700d99ba750cd7152732a4c4fb966a70623f
+
+./.git/objects/bb:
+total 32
+-r--r--r--    1 akrasnosel  4242   167 Jan 22 12:02 b5ad6adac5a9fc2e0be724881244cd141d3004
+-r--r--r--    1 akrasnosel  4242   170 Jan 22 12:04 06e155ef9555e278f49398cb083be0b8508210
+-r--r--r--    1 akrasnosel  4242   202 Jan 25 17:47 f969220ba55d65aaf8e8384776475fee4d3fab
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   725 Jan 22 12:02 cd01265b52fc5fd8c1cea03621a5d3bec375c0
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ba:
+total 32
+-r--r--r--    1 akrasnosel  4242   202 Jan 25 14:51 65f0f4524dfea681aae84b00d9a0042c491abd
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   369 Jan  5 22:26 0c97172e1622ebf7ffe89a78c703fcd096fa66
+-r--r--r--    1 akrasnosel  4242   429 Jan 25 17:47 d4138f490bb056a4747f379893d38c6449c8fd
+-r--r--r--    1 akrasnosel  4242   625 Jan 19 18:00 9b35f57989c3b22fec849a6d90da5dd1e0eaf9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ac:
+total 40
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   323 Jan 19 18:00 3a839bb98503a4f203d65803c07c696637c7bd
+-r--r--r--    1 akrasnosel  4242   358 Jan 25 15:35 bb7967e029455bb96b5be1adeb761eb75b0125
+-r--r--r--    1 akrasnosel  4242   584 Jan 25 15:35 3b73b4bf691f371dbacbc2c17e009be8b0ce90
+-r--r--r--    1 akrasnosel  4242  5282 Jan 22 12:03 788e63a9de73155da71da3366d62b226ce6eb9
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9c:
+total 32
+-r--r--r--    1 akrasnosel  4242   171 Jan 27 16:08 34a6a237ddb5ad3763c82b3fdbfe6fdccf6231
+-r--r--r--    1 akrasnosel  4242   182 Jan 27 16:08 521e349cb3b5c74176ba524714346ce673fa72
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   482 Jan 23 19:41 047ec5b480ddafb94deaca726ff2177178eb34
+-r--r--r--    1 akrasnosel  4242   521 Jan 19 18:00 31ff680e233d95714bf5b0e4de19504740578d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/91:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   223 Jan 27 16:08 58d00617166ca8f8ea09db58c6f9c37382b4d5
+-r--r--r--    1 akrasnosel  4242   298 Jan 18 20:47 1b3993a2b19a0472dc698d1b7012aa7b88f7e8
+-r--r--r--    1 akrasnosel  4242   567 Jan 25 17:47 39cfd35fa6c9fba171b35f7550d8fe2f712e72
+-r--r--r--    1 akrasnosel  4242   673 Jan 27 16:08 72cc4fc6e8400dc999d646b5980081dc8ed785
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/90:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   486 Jan 25 17:47 7c1ac0740da27f127a137b0a9dfda107d5d4a0
+-r--r--r--    1 akrasnosel  4242   652 Jan 25 14:49 3cc9c17345c51b3368808cbdf2523567a73cc2
+-r--r--r--    1 akrasnosel  4242   799 Jan 25 14:53 cd096cee363708be4dc23700c9d7e48554f1fe
+-r--r--r--    1 akrasnosel  4242   951 Jan 25 15:35 e42203c9758ae9b385d7738297ead74038a412
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/8e:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   443 Jan 22 12:08 ddc17d3a87b57b6de5e0944ca2c45d15815827
+-r--r--r--    1 akrasnosel  4242   741 Jan 25 14:51 b779a5012ca4ce3f04e3f40f812cf31e836f01
+-r--r--r--    1 akrasnosel  4242   925 Jan 27 16:17 4f7af3bfe31269908060e381b9e6c75a73a14b
+-r--r--r--    1 akrasnosel  4242  1023 Jan 19 18:00 336c2e52f80f411fdbdca87788302c19b1ac97
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/8d:
+total 32
+-r--r--r--    1 akrasnosel  4242   177 Jan 25 21:19 ac8bb4b712d59ce7681246c8c521ca914fd5a2
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   483 Jan 27 16:17 22f0b3118f40efa7e51d51a4895e8ec92ed8bd
+-r--r--r--    1 akrasnosel  4242   494 Jan 25 15:35 7c945fe7f08928fb4ba82577f97d804486db9f
+-r--r--r--    1 akrasnosel  4242   544 Jan 18 20:47 8459840cd72399bca57879b1c8287f0f180c46
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/8c:
+total 32
+-r--r--r--    1 akrasnosel  4242   138 Jan 18 17:47 11072eee42cf547fc0b7680f902ab7015fc455
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:08 .
+-r--r--r--    1 akrasnosel  4242   314 Jan 19 18:00 41a544b8a9739d2e208b6fab2b3c5b6b76d483
+-r--r--r--    1 akrasnosel  4242   352 Jan 22 12:08 175f42332a7d67b762f0798ecb5487a1611d12
+-r--r--r--    1 akrasnosel  4242   571 Jan 22 12:02 7c3d32b7abd9e5efbc6867a9167888afdf5b89
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/8a:
+total 32
+-r--r--r--    1 akrasnosel  4242    91 Jan 27 16:08 5be9ae03a11179aef5e33da82702008805f540
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   605 Jan 19 18:00 e92384943bd2eb7bfdf65810d1dd5ef4482abe
+-r--r--r--    1 akrasnosel  4242   873 Jan 27 16:08 7905fde1c478155f905b4252d7e797306f065f
+-r--r--r--    1 akrasnosel  4242   959 Jan 25 14:51 4191577d9e61661df0db23605b424bffc29244
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/89:
+total 80
+-r--r--r--    1 akrasnosel  4242     58 Jan 23 19:42 958c9576386510c38ffa20d64ba99a855404e2
+drwxr-xr-x    6 akrasnosel  4242    204 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242    424 Jan 25 15:35 d3b68298864fde463b1d15fb81053698628e3e
+-r--r--r--    1 akrasnosel  4242    571 Jan 22 12:03 9fcb3ba30b297e995e809a157162cdb2479890
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  25041 Jan 25 17:46 8e970680c3e6c4933d3d1a3b8faef95ba9ad96
+
+./.git/objects/7f:
+total 32
+-r--r--r--    1 akrasnosel  4242   176 Jan 25 17:47 ce8811232e9a2f70fd28c5c4c630a684a195f5
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   571 Jan 19 17:59 c9771cb0a6ecedebf29695ab32f86073187926
+-r--r--r--    1 akrasnosel  4242   597 Jan 27 16:08 a45be068d57be49d88fb8ce56ddcb3ba224c76
+-r--r--r--    1 akrasnosel  4242   793 Jan 22 12:03 0844842cec7b4f254c3e3c2feb3fa61015ae8c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/7c:
+total 32
+-r--r--r--    1 akrasnosel  4242   145 Jan 27 16:08 c3d7b76b4416f5ca724d0e1bd96b998c633bb0
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   570 Jan 18 18:01 d584e7d2146c321d6fcb14c6310d69823ae5f7
+-r--r--r--    1 akrasnosel  4242   727 Jan 18 17:43 61bf6df9f6910057b901c394b22da6eaa99ee8
+-r--r--r--    1 akrasnosel  4242   770 Jan 23 19:41 c3f7d5b473c2907a1d981a7e3149192e727b97
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/79:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   655 Jan 25 15:35 ffd13713baa56a37b73221af2063535ceb623a
+-r--r--r--    1 akrasnosel  4242   768 Jan 23 19:49 e86816bbceb7ef77c88030f07269092f7c15b2
+-r--r--r--    1 akrasnosel  4242   965 Jan 18 20:47 bbacbf45420ad4913e6aa27194c39a0e080b30
+-r--r--r--    1 akrasnosel  4242  1012 Jan 22 12:08 111516c9b1dfc38f361b0a3fa9fbdaecc3a69e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/76:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   234 Jan 25 17:46 b6484d2503a3e5c322d5130fd7bb10a0ce27ef
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 17:47 77568d521d0a50cfe4b5aafa6698d1c61276cf
+-r--r--r--    1 akrasnosel  4242   351 Jan 25 15:35 1b1d32dc2b913b8db83bf72623a6d843382afb
+-r--r--r--    1 akrasnosel  4242   453 Jan 19 18:00 2b472d72ef94f703990c0af9383fd8d34a5644
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/75:
+total 32
+-r--r--r--    1 akrasnosel  4242    53 Jan 23 19:42 8bde825bbfff4f33b0e3256103b8f19e70a212
+-r--r--r--    1 akrasnosel  4242   144 Jan 25 17:46 da5ab3ac7af47de3b7153d4bc781f4b8596b90
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   415 Jan 19 18:00 b48e9e1844d1c2f47b77e4f1d1ab9edf0526c9
+-r--r--r--    1 akrasnosel  4242   831 Jan 27 16:17 2d9faaa372d2b8a20e48148f0e1694c280cd7a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/72:
+total 32
+-r--r--r--    1 akrasnosel  4242   148 Jan  5 22:33 4f68e392fef07edac6f1d7c58baaefc2c2ab27
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   310 Jan 18 20:47 7c3d553b512a2b5cec896cca6f4f3814924d12
+-r--r--r--    1 akrasnosel  4242   429 Jan 25 17:47 7ff5e26be819114d734200b77d8706cbbfdd57
+-r--r--r--    1 akrasnosel  4242   725 Jan 22 12:02 b385fe578af17d64e360d2dc2738fdde99af42
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6e:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   319 Jan 18 20:47 a49c078282ed1472f9fcd9e46ef6a209c71ecb
+-r--r--r--    1 akrasnosel  4242   324 Jan 22 12:02 e34665961f425a7a03107e0122ecc64adc83a7
+-r--r--r--    1 akrasnosel  4242   795 Jan 23 19:41 309acd1c6e53be2ab2c32714d6112383e4d074
+-r--r--r--    1 akrasnosel  4242   943 Jan 25 15:35 2881777b4d9f540076ac4d4b596c9ac896c064
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6d:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   336 Jan 19 18:00 91824b49e9ecfad50ecc7a4bad01ebfa63d940
+-r--r--r--    1 akrasnosel  4242   397 Jan  5 22:26 8dad3a6135c5fc72bb045229592a3968d0281e
+-r--r--r--    1 akrasnosel  4242   806 Jan 25 14:49 02c45cf7750c97e412b178d70acd9bd7d8c547
+-r--r--r--    1 akrasnosel  4242   836 Jan 25 14:51 1b3e7d984f39343f24d76980f54cf0698533fd
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6c:
+total 32
+-r--r--r--    1 akrasnosel  4242   180 Jan 25 17:46 f6371f7ab20ebe4aacd5e54879bdc67c847a12
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   359 Jan 18 17:43 a1fa47d77c0469729b21ce61053cf8789b17d4
+-r--r--r--    1 akrasnosel  4242   577 Jan 25 14:51 1d05666eb34085968310072831c7ecc035068c
+-r--r--r--    1 akrasnosel  4242   606 Jan 25 17:46 f06eac96b5a591ddfc3fa70e76e0db00a60048
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6b:
+total 32
+-r--r--r--    1 akrasnosel  4242   177 Jan 23 19:49 9ae2749c8bf4de49c38303f9e5baf993e9161b
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   471 Jan 19 18:00 30bb8fbdef5aa076b8a393f934ccbb5ef08a0d
+-r--r--r--    1 akrasnosel  4242   690 Jan  5 22:26 83844a4d72e10e7894966d8fd7614733886738
+-r--r--r--    1 akrasnosel  4242  1052 Jan 22 12:04 48df2d66d0a68a207736c2c41aab0418659d08
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/69:
+total 32
+-r--r--r--    1 akrasnosel  4242   176 Jan  5 19:20 10325534ff19bb32abbfee056848b2f671eb11
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   578 Jan 23 19:41 6ffc299a84e5662b764b946e8e8c287d67b928
+-r--r--r--    1 akrasnosel  4242   618 Jan 25 21:18 4caf3f1bde017be3ab88ff520400f32fb3b896
+-r--r--r--    1 akrasnosel  4242   862 Jan 25 14:51 9effffab9705758078dd507a6c8c29e5806808
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/58:
+total 32
+-r--r--r--    1 akrasnosel  4242   179 Jan 22 12:02 145b2cabbd365d2c13998049735f7dd2bb5699
+-r--r--r--    1 akrasnosel  4242   204 Jan 19 18:00 c248a8423cdd692fb048ce9b422fc2a455858d
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   229 Jan 18 20:47 1ef64021b41d38b0aa9726de28887f072baf52
+-r--r--r--    1 akrasnosel  4242   899 Jan 23 19:49 648733eb2c856cd0fec43e5cde9ff8ab81f5da
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/55:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:49 .
+-r--r--r--    1 akrasnosel  4242   508 Jan 22 12:02 189debfb5bad28a49023c9d83edac44f0857df
+-r--r--r--    1 akrasnosel  4242   542 Jan 18 20:47 ee9e2a2bbc06ef7ad3f463b9e18d5abb93f126
+-r--r--r--    1 akrasnosel  4242   601 Jan 18 20:47 a61f9f1f3f97112f0d1d2221c007b554b845f3
+-r--r--r--    1 akrasnosel  4242   783 Jan 23 19:49 0781289a3117f05080137f4b09b47bc6ddb895
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/54:
+total 32
+-r--r--r--    1 akrasnosel  4242    52 Jan  5 22:26 aca0992847e8a6b2596bd05798b6349bd4f98f
+-r--r--r--    1 akrasnosel  4242    53 Jan 25 14:53 c6066d02906e03dfbd050d6c06a926a4e892d1
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   255 Jan 27 16:08 2b5bfd8f63b653988c0bc30ff467141ed716f6
+-r--r--r--    1 akrasnosel  4242   807 Jan 25 21:18 c03ad54ac8885a2c22a69c728bb2746527bc5d
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/51:
+total 32
+-r--r--r--    1 akrasnosel  4242   137 Jan 27 16:08 8bb20c6907401d4f0c174afa6d31cdb9f339b1
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   323 Jan 25 14:51 d312d76b3a2129696087719dd3c258b98f7220
+-r--r--r--    1 akrasnosel  4242   497 Jan 25 15:35 b9b8d73b108eca5fd4215510fc6174890d9d94
+-r--r--r--    1 akrasnosel  4242   500 Jan 19 18:00 8f50b60bfca2542451801f77fe1922b2da18d1
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/4f:
+total 32
+-r--r--r--    1 akrasnosel  4242   144 Jan 22 12:02 e000e897d90b18bcca90ed13a055d2f541628b
+-r--r--r--    1 akrasnosel  4242   170 Jan  5 15:27 e79759340c170a91c6124ffd8c0b0f03381364
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   378 Jan  5 22:26 f484bf0be486b2ea1e67e0c298711cda873ae9
+-r--r--r--    1 akrasnosel  4242   997 Jan 25 15:35 f9532cf0cee440eec0262851ab59d970aa4647
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/49:
+total 32
+-r--r--r--    1 akrasnosel  4242   176 Jan 25 15:36 66653a040a5d5d10f1f4366ccc973745517551
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:36 .
+-r--r--r--    1 akrasnosel  4242   207 Jan 18 17:47 828dbc1de6af083c6fe702a76772c2ee4f06b7
+-r--r--r--    1 akrasnosel  4242   311 Jan 22 12:02 18df2782ac838665cf7cb63e40838fafe14577
+-r--r--r--    1 akrasnosel  4242   423 Jan 25 15:35 58983f8e1d321414165dbe2adaf7e550d5c667
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/46:
+total 32
+-r--r--r--    1 akrasnosel  4242   169 Jan  5 19:20 42a5b7f4e3aaee516a9fe40db49cd35d51d521
+-r--r--r--    1 akrasnosel  4242   175 Jan  5 19:19 6921b38132be948d7dfaa393a769fe3880ad5d
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:19 .
+-r--r--r--    1 akrasnosel  4242   288 Jan 25 21:19 e42bd45e8e5b31e0cc143ce0dc80ba4389d3d8
+-r--r--r--    1 akrasnosel  4242   678 Jan 25 17:47 7630c2a0defba0d76a7d88add666beee6855af
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/3b:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   427 Jan 23 19:41 c1d9544f920e32e0447a02a830bc31f84e1c3d
+-r--r--r--    1 akrasnosel  4242   570 Jan 22 12:03 6bf22f5fa104208880985b83d696081e1ec88e
+-r--r--r--    1 akrasnosel  4242   779 Jan 23 19:41 3d4ae14dcc17ffc61bd7a93b352e546b60c4b1
+-r--r--r--    1 akrasnosel  4242  1342 Jan 19 18:00 7201d88174d2298989f5fd1b00b7a59eb73b3e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/39:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 17:47 ac07fc3fc049f8c3288ec5cf41f95c1076f01e
+-r--r--r--    1 akrasnosel  4242   425 Jan 18 20:47 86f0d58fa799675df1e59df3ef22d6975b7faa
+-r--r--r--    1 akrasnosel  4242   808 Jan 27 16:17 3687ccface3e9c576c4660b5249ceed33d3861
+-r--r--r--    1 akrasnosel  4242   812 Jan 25 17:48 8825f51fa11283fcdc208ada72deb91eead001
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/2c:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   355 Jan 27 16:08 fdfc16a33ebe5f7021e71d9eb6a7894c8f6dd2
+-r--r--r--    1 akrasnosel  4242   551 Jan 23 19:41 b524e56fa589fb507956a460c4bbdee7bc3ca7
+-r--r--r--    1 akrasnosel  4242   742 Jan 25 14:51 7ec17c7d109f4d2c519e5122f4f10058dce00c
+-r--r--r--    1 akrasnosel  4242   805 Jan 23 19:49 dfd213f713dd22941fa654776d19b998bfd3a8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/24:
+total 32
+-r--r--r--    1 akrasnosel  4242   199 Jan  5 22:22 dab708676b41f88bc82092fd1f7fae3e1ce5a5
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   486 Jan 27 16:08 c668d6e0399a23fa67bde63152fdc79500c58f
+-r--r--r--    1 akrasnosel  4242   759 Jan 18 20:47 daf8ad90261b07f40b87ab209af96b76ea3d87
+-r--r--r--    1 akrasnosel  4242   885 Jan 18 18:01 3fea57298672118e03c3afb106d825267669b1
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/20:
+total 32
+-r--r--r--    1 akrasnosel  4242   141 Jan 19 18:00 0a40320fd92039e40691655f04bec688fb41b3
+-r--r--r--    1 akrasnosel  4242   150 Jan 27 16:08 5dea1efec7330a68da92519996a1aa4bd7aa2e
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   322 Jan 22 12:08 b88eebd7b2ac35ff554a57c28ef8c08c0c2d91
+-r--r--r--    1 akrasnosel  4242   829 Jan 27 16:08 b47e7dec39ba5809a156504626cba32b14d40c
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/17:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   468 Jan 18 20:47 b6bd085b81c1c79262a4ef5e8a28bd08dd4aff
+-r--r--r--    1 akrasnosel  4242   658 Jan 23 19:41 cce65c83901bd2ebf444a76a649278cd3a07d1
+-r--r--r--    1 akrasnosel  4242   706 Jan 18 18:01 91bd2874bf89eb7ac14d076f522b54806cb6b8
+-r--r--r--    1 akrasnosel  4242   840 Jan 23 19:49 ead7b04e0f7138759e22ba19712d98b077dcc8
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/12:
+total 32
+-r--r--r--    1 akrasnosel  4242   169 Jan  5 22:22 20a859ce1fd320c018dcfb278b819816cb0b02
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 15:36 .
+-r--r--r--    1 akrasnosel  4242   711 Jan 18 18:01 27dbd47cb218385c8a7bcfe6c4d5738a8caa65
+-r--r--r--    1 akrasnosel  4242   789 Jan 23 19:49 103e598e5350e4394fa2ddb30810fa40d9d602
+-r--r--r--    1 akrasnosel  4242   835 Jan 25 15:36 a2bb5caf94c4932eb5c34805f4c8c428574026
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/08:
+total 32
+drwxr-xr-x    6 akrasnosel  4242   204 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   262 Jan 22 12:02 38c432994b69f1751cf3e3c4fadfb7e2632b98
+-r--r--r--    1 akrasnosel  4242   412 Jan 27 16:08 70cf178db180595adaeed1971a82d641972073
+-r--r--r--    1 akrasnosel  4242   722 Jan 22 12:02 468430de05aeefb56e868462aee565f19c9a2d
+-r--r--r--    1 akrasnosel  4242   836 Jan 25 17:47 97605ab028780031e40e6ecf64094b71f4a73e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/ff:
+total 40
+-r--r--r--    1 akrasnosel  4242    52 Jan 22 12:02 afdd4c60ce5fe760ea46ae4aeb30767281847f
+-r--r--r--    1 akrasnosel  4242   177 Jan 25 14:49 ce25768ddea7a383ba559da6e2ab84a102a387
+-r--r--r--    1 akrasnosel  4242   234 Jan 25 15:36 3371a9ffd78c132bc86901f03f5fd6c160d968
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   453 Jan 25 14:51 a6c32fa45fd076319575808e15aed18e58e997
+-r--r--r--    1 akrasnosel  4242   924 Jan 27 16:08 0683155d7a522bfbb30efef6241853b0482035
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/f2:
+total 56
+-r--r--r--    1 akrasnosel  4242   202 Jan 22 12:02 a09a17ca0a6f6c919732595e80a50d740da82e
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   339 Jan 25 17:46 0e48922f06bd5c85cd982c65172cb2205af068
+-r--r--r--    1 akrasnosel  4242   407 Jan  5 22:22 3c05b18b5900e301c32b940a52aa3c73e2fb77
+-r--r--r--    1 akrasnosel  4242   888 Jan 18 20:47 92dee74f5c72b9f74838e6f870f8e317a45641
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  8456 Jan 19 18:00 6acd8094020ff59acde8bec9bc55ecf6a79822
+
+./.git/objects/eb:
+total 40
+-r--r--r--    1 akrasnosel  4242    53 Jan 22 12:02 d1bf9127ec982ae15cacaa1b37c45a2afee146
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 15:36 .
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 15:36 e89f10813d5b449fb8b590f9fa8d25a2fded8d
+-r--r--r--    1 akrasnosel  4242   480 Jan 23 19:49 2a24a86816fc156625a5517830ad0b739aa8ec
+-r--r--r--    1 akrasnosel  4242   519 Jan 22 12:02 cdbb59585978b8f2d49bdea54b597a52041d2b
+-r--r--r--    1 akrasnosel  4242   795 Jan 25 15:35 78f53879a44355aa85c85ec63e15ebe4d25d00
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/dd:
+total 40
+-r--r--r--    1 akrasnosel  4242    48 Jan 27 16:17 2cd6e604e6dbfd44d375f9d928b47bf77cf7ab
+-r--r--r--    1 akrasnosel  4242   196 Jan 23 19:41 fa726a82c0920eb9ade94fcc42ddc4d2745d8d
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   342 Jan 22 12:08 5657de0b77b50e7971d91a56786efcc429f0a1
+-r--r--r--    1 akrasnosel  4242   609 Jan 25 15:35 9b29b6f77dbe220184cfdd3c42f8bb510de2c9
+-r--r--r--    1 akrasnosel  4242   711 Jan 18 17:43 adad1abbba97c5d45da0c6e24f3d84bb756f43
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/a5:
+total 40
+-r--r--r--    1 akrasnosel  4242   204 Jan 22 12:02 13a1ebf172e6989a19de0ccabb9dbb7f9e9f07
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 22 12:02 .
+-r--r--r--    1 akrasnosel  4242   410 Jan 18 17:43 0e76c9b7fae3ddeecbd456139c2f169bd5d18f
+-r--r--r--    1 akrasnosel  4242   596 Jan 18 20:47 50679cc7ddaac0ca7a8752dfa8f11a1158ce0f
+-r--r--r--    1 akrasnosel  4242   799 Jan 18 17:43 97300fb1e08361671d392c13d105b6ac2e5377
+-r--r--r--    1 akrasnosel  4242  2770 Jan 18 18:01 f0389a4ff2da8cd80f770d8a18e20b82f1f665
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/6a:
+total 40
+-r--r--r--    1 akrasnosel  4242   129 Jan 27 16:08 d5842f12bd49d4cfa1bc9a59c86ca7af4fa17b
+-r--r--r--    1 akrasnosel  4242   173 Jan 25 14:51 1506014965d5ed9d54c5e1869b696a71f796bf
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 17:46 .
+-r--r--r--    1 akrasnosel  4242   270 Jan 27 16:08 5fa2bc6b51e3e0b88334f1fbf0a0bb5770da06
+-r--r--r--    1 akrasnosel  4242   831 Jan 25 17:46 42a6fb0189bc5cb03f1fcd33e9c9fe327be4a5
+-r--r--r--    1 akrasnosel  4242  1031 Jan 23 19:49 5d9d26e33b6a2c6d655742d5c9fe59a5ef8569
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/5c:
+total 56
+-r--r--r--    1 akrasnosel  4242    50 Jan 27 16:17 0b1f61000a868c2964e3586f365ebcc1e6bbf9
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   430 Jan 25 14:51 ec8180adb6ada2611a5440826b900c2673bbb0
+-r--r--r--    1 akrasnosel  4242   640 Jan 25 17:46 a9a1778ef4192f30ced503b8e384b2143c3d05
+-r--r--r--    1 akrasnosel  4242   945 Jan 25 14:51 9a6ed5714ba5d0c528568b70ceb22974e1f293
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  9503 Jan 22 12:02 c582c39fc4baeec3e163915044fe34394ab774
+
+./.git/objects/4a:
+total 40
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 23 20:13 .
+-r--r--r--    1 akrasnosel  4242   371 Jan 25 14:49 8444760fd05d4ac3f0cabbb3e015d1ef33e7da
+-r--r--r--    1 akrasnosel  4242   687 Jan  5 22:26 bf11f704121f8a13ac148e52d8c774c9da1a57
+-r--r--r--    1 akrasnosel  4242   767 Jan 22 12:02 b553dbf2e008eafe1bda8ae916e21ebaee8d23
+-r--r--r--    1 akrasnosel  4242   861 Jan 25 15:35 22b0da706b68042225b2f906a2363d2b3f3f61
+-r--r--r--    1 akrasnosel  4242   981 Jan 27 16:08 d377f981dece12623a3bc82f8177f99bc6babb
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/45:
+total 40
+-r--r--r--    1 akrasnosel  4242   168 Jan 23 19:41 452e3aad099053f2423bd5314adff2f79793cf
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 22 12:03 .
+-r--r--r--    1 akrasnosel  4242   366 Jan 25 14:51 5c368eab3fefa7472ec10248eb6195c7eecd47
+-r--r--r--    1 akrasnosel  4242  1297 Jan 18 17:47 580486136ee74e630e70b4ee433f1ef7beb500
+-r--r--r--    1 akrasnosel  4242  2344 Jan 22 12:02 365b255062420235e5846d3b0fb788302677bf
+-r--r--r--    1 akrasnosel  4242  2878 Jan 22 12:03 d86d0d2884c2b462e63c1ce1cff47958fee0a3
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/34:
+total 48
+-r--r--r--    1 akrasnosel  4242   235 Jan 18 17:47 361414dc6161bc378ba720828dac4c0ded98a0
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   350 Jan  5 22:26 c876acafc5fedb9221221c230857dfdb3dcebc
+-r--r--r--    1 akrasnosel  4242   600 Jan 27 16:17 c1112baa84b428ba4cb7c8a7216f2035317311
+-r--r--r--    1 akrasnosel  4242   667 Jan 25 14:49 d87f5f5941618374cf455ac92e884eaddec51f
+-r--r--r--    1 akrasnosel  4242  5318 Jan 19 18:00 9c7d5db8acf83a7b91972d26ec613a0c8d3af0
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/22:
+total 40
+-r--r--r--    1 akrasnosel  4242    98 Jan 18 18:01 eb07b94bcde7cba46380781f620ecad9fc1c0d
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   369 Jan 18 17:44 942d23558ddc053fa1391e9f1813ad93600a51
+-r--r--r--    1 akrasnosel  4242   676 Jan 23 19:49 e3884479af82233c9442cb257651450251f806
+-r--r--r--    1 akrasnosel  4242   861 Jan 25 14:51 f46044fd566dfbeb8da6230f5574e957df95fd
+-r--r--r--    1 akrasnosel  4242  1528 Jan 25 14:51 89d5924a9f9035c9d011d61b9396b067cb07cf
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/01:
+total 40
+-r--r--r--    1 akrasnosel  4242   182 Jan  5 22:33 aa5217e9e4211e247f218f496d3e09cd374b26
+drwxr-xr-x    7 akrasnosel  4242   238 Jan 27 16:08 .
+-r--r--r--    1 akrasnosel  4242   320 Jan 27 16:08 ec66da2fd30e3f1694472ef20274c282b2f56f
+-r--r--r--    1 akrasnosel  4242   588 Jan 25 15:35 393ea1d89d1a58632cbb47148cdbc4ffb08147
+-r--r--r--    1 akrasnosel  4242   605 Jan 22 12:02 41372ec15231a2e8308b8c488a1e4a2958ebec
+-r--r--r--    1 akrasnosel  4242   777 Jan 25 14:51 1360df28659b017659806cd4c977790d039089
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/dc:
+total 72
+-r--r--r--    1 akrasnosel  4242   166 Jan  5 22:22 0df263037a72922080974711118e9d76b17e8c
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   471 Jan 25 15:35 3e05c9d7c1b26effab76348cbe4e725e354bc1
+-r--r--r--    1 akrasnosel  4242   504 Jan 19 18:00 100aa083f4deefeac4dcc98faeb6610f8b5d7b
+-r--r--r--    1 akrasnosel  4242  5295 Jan 18 20:47 dc8867062201a2653f64efe38b23ee68fdca11
+-r--r--r--    1 akrasnosel  4242  6164 Jan 22 12:02 d2e08eebbfb50d95499d1535b097e28e48dbce
+-r--r--r--    1 akrasnosel  4242  8122 Jan 18 20:47 e06f8e03f676ef2d3ae76cbd75f2081c9fad23
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9e:
+total 48
+-r--r--r--    1 akrasnosel  4242   176 Jan 22 12:02 40d4e0b65bd63285a14aeca4deec6ec0f19922
+-r--r--r--    1 akrasnosel  4242   183 Jan 27 16:08 70d708c168e8cd64c71d203d14954fa128f2bc
+-r--r--r--    1 akrasnosel  4242   272 Jan 23 19:41 ab49c466ecc53f3f202e2f2a4e0837a00fb4ed
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 23 19:41 .
+-r--r--r--    1 akrasnosel  4242   322 Jan 22 12:02 1aeec608194ccad0e233a5b841359679390dfe
+-r--r--r--    1 akrasnosel  4242   408 Jan 22 12:04 b707acb7a5af8482ef51f75f07c1f303439c7f
+-r--r--r--    1 akrasnosel  4242   520 Jan 22 12:02 7dedb8328fe4025bc21ee1eb6e0482d35c04cd
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/9d:
+total 48
+-r--r--r--    1 akrasnosel  4242   172 Jan 18 18:01 36b1bf73af94356e68a672d62fd7202a959d1b
+-r--r--r--    1 akrasnosel  4242   252 Jan 27 16:08 96745c08f03940fa5cd37ba04bb0ca71c9baf1
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   693 Jan  5 22:33 2dfecb338ca9b0073afa4929fb7713f0d0cf24
+-r--r--r--    1 akrasnosel  4242   749 Jan 23 19:42 fe764ef4838c0f47343e44349467537f2b31e1
+-r--r--r--    1 akrasnosel  4242   800 Jan 22 12:02 855154b67b0e625eb32368ed8e6d1190429faf
+-r--r--r--    1 akrasnosel  4242  1104 Jan 25 15:35 22864a2aa07f8ebeb802b5213becb1a4789d98
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/53:
+total 48
+-r--r--r--    1 akrasnosel  4242   173 Jan 18 17:32 1fefbc0abeba6a3a6598092e42fb8dddd89c3a
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   421 Jan 25 15:35 bda5a0e2fb3ab1899e5205542273c067d5b6b1
+-r--r--r--    1 akrasnosel  4242   454 Jan 22 12:08 5a9ce91b2ec2ab3249284fec6f5e8b03fe7a2c
+-r--r--r--    1 akrasnosel  4242   570 Jan 22 12:02 ac55d4ae4a1063fc99a26e2f714ef6c070339d
+-r--r--r--    1 akrasnosel  4242   833 Jan 25 14:51 a668732782620e35de1fd996b035b8354c0c45
+-r--r--r--    1 akrasnosel  4242  1393 Jan 18 17:45 95524c394385dbd848d69f68200ea83ac9d729
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/4b:
+total 64
+-r--r--r--    1 akrasnosel  4242     15 Jan  5 15:27 825dc642cb6eb9a060e54bf8d69288fbee4904
+-r--r--r--    1 akrasnosel  4242    173 Jan 25 14:51 f4f0db4e485ffebb6c27260f66b04429e3b940
+-r--r--r--    1 akrasnosel  4242    203 Jan 23 19:49 2683bdf31bd6a5557bbd4c23bc1b002d09555a
+drwxr-xr-x    8 akrasnosel  4242    272 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242    299 Jan  5 22:26 3dd7671827011436af505a52bc95ed14563d27
+-r--r--r--    1 akrasnosel  4242    548 Jan 25 15:35 3f5290aae41f8e98ba3b328995f57e45165445
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242  11573 Jan 25 15:35 8228dfb2f9259eb3472a2930cb16b27d28aa0b
+
+./.git/objects/26:
+total 48
+-r--r--r--    1 akrasnosel  4242    53 Jan 22 12:04 5f3b92c55ea74ce01ba69bc1bc17eb513cbe5e
+-r--r--r--    1 akrasnosel  4242   197 Jan 27 16:17 9854dd8a73d83a2afad519160f4df7fee3b26d
+drwxr-xr-x    8 akrasnosel  4242   272 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   453 Jan  5 22:33 cee9101afe817c63d3b61070435507ea357e55
+-r--r--r--    1 akrasnosel  4242   777 Jan 25 17:46 1bcff6c3a92436ffb946b9532892db8c0de038
+-r--r--r--    1 akrasnosel  4242   832 Jan 25 14:53 79952d857e814329ee2a4689865c6462ec5ee9
+-r--r--r--    1 akrasnosel  4242  1343 Jan 27 16:17 659e076955d11075d8c245cba1d88d9157453e
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/bd:
+total 56
+-r--r--r--    1 akrasnosel  4242    53 Jan 22 12:08 dd32418fa6ac3d4b6b02ae462725cc941c339b
+-r--r--r--    1 akrasnosel  4242   144 Jan 22 12:08 ece388ced15aa397e73f55f8c56d65e9aa09e0
+-r--r--r--    1 akrasnosel  4242   234 Jan 17 11:12 ec93365c2f05e05aa55ce961b1f66e584de4ac
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 17:47 .
+-r--r--r--    1 akrasnosel  4242   486 Jan 25 17:47 a9e5520e2b21c1b3f42d000692531155a23f82
+-r--r--r--    1 akrasnosel  4242   621 Jan 18 20:47 6156bd9e4a4d4a2d30bc749d7a80480895d2fc
+-r--r--r--    1 akrasnosel  4242  1083 Jan 25 14:51 16693b257d4118ccd8c8bc4e56cfd41cc614a9
+-r--r--r--    1 akrasnosel  4242  3667 Jan  5 19:19 2c42013e04b1380fc131ccfd04e657e980b01a
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/86:
+total 56
+-r--r--r--    1 akrasnosel  4242    50 Jan 25 17:46 d3d5bc98f37e7e75219587b1e2ff658a18ed17
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 15:35 .
+-r--r--r--    1 akrasnosel  4242   348 Jan 25 15:35 afef89033ad484d7793ca951ff8517f52157c2
+-r--r--r--    1 akrasnosel  4242   351 Jan 25 14:49 844754695deac4ec9dd40b1ed16cc81e4ae8cd
+-r--r--r--    1 akrasnosel  4242   525 Jan  5 22:26 bbad0727cdd945d74c1dd334891adc67505bc5
+-r--r--r--    1 akrasnosel  4242   542 Jan 25 15:35 5bfb1920a0e223ab1fb4f4b46dfa024c19feb1
+-r--r--r--    1 akrasnosel  4242   711 Jan 22 12:02 85295801f2e06f6a163d7a699a34ce96b9c5f3
+-r--r--r--    1 akrasnosel  4242   970 Jan 25 14:51 a73dabf6229f2e0e22aa8f450cf7ccc95b3111
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/63:
+total 56
+-r--r--r--    1 akrasnosel  4242    48 Jan 27 16:17 f0d63a0b8445b8902600e30a9ec97f97a3ddc2
+-r--r--r--    1 akrasnosel  4242    82 Jan  5 15:00 2cb93f3f10778a11b9cf5c3786774eb7a68477
+-r--r--r--    1 akrasnosel  4242   181 Jan 27 16:08 09fc9ff20d4b0255c77fd201c556f4ce937688
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 27 16:17 .
+-r--r--r--    1 akrasnosel  4242   339 Jan  5 19:19 cb725d6ef12c714f342f96b60049740a1c563a
+-r--r--r--    1 akrasnosel  4242   525 Jan 27 16:08 6aba7795fb0ba9b827e8eb2b21318d3785bb01
+-r--r--r--    1 akrasnosel  4242   546 Jan 25 14:51 edb783a100b1f489689bec8b56f4a15fee418b
+-r--r--r--    1 akrasnosel  4242  2738 Jan 27 16:08 3a70f86c8e3bd56399e5fd2131ce1aa4dcf1fd
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/41:
+total 56
+-r--r--r--    1 akrasnosel  4242   143 Jan 25 14:51 084e2aa229442592e4043de09016d38eba150c
+-r--r--r--    1 akrasnosel  4242   144 Jan 22 12:02 05525415f2d1ec9e8fef9b7eb48ef3f243dd95
+-r--r--r--    1 akrasnosel  4242   263 Jan 22 12:02 18d004a2a258db07b97f29cbaa44889fa46052
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 14:51 .
+-r--r--r--    1 akrasnosel  4242   344 Jan 18 20:47 c308202b337fc162b2e1243306fe103146ca54
+-r--r--r--    1 akrasnosel  4242   544 Jan 23 19:49 67eae72acd141a630cb53f972304de4291cbb6
+-r--r--r--    1 akrasnosel  4242   799 Jan 25 17:48 94e9d6dc690749aa932b8281e61ab8bcdcc3c9
+-r--r--r--    1 akrasnosel  4242   959 Jan 18 18:01 7fd0e1abae94eda136386fa17b76fac6d6ffe2
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/35:
+total 56
+-r--r--r--    1 akrasnosel  4242   115 Jan 27 16:08 cd4b10c1a32d0d3c01dba7759b9df0998457a3
+-r--r--r--    1 akrasnosel  4242   164 Jan  5 22:26 eb8d4c2f222e1b57a793d796ddca2d69c51cb6
+-r--r--r--    1 akrasnosel  4242   258 Jan 25 21:18 2bb9ec9d5e5f9b5565883ff95219646a3ffeeb
+-r--r--r--    1 akrasnosel  4242   290 Jan 25 14:49 4270f4eece46ecfdc4335564bfe03c9adc5187
+drwxr-xr-x    9 akrasnosel  4242   306 Jan 25 21:18 .
+-r--r--r--    1 akrasnosel  4242   307 Jan 22 12:02 036dfcb979e79cd511a3515762cc9ff9b9ee08
+-r--r--r--    1 akrasnosel  4242   404 Jan 25 15:35 f33e2a2d3061354e3867332028195b0c7dff94
+-r--r--r--    1 akrasnosel  4242   924 Jan 25 15:35 d6ffeecd73dc1bcf8aeb4eb0cd5f45aa2c2a7f
+drwxr-xr-x  243 akrasnosel  4242  8262 Jan 27 16:17 ..
+
+./.git/objects/aa:
+total 96
+-r--r--r--    1 akrasnosel  4242     50 Jan 27 16:08 60f3921dcf4d7bf1b983fbad210a2810f0c83e
+-r--r--r--    1 akrasnosel  4242     91 Jan 25 14:51 bb1721dc8cfec7093f88e7e4de4920884a2a7e
+-r--r--r--    1 akrasnosel  4242    110 Jan 17 11:12 ce2944905f2c44fb82ecd572c1db68649678fb
+-r--r--r--    1 akrasnosel  4242    175 Jan 23 19:42 0cf24229bb96dc33f8db2186f92ce5cbddb6c8
+-r--r--r--    1 akrasnosel  4242    191 Jan 27 16:08 b486e497725966f57d7fa755027f6dcf772eeb
+-r--r--r--    1 akrasnosel  4242    204 Jan 18 18:01 38779dd01fb7905ad43d8a44c3be120e6df5be
+drwxr-xr-x   10 akrasnosel  4242    340 Jan 27 16:08 .
+drwxr-xr-x  243 akrasnosel  4242   8262 Jan 27 16:17 ..
+-r--r--r--    1 akrasnosel  4242   9784 Jan 22 12:03 47e9912a66d71ceaadf734a245006a64077379
+-r--r--r--    1 akrasnosel  4242  11224 Jan 23 19:49 6fbe57acef49a30758c3b9d36fe896fe8803a7
+
+./obj:
+total 664
+drwxr-xr-x  16 akrasnosel  4242    544 Jan 28 17:34 ..
+drwxr-xr-x  30 akrasnosel  4242   1020 Jan 28 17:34 .
+-rw-r--r--   1 akrasnosel  4242   2428 Jan 28 17:34 mx_intlen.o
+-rw-r--r--   1 akrasnosel  4242   2988 Jan 28 17:34 mx_str_copy.o
+-rw-r--r--   1 akrasnosel  4242   5252 Jan 28 17:34 mx_get_ws.o
+-rw-r--r--   1 akrasnosel  4242   5252 Jan 28 17:34 mx_find_path.o
+-rw-r--r--   1 akrasnosel  4242   6752 Jan 28 17:34 mx_dir_arr.o
+-rw-r--r--   1 akrasnosel  4242   6760 Jan 28 17:34 mx_simple_out.o
+-rw-r--r--   1 akrasnosel  4242   6768 Jan 28 17:34 mx_file_arr.o
+-rw-r--r--   1 akrasnosel  4242   6808 Jan 28 17:34 mx_files_quantity.o
+-rw-r--r--   1 akrasnosel  4242   6828 Jan 28 17:34 mx_define_flags.o
+-rw-r--r--   1 akrasnosel  4242   6888 Jan 28 17:34 mx_flag_g.o
+-rw-r--r--   1 akrasnosel  4242   7372 Jan 28 17:34 mx_files_in_dir.o
+-rw-r--r--   1 akrasnosel  4242   7640 Jan 28 17:34 mx_print_cols.o
+-rw-r--r--   1 akrasnosel  4242   8432 Jan 28 17:34 main.o
+-rw-r--r--   1 akrasnosel  4242   8760 Jan 28 17:34 mx_for_flagl_two.o
+-rw-r--r--   1 akrasnosel  4242   9132 Jan 28 17:34 mx_colour_out.o
+-rw-r--r--   1 akrasnosel  4242   9308 Jan 28 17:34 mx_print_link_update.o
+-rw-r--r--   1 akrasnosel  4242   9552 Jan 28 17:34 mx_upgraded_sort.o
+-rw-r--r--   1 akrasnosel  4242   9568 Jan 28 17:34 mx_flag_sort.o
+-rw-r--r--   1 akrasnosel  4242  10500 Jan 28 17:34 mx_file_specified.o
+-rw-r--r--   1 akrasnosel  4242  10816 Jan 28 17:34 mx_flags_filter.o
+-rw-r--r--   1 akrasnosel  4242  12504 Jan 28 17:34 mx_print_name_acl.o
+-rw-r--r--   1 akrasnosel  4242  12644 Jan 28 17:34 mx_file_mode_check.o
+-rw-r--r--   1 akrasnosel  4242  13300 Jan 28 17:34 mx_sorting_flags.o
+-rw-r--r--   1 akrasnosel  4242  15356 Jan 28 17:34 mx_acl_line.o
+-rw-r--r--   1 akrasnosel  4242  16416 Jan 28 17:34 mx_recursion_call.o
+-rw-r--r--   1 akrasnosel  4242  16720 Jan 28 17:34 mx_flag_l.o
+-rw-r--r--   1 akrasnosel  4242  19236 Jan 28 17:34 mx_for_flagl_one.o
+-rw-r--r--   1 akrasnosel  4242  20984 Jan 28 17:34 mx_print_size_mm.o
+
+./src:
+total 256
+-rw-r--r--   1 akrasnosel  4242   144 Jan 19 18:01 mx_del_timearr.c
+-rw-r--r--   1 akrasnosel  4242   172 Jan 19 18:01 mx_intlen.c
+-rw-r--r--   1 akrasnosel  4242   262 Jan 25 15:18 mx_str_copy.c
+-rw-r--r--   1 akrasnosel  4242   271 Jan 25 21:20 mx_get_ws.c
+-rw-r--r--   1 akrasnosel  4242   475 Jan 27 16:09 mx_find_path.c
+-rw-r--r--   1 akrasnosel  4242   516 Jan 25 21:20 mx_dir_arr.c
+-rw-r--r--   1 akrasnosel  4242   543 Jan 25 21:20 mx_file_arr.c
+drwxr-xr-x  16 akrasnosel  4242   544 Jan 28 17:34 ..
+-rw-r--r--   1 akrasnosel  4242   557 Jan 25 21:20 mx_files_quantity.c
+-rw-r--r--   1 akrasnosel  4242   806 Jan 28 17:34 mx_simple_out.c
+-rw-r--r--   1 akrasnosel  4242   859 Jan 25 17:49 mx_for_flagl_two.c
+-rw-r--r--   1 akrasnosel  4242   864 Jan 27 20:43 mx_flag_sort.c
+drwxr-xr-x  32 akrasnosel  4242  1088 Jan 28 17:16 .
+-rw-r--r--   1 akrasnosel  4242  1173 Jan 27 20:42 mx_upgraded_sort.c
+-rw-r--r--   1 akrasnosel  4242  1185 Jan 22 12:11 mx_print_name_acl.c
+-rw-r--r--   1 akrasnosel  4242  1195 Jan 28 17:20 mx_define_flags.c
+-rw-r--r--   1 akrasnosel  4242  1293 Jan 28 14:36 mx_flag_g.c
+-rw-r--r--   1 akrasnosel  4242  1312 Jan 27 16:09 mx_print_link_update.c
+-rw-r--r--   1 akrasnosel  4242  1365 Jan 28 17:35 mx_print_cols.c
+-rw-r--r--   1 akrasnosel  4242  1578 Jan 27 16:09 mx_colour_out.c
+-rw-r--r--   1 akrasnosel  4242  1653 Jan 28 17:31 main.c
+-rw-r--r--   1 akrasnosel  4242  1693 Jan 28 17:25 mx_flags_filter.c
+-rw-r--r--   1 akrasnosel  4242  1757 Jan 27 16:09 mx_sorting_flags.c
+-rw-r--r--   1 akrasnosel  4242  1843 Jan 27 20:21 mx_files_in_dir.c
+-rw-r--r--   1 akrasnosel  4242  1871 Jan 27 16:09 mx_file_mode_check.c
+-rw-r--r--   1 akrasnosel  4242  1874 Jan 28 17:20 mx_file_specified.c
+-rw-r--r--   1 akrasnosel  4242  2078 Jan 25 21:20 mx_recursion_call.c
+-rw-r--r--   1 akrasnosel  4242  2250 Jan 27 16:18 mx_flag_l.c
+-rw-r--r--   1 akrasnosel  4242  2376 Jan 22 12:11 mx_acl_line.c
+-rw-r--r--   1 akrasnosel  4242  2965 Jan 23 19:58 mx_for_flagl_one.c
+-rw-r--r--   1 akrasnosel  4242  5045 Jan 27 16:18 mx_print_size_mm.c
+-rw-r--r--   1 akrasnosel  4242  6148 Jan 19 18:01 .DS_Store
