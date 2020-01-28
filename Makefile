@@ -28,6 +28,7 @@ SRC = src/main.c \
 	src/mx_find_path.c \
 	src/mx_sorting_flags.c \
 	src/mx_flag_sort.c \
+	src/mx_error_check.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -55,8 +56,9 @@ OUT = main.o \
 	mx_find_path.o \
 	mx_sorting_flags.o \
 	mx_flag_sort.o \
+	mx_error_check.o \
 
-CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic -g -fsanitize=address
+CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
 
 INC = inc/header.h
 

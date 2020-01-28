@@ -7,7 +7,7 @@ static char *neccesary_num(double n) {
     char *number = NULL;
     char *number_two = NULL;
 
-    if (n > 9) {
+    if (n >= 10) {
             my_num = n;
             buf_one = n - my_num;
             if (buf_one >= 0.5)
@@ -15,7 +15,7 @@ static char *neccesary_num(double n) {
             number = mx_itoa(my_num);
         }
         else {
-            my_num = n;          
+            my_num = n;
             buf_two = (n - (double) my_num) * 10;
             buf_one = buf_two;
             if (buf_two - (int) buf_one >= 0.5) {
@@ -26,6 +26,8 @@ static char *neccesary_num(double n) {
                 buf_one = 0;
             }
             number = mx_itoa(my_num);
+            if (my_num >= 10)
+                return number;
             number = mx_strjoin_two(number, ".");
             number_two = mx_itoa(buf_one);
             number = mx_strjoin_two(number, number_two);
@@ -42,11 +44,11 @@ static char *for_flag_h(long i) {
     char *str_out = NULL;
     double n = 0;
 
-    if (i < 1024) { //B
+    if (i < 1000) { //B
         num = mx_itoa(i);
         str_out = mx_strjoin_two(num, "B");
     }
-    if (i >= 1024 && i < 1048576 ) {//K
+    if (i >= 1000 && i < 1048576 ) {//K
         n = (double) i / (double) 1024;
         str_out = neccesary_num(n);
         str_out = mx_strjoin_two(str_out, "K");
@@ -108,40 +110,6 @@ static void print_minor(t_lens *my_lens, t_acl_trig *trigers) {
 }
 
 
-
-// void mx_print_size_mm(t_lens *lens, struct stat sb, t_acl_trig *trigers,
-// t_flags *flags) {
-//     char *num;
-//     if (trigers -> dev_flag == 1 && trigers->l_flag != 1) {
-//         print_major(lens, trigers);
-//         print_minor(lens, trigers);
-//         trigers -> dev_flag = 0;
-//     } 
-//     else {
-//         if (lens->flag_device == 1) {
-//             if (lens->forth_len < lens->minor_major_len) {
-//                 for (int j = 0; j < lens->minor_major_len - mx_intlen(sb.st_size); j++) 
-//                     mx_printstr(" ");
-//             }
-//         }
-//         else {
-//             for (int j = 0; j < lens->forth_len - mx_intlen(sb.st_size); j++)
-//                 mx_printstr(" ");
-//             }
-//         if (flags->h == 1){
-//             num = for_flag_h(sb.st_size);
-//             mx_printstr(num);
-//             mx_strdel(&num);
-//         }
-//         else
-//         {
-//             mx_printint(sb.st_size);
-//         }
-
-//     }
- 
-//     mx_printstr(" ");
-// }
 
 void mx_print_size_mm(t_lens *lens, struct stat sb, t_acl_trig *trigers,
 t_flags *flags) {
