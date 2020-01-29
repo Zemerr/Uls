@@ -93,7 +93,7 @@ int mx_intlen(signed long long num);
 void mx_colour_out(char *file, char *file_name);
 void mx_flag_g(char **arr, int count, char *file_name);
 void mx_recursion_call(char **obj, t_flags *flags, char *file_name);
-t_flags *mx_flags_filter(char **argv, int count);
+t_flags *mx_flags_filter(char *str);
 t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name);
 char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1, 
 char *my_asl_line);
@@ -109,6 +109,7 @@ void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags);
 void mx_upgraded_sort(struct stat *info, t_flags *flags, char **files);
 void mx_simple_out(char **files, t_flags *flag, char *file_name);
 void mx_print_error_file(char *error_file);
+void mx_flag_file_valid(char ***file, char **flags, char **obj, int n);
 
 
 #endif

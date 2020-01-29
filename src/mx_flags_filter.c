@@ -1,27 +1,7 @@
 #include "../inc/header.h"
 
-static char *flags_fill_in(char **argv, int count) {
-	char *flags = NULL;
-	int o = 0;
 
-	if (count == -1) {
-		return NULL;
-	}
-	flags = (char *)malloc(sizeof(char) * count + 1);
-		for (int j = 1; argv[j] != NULL; j++) {
-			if (argv[j][0] == '-') {
-				for (int i = 1; argv[j][i] != '\0'; i++, o++) {
-					flags[o] = argv[j][i];
-				}
-			}
-		}
-		flags[o] = '\0';
-
-		return flags;
-}
-
-t_flags *mx_flags_filter(char **argv, int count) {
-	char *str = flags_fill_in(argv, count);
+t_flags *mx_flags_filter(char *str) {
 	t_flags *flag = (t_flags *)malloc(sizeof(t_flags));
 
 	mx_memset(flag, 0, sizeof(t_flags));
@@ -83,6 +63,8 @@ t_flags *mx_flags_filter(char **argv, int count) {
 				(*flag).one = 0;
 				(*flag).C = 0;
 				(*flag).l = 0;
+				break;
+            case('-'):
 				break;
 		}
 	}

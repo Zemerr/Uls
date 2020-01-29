@@ -9,11 +9,11 @@ char **mx_file_arr(char **files, int size) {
    
     mx_bubble_sort(files, size);
     reg_file = (char **)malloc(sizeof(char *) * (count + 1));
-        for (i = 0; files[i]; i++) {
+        for (i = 0; files[i]; i++) {            
             if (lstat(files[i], &buf) < 0) {
                  mx_print_error_file(files[i]);
-            }
-            else if ((buf.st_mode & S_IFMT) == S_IFREG) {
+            }            
+            else if ((buf.st_mode & S_IFDIR) != S_IFDIR) {
                 reg_file[q] = mx_strdup(files[i]);
                 q++;
             }

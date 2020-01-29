@@ -51,7 +51,7 @@ static void print_block(char *my_acl_line, t_lens *my_lens) {
 }
 
 
-void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags) {
+void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags) {    
     struct stat sb;
     char my_acl_line[] = "-----------";
     t_lens *my_lens =  mx_for_flagl_one(sort_arr, dir_name);

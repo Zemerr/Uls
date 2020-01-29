@@ -74,20 +74,18 @@ static char *for_flag_h(long i) {
 static void print_major(t_lens *my_lens, t_acl_trig *trigers) {
     int j = 0;
 
-    if (my_lens->forth_len > my_lens->minor_major_len) {
-        for (j = 0; j < my_lens->forth_len - my_lens->minor_major_len; j++) 
+    if (my_lens->forth_len > 8) {
+        for (j = 0; j < my_lens->forth_len - 8; j++) 
             mx_printstr(" ");
         }
-    else 
-        mx_printstr(" ");
-    for (j = 0; j < my_lens->major_len - mx_intlen(trigers->major); j++)
+    for (j = 0; j < 3 - mx_intlen(trigers->major); j++)
         mx_printstr(" ");
     mx_printint(trigers->major);
     mx_printstr(",");
     mx_printstr(" ");
 }
 
-static void print_minor(t_lens *my_lens, t_acl_trig *trigers) {
+static void print_minor(t_acl_trig *trigers) {
     char *nbr = NULL;
     char *need_nul = NULL;
     char *binar = NULL;
@@ -100,9 +98,9 @@ static void print_minor(t_lens *my_lens, t_acl_trig *trigers) {
         need_nul = mx_strndup("0x00000000", n + 2);
         binar = mx_strjoin(need_nul, nbr);
         mx_printstr(binar);
-    } 
+    }
     else {
-        for (j = 0; j < my_lens->minor_len - mx_intlen(trigers->minor); j++)
+        for (j = 0; j < 3 - mx_intlen(trigers->minor); j++)
             mx_printstr(" ");
         mx_printint(trigers->minor);
     }
@@ -116,18 +114,17 @@ t_flags *flags) {
     char *num;
     if (trigers -> dev_flag == 1 && trigers->l_flag != 1) {
         print_major(lens, trigers);
-        print_minor(lens, trigers);
+        print_minor(trigers);
         trigers -> dev_flag = 0;
     } 
     else {
         if (lens->flag_device == 1) {
-            if (lens->forth_len < lens->minor_major_len) {
-                for (int j = 0; j < lens->minor_major_len - mx_intlen(sb.st_size); j++) 
+            if (lens->forth_len < 8) {
+                for (int j = 0; j < 8 - mx_intlen(sb.st_size); j++) 
                     mx_printstr(" ");
             }
             mx_printint(sb.st_size);
         }
-
         else if (lens->flag_device != 1 && flags->h != 1) {
             for (int j = 0; j < lens->forth_len - mx_intlen(sb.st_size); j++)
                 mx_printstr(" ");
@@ -140,7 +137,7 @@ t_flags *flags) {
                 mx_printstr(" ");
             mx_printstr(num);
             mx_strdel(&num);
-        }        
+        }
     }
     mx_printstr(" ");
 }
