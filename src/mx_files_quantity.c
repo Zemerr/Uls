@@ -6,7 +6,7 @@ int mx_files_quantity(char **files, int trig) {
 
     if (trig == 1) {
         for (int i = 0; files[i]; i++) {
-            stat(files[i], &buf);
+            lstat(files[i], &buf);
                 if ((buf.st_mode & S_IFREG) == S_IFREG) {
                     count += 1;
                 }
@@ -14,7 +14,7 @@ int mx_files_quantity(char **files, int trig) {
     }
     if (trig == 2) {
         for (int i = 0; files[i]; i++) {
-            stat(files[i], &buf);
+            lstat(files[i], &buf);
                 if ((buf.st_mode & S_IFDIR) == S_IFDIR)
                     count += 1;
         }

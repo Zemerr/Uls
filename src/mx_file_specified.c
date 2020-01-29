@@ -18,8 +18,9 @@ static void files_simple_out(char **files) {
     }
 }
 
-static int reg_file_out(char **files, t_flags *flags, char *file_name) {
-    char **reg_file = mx_file_arr(files);
+
+static int reg_file_out(char **files, t_flags *flags, char *file_name, int size) {
+    char **reg_file = mx_file_arr(files, size);
     int file_count = mx_files_quantity(files, 1);
 
     if (file_count != 0) {
@@ -39,11 +40,11 @@ static int reg_file_out(char **files, t_flags *flags, char *file_name) {
     return file_count;
 }
 
-void mx_file_specified(char **files, t_flags *flags, char *file_name) {
+void mx_file_specified(char **files, t_flags *flags, char *file_name, int size) {
     char **dir = NULL;
     int dir_count = 0;
-    int file_count = reg_file_out(files, flags, file_name);
 
+    int file_count = reg_file_out(files, flags, file_name, size);
     dir = mx_dir_arr(files);
     dir_count = mx_files_quantity(files, 2);
     if (dir_count > 1) {

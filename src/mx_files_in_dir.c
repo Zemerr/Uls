@@ -50,6 +50,23 @@ char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags) {
     char **arr = NULL;
     int count = 0;
 
+       if (!dirp) {
+            if (dir_name[mx_strlen(dir_name)-1] != '/') {
+                char **error = mx_strsplit(dir_name, '/');
+                int i = 0;
+                while (error[i] != NULL)
+                    i++;
+                mx_printstr_err("uls: ");
+                perror(error[i-1]);
+                mx_del_strarr(&error);
+            }
+            else {
+                mx_printstr_err("uls:");
+                perror(" ");
+            }
+            //exit(1);
+        }
+
     if (dirp != NULL) {
         count = files_count(dirp, trig);
         if (count == 0)

@@ -39,5 +39,6 @@ void mx_strdel_three(char **str1, char **str2, char **str3);
 char *mx_strdup(const char *str);
 char *mx_strcpy(char *dst, const char *src);
 void *mx_memset(void *b, int c, size_t len);
+void mx_printstr_err(const char *s);
 
 #endif

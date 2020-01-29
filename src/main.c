@@ -39,7 +39,6 @@ static char **files_fill_in(int argc, char **argv) {
             files[q] = mx_str_copy(argv[j]);
             q++;
         }
-        //q++;
     }
     files[q] = NULL;
     return files;
@@ -64,8 +63,7 @@ int main(int argc, char **argv) {
     }
     if (filec != 0) {
         files = files_fill_in(argc, (argv));
-        mx_file_specified(files, flags, ".");
+        mx_file_specified(files, flags, ".", filec);
     }
-
     //system("leaks -q uls");
 }
