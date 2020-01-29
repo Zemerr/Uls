@@ -74,20 +74,14 @@ typedef struct s_acl_trig {
 typedef struct s_sort {
     char *name;
     char *path;
-
     long long size;
-}               t_sort;
+} t_sort;
 
 void mx_sort_S(char **files, int dir_count, char *file_name);
 char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags);
 int mx_get_ws();
-<<<<<<< HEAD
 void mx_print_cols(char **arr, int count, t_flags *flags);
-void mx_file_specified(char **files, t_flags *flags, char *file_name);
-=======
-void mx_print_cols(char **arr, int count);
 void mx_file_specified(char **files, t_flags *flags, char *file_name, int size);
->>>>>>> Sasha
 int mx_files_quantity(char **files, int trig);
 char **mx_dir_arr(char **files);
 char **mx_file_arr(char **files, int size);
@@ -112,12 +106,9 @@ char *my_acl_line, char *sort_arr, int flag, t_flags *flags, char *dir_name);
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str);
 char *mx_find_path(char *file, char *file_name);
 void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags);
-<<<<<<< HEAD
 void mx_upgraded_sort(struct stat *info, t_flags *flags, char **files);
 void mx_simple_out(char **files, t_flags *flag, char *file_name);
-=======
 void mx_print_error_file(char *error_file);
 
->>>>>>> Sasha
 
 #endif
