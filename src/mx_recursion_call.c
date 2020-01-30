@@ -72,6 +72,6 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
     dir = dir_in(obj, str, count);
     dir_out(str, dir, flags);
     mx_del_strarr(&dir);
-    if (mx_strcmp(file_name, "/") != 0)
-        mx_strdel(&str);
+        if (mx_strcmp(file_name, "/") != 0)
+            mx_strdel(&str);
 }

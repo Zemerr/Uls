@@ -6,17 +6,17 @@ int mx_files_quantity(char **files, int trig) {
 
     if (trig == 1) {
         for (int i = 0; files[i]; i++) {
-            stat(files[i], &buf);
-                if ((buf.st_mode & S_IFREG) == S_IFREG) {
+            lstat(files[i], &buf);
+                if ((buf.st_mode & S_IFDIR) != S_IFDIR) {
                     count += 1;
                 }
         }
     }
     if (trig == 2) {
         for (int i = 0; files[i]; i++) {
-            stat(files[i], &buf);
-                if ((buf.st_mode & S_IFDIR) == S_IFDIR)
-                    count += 1;
+            lstat(files[i], &buf);
+            if ((buf.st_mode & S_IFDIR) == S_IFDIR)
+                count += 1;
         }
     }
     return count;

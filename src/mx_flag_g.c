@@ -39,8 +39,6 @@ void mx_flag_g(char **arr, int count, char *file_name) {
     int rows = get_rows(count, m_l);
     int spacing = 0;
 
-    // if ((*flags).m == 1 || (*flags).one == 1)
-    //     mx_simple_out(arr, flags, file_name);
     for (int j = 0; j < rows; j++) {
         for (int i = j; i < count; i += rows) {
             if (!arr[i])

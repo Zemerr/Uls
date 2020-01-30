@@ -8,7 +8,9 @@ static char dir_check(struct stat buf) {
         c = 'd';
             if ((buf.st_mode & S_ISVTX) == S_ISVTX
                 && (buf.st_mode & S_IWOTH) == S_IWOTH)
+            {
                 c = 'x';
+            }
             else if ((buf.st_mode & S_IWOTH) == S_IWOTH)
                 c = 'n';
     }

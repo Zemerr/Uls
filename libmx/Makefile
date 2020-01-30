@@ -26,7 +26,8 @@ SRC = src/mx_del_strarr.c \
   src/mx_strdup.c \
   src/mx_strcpy.c \
   src/mx_strncpy.c \
-  src/mx_memset.c
+  src/mx_memset.c \
+  src/mx_printstr_err.c \
 
 OUT = mx_file_to_str.o \
   mx_strlen.o \
@@ -52,7 +53,8 @@ OUT = mx_file_to_str.o \
   mx_strdup.o \
   mx_strcpy.o \
   mx_strncpy.o \
-  mx_memset.o
+  mx_memset.o \
+  mx_printstr_err.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

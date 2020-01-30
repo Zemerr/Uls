@@ -34,9 +34,11 @@ static int get_rows(int count, int max_len, t_flags *flags) {
         return count;
     one_line = w_s / (((max_len / 8) * 8) + 8);
     rows = count / one_line;
-        if (count % one_line != 0)
-            rows += 1;
-    return rows;
+        if (isatty(1) != 0) {
+            if (count % one_line != 0)
+                rows += 1;
+        }
+        return rows;
 }
 
 void mx_print_cols(char **arr, int count, t_flags *flags) {
