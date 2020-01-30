@@ -48,13 +48,14 @@ void mx_file_specified(char **files, t_flags *flags, char *file_name, int size) 
 
     dir = mx_dir_arr(files);
     dir_count = mx_files_quantity(files, 2);
+
     if (dir_count > 1) {
         mx_flag_sort(file_name, dir, dir_count, flags);
     }
     for (int i = 0; dir[i]; i++) {
         if (i > 0 || file_count != 0)
             write(1, "\n", 1);
-        if (dir_count != 1 || (*flags).R == 1 || file_count > 0) {
+        if (dir_count != 1 || (*flags).R == 1 || file_count > 0 || size > dir_count) {
             write(1, dir[i], mx_strlen(dir[i]));
             write(1, ":", 1);
             write(1, "\n", 1);

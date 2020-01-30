@@ -6,12 +6,15 @@ static void flag_check(char *str, int *flag_count) {
         if (str[i] == 'A' || str[i] == 'a' || str[i] == 'l' ||
            str[i] == 'G' || str[i] == 'R' || str[i] == 'S' || str[i] == 't' ||
            str[i] == 'h' || str[i] == 'u' || str[i] == 'r' || str[i] == 'C' ||
-           str[i] == '1' || str[i] == 'm') {
+           str[i] == '1' || str[i] == 'm' || str[i] == 'o' || str[i] == 'g') {
             (*flag_count)++;
            }
         else {
-            write(2, "usage: uls [-AalGRSthurC1m] [file ...]\n",
-                mx_strlen("usage: uls [-lAalGRSthurC1m] [file ...]\n"));
+            write(2, "uls: illegal option -- ", 
+            mx_strlen("uls: illegal option -- "));
+            write(2, &str[i], 1);
+            write(2, "\nusage: uls [-AalGRSthurC1mog] [file ...]\n",
+                mx_strlen("\nusage: uls [-lAalGRSthurC1mog] [file ...]\n"));
             exit(1);
         }
     }
