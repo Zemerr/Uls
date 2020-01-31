@@ -27,15 +27,7 @@ static void count_second_colum(t_lens *my_lens, struct stat sb) {
         && (sb.st_mode & S_IFDIR) != S_IFDIR
         && (sb.st_mode & S_IFREG) != S_IFREG
         && (sb.st_mode & S_IFLNK) != S_IFLNK) {
-            my_lens->flag_device = 1; 
-            my_lens->minor = minor(sb.st_rdev);
-            my_lens->major = major(sb.st_rdev);
-            if (my_lens->major_len < mx_intlen(my_lens->major))
-                my_lens->major_len = mx_intlen(my_lens->major);
-            if (my_lens->minor <= 255) {
-                if (my_lens->minor_len < mx_intlen(my_lens->minor))
-                    my_lens->minor_len = mx_intlen(my_lens->minor);
-            }
+            my_lens->flag_device = 1;
         }
     if (my_lens->forth_len < mx_intlen(sb.st_size))
         my_lens->forth_len = mx_intlen(sb.st_size);
@@ -50,29 +42,32 @@ static t_lens *create_struckt() {
     my_lens->minor_len = 0;
     my_lens->major_len = 0;
     my_lens->forth_len = 0;
-    my_lens->minor_major_len = 0;
     my_lens->blocks = 0;
     my_lens->flag_device = 0;
 
     return my_lens;
 }
 
+static char *build_path_l(char *dir_name, int *flag, char *sort_arr) {
+     char *path_name_1 = NULL;
+
+    if (sort_arr[0] != '/') {
+        path_name_1 = mx_strjoin(dir_name, "/");
+        path_name_1 = mx_strjoin_two(path_name_1, sort_arr);
+        *flag = 1;
+    }
+    else
+        path_name_1 = sort_arr;
+    return path_name_1;
+}
+
 t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name) {
-    //підрахунок довжин між колонками
-    // char *path_name_1 = NULL;
     struct stat sb;
     t_lens *my_lens = create_struckt();
     int flag = 0;
 
     for (int i = 0; sort_arr[i] != NULL; i++) {
-        char *path_name_1 = NULL;
-        if (sort_arr[i][0] != '/') {
-            path_name_1 = mx_strjoin(dir_name, "/");
-            path_name_1 = mx_strjoin_two(path_name_1, sort_arr[i]);
-            flag = 1;
-        }
-        else
-            path_name_1 = sort_arr[i];
+        char *path_name_1 = build_path_l(dir_name, &flag, sort_arr[i]);
         lstat(path_name_1, &sb);
         count_first_colum(my_lens, sb);
         count_second_colum(my_lens, sb);
@@ -82,6 +77,5 @@ t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name) {
             flag = 0;
         }
     }
-        my_lens->minor_major_len = 3 + my_lens->major_len + my_lens->minor_len;
-        return my_lens;
+    return my_lens;
 }

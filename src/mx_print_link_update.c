@@ -1,7 +1,6 @@
 #include "../inc/header.h"
 
-static void print_link(char *path_name_1, t_acl_trig *trigers) {
-    //char *buf_link = mx_strnew(sb.st_size);
+static void print_link(char *path_name_1, t_acl_trig *trigers) {    
     char buf_link[1024];
 
     if (trigers->l_flag == 1) {
@@ -10,14 +9,8 @@ static void print_link(char *path_name_1, t_acl_trig *trigers) {
         mx_printstr(" -> ");
         mx_printstr(buf_link);
         trigers -> l_flag = 0;
-       // mx_strdel(&buf_link);
     }
     mx_printchar('\n');
-    //  if (flag == 1) {
-    //      mx_strdel(&path_name_1);
-    // }
-   // mx_strdel(&buf_link);
-   
 }
 
 static void upadate(char *my_acl_line) {
@@ -34,18 +27,22 @@ static void upadate(char *my_acl_line) {
     my_acl_line[10] = ' ';
 }
 
-void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
-char *my_acl_line, char *sort_arr, int flag, t_flags *flags, char *dir_name) {
+void mx_print_name(char *sort_arr, t_flags *flags, char *dir_name) {
     if ((*flags).G == 1) {
         mx_colour_out(sort_arr, dir_name);
     }
-        //mx_printstr(sort_arr);
     else
         mx_printstr(sort_arr);
+}
+
+
+void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
+char *my_acl_line) {
     print_link(path_name_1, trigers);
     upadate(my_acl_line);
-      if (flag == 1) {
-         mx_strdel(&path_name_1);
+    if (trigers->path_flag == 1) {
+        mx_strdel(&path_name_1);
+        trigers->path_flag = 0;
     }
 }
 

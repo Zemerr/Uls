@@ -18,10 +18,8 @@ t_flags *mx_flags_filter(char *str) {
 				(*flag).A = 0;
 				break;
 			case('l'):
-                //if ((*flag).o == 0 && (*flag).g == 0) {
-                    (*flag).l = 1;
-                    (*flag).m = 0;
-               // }
+                (*flag).l = 1;
+                (*flag).m = 0;
                 break;
 			case('G'):
 				(*flag).G = 1;
@@ -73,6 +71,9 @@ t_flags *mx_flags_filter(char *str) {
             case('o'):
 				(*flag).o = 1;
                 (*flag).l = 1;
+				break;
+            case('T'):
+				(*flag).T = 1;
 				break;
             case('-'):
 				break;

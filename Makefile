@@ -31,6 +31,8 @@ SRC = src/main.c \
 	src/mx_simple_out.c \
 	src/mx_error_check.c \
 	src/mx_flag_file_valid.c \
+	src/mx_print_time.c \
+	src/mx_for_flag_h.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -61,6 +63,8 @@ OUT = main.o \
 	mx_simple_out.o \
 	mx_error_check.o \
 	mx_flag_file_valid.o \
+	mx_print_time.o \
+	mx_for_flag_h.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
 

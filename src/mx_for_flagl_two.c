@@ -29,5 +29,4 @@ char *my_acl_line) {
         trigers->major = major(sb.st_rdev);
     }
     return my_acl_line;
-
 }

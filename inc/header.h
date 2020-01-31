@@ -49,6 +49,7 @@ typedef struct s_flags {
     int m;
     int g;
     int o;
+    int T;
 } t_flags;
 
 typedef struct s_lens {
@@ -58,10 +59,7 @@ typedef struct s_lens {
     int minor_len;
     int major_len;
     int forth_len;
-    int minor_major_len;
     unsigned long long blocks;
-    unsigned int minor;
-    unsigned int major;
     int flag_device;
 } t_lens;
 
@@ -70,6 +68,7 @@ typedef struct s_acl_trig {
     int dev_flag;
     unsigned int minor;
     unsigned int major;
+    int path_flag;
 } t_acl_trig;
 
 
@@ -101,11 +100,10 @@ char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1,
 char *my_asl_line);
 void mx_acl_line(struct stat sb, t_acl_trig *trigers,
 char *my_acl_line);
-void mx_print_size_mm(t_lens *my_lens, struct stat sb, t_acl_trig *trigers, t_flags *flags);
+void mx_print_size_mm(t_lens *my_lens, struct stat sb, t_acl_trig *trigers,
+t_flags *flags);
 void mx_print_name_acl(struct stat sb, char *my_acl_line, t_lens *my_lens,
- t_flags *flags);
-void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
-char *my_acl_line, char *sort_arr, int flag, t_flags *flags, char *dir_name);
+t_flags *flags);
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str);
 char *mx_find_path(char *file, char *file_name);
 void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags);
@@ -113,6 +111,11 @@ void mx_upgraded_sort(struct stat *info, t_flags *flags, char **files);
 void mx_simple_out(char **files, t_flags *flag, char *file_name);
 void mx_print_error_file(char *error_file);
 void mx_flag_file_valid(char ***file, char **flags, char **obj, int n);
+void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
+char *my_acl_line);
+void mx_print_name(char *sort_arr, t_flags *flags, char *dir_name);
+void mx_print_time(struct stat sb, t_flags *flags);
+char *mx_for_flag_h(long i);
 
 
 #endif

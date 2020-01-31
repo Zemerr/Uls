@@ -22,4 +22,6 @@ int main(int argc, char **argv) {
             
             mx_file_specified(file, flags, ".", filec);
         }
+    system("leaks -q uls");
+    return 0;
 }
