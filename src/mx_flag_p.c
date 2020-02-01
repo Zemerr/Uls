@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void flag_F(char *obj, char *file_name) {
 	char c;

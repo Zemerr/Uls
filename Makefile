@@ -37,6 +37,9 @@ FILES = main \
 	mx_flag_file_valid \
 	mx_print_time \
 	mx_for_flag_h \
+	mx_flag_d \
+	mx_flag_p \
+	mx_output_flags \
 
 INC_H = $(addprefix "inc/", $(HEADERS))
 

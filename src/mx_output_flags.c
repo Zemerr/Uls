@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void second_part(char c, t_flags *flag) {
     switch(c) {
