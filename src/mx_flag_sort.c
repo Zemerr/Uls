@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static char *filepath(char *file_name, char *file) {
     char *str = file_name;

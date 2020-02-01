@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 static char *str_fill(const char *file, int size) {
     int p = open(file, O_RDONLY);

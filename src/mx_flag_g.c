@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int max_len(char **arr) {
     int len = 0;

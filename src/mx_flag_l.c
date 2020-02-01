@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static t_acl_trig *create_trig(char *my_acl_line) {
     t_acl_trig *trigers = (t_acl_trig *)malloc(sizeof(t_acl_trig));
@@ -50,7 +50,6 @@ void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags, int trig) {
         mx_print_time(sb, flags);
         mx_print_name(*sort_arr, flags, dir_name);
         mx_print_link_update(path_name_1, trigers, my_acl_line);
-        
     }
     free(my_lens);
     free(trigers);

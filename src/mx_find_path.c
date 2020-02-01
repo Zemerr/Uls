@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 char *mx_find_path(char *file, char *file_name) {
     char *filepath1 = NULL;

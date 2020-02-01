@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 
 static void flag_check(char *str, int *flag_count) {

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int count_arr_len(char **arr) {
     int i = 0;
@@ -25,5 +25,5 @@ int main(int argc, char **argv) {
             else
                 mx_file_specified(file, flags, ".", filec);
         }
-        return 0;
+    return 0;
 }

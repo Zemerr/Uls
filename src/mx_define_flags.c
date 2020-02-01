@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int determine_size(char **arr) {
     int size = 0;

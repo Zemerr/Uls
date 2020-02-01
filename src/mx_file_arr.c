@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 char **mx_file_arr(char **files, int size, t_flags *flag) {
     char **reg_file = NULL;

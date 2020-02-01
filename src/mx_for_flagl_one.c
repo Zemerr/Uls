@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void count_first_colum(t_lens *my_lens, struct stat sb) {
     struct passwd *user_info = NULL;

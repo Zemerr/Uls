@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void print_link(char *path_name_1, t_acl_trig *trigers) {    
     char buf_link[1024];

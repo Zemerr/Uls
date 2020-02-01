@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 char *mx_str_copy(char *src) {
     char *copy = NULL;

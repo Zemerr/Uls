@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 static char *convert(unsigned long copy, char *hex, int num, int i) {
     while (copy > 0) {

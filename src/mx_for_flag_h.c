@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static char *build_num(double n, double buf_one,  double buf_two, char **n_t) {
     char *number = NULL;

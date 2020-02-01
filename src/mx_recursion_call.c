@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int dir_count(char **obj, char *str) {
     char *path = NULL;

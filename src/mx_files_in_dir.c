@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int files_count(DIR *dirp, char trig) {
     struct dirent *entry;

@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_del_two_arr(char ***arr1, char ***arr2, char **str) {
     mx_del_strarr(arr1);

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int name_out(char *dir, int trig) {
     int n = 0;
