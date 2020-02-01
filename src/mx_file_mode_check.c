@@ -80,7 +80,7 @@ char mx_file_mode_check(char *file, char *file_name) {
     c = one_mode_unit(buf);
         if (c == '-')
             c = second_mode_unit(buf);
-        if (file_name != NULL && mx_strcmp(file_name, ".") != 0)
+        if (mx_strcmp(file_name, ".") != 0)
             mx_strdel(&filepath);
         return c;
 }
