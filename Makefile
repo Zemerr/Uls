@@ -33,6 +33,9 @@ SRC = src/main.c \
 	src/mx_flag_file_valid.c \
 	src/mx_print_time.c \
 	src/mx_for_flag_h.c \
+	src/mx_flag_p.c \
+	src/mx_flag_d.c \
+	src/mx_output_flags.c \
 
 OUT = main.o \
 	mx_files_in_dir.o \
@@ -65,6 +68,9 @@ OUT = main.o \
 	mx_flag_file_valid.o \
 	mx_print_time.o \
 	mx_for_flag_h.o \
+	mx_flag_p.o \
+	mx_flag_d.o \
+	mx_output_flags.o \
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
 
@@ -74,9 +80,9 @@ LIBMX = libmx/libmx.a
 
 all: install
 
-install: pathfinder
+install: uls
 
-pathfinder: $(SRC) $(INC)
+uls: $(SRC) $(INC)
 	@mkdir -p $(DIROBJ)
 	@clang $(CLANG) -c $(SRC) -I $(INC)
 	@mv $(OUT) $(DIROBJ)

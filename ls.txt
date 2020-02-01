@@ -1,0 +1,13 @@
+-
+--
+-M
+Makefile
+inc
+libmx
+ls.txt
+obj
+res.txt
+src
+test.txt
+uls
+uls.dSYM

@@ -29,27 +29,30 @@
 
 
 // typedef struct s_flags {
-// 	char flag;
+//  char flag;
 // } t_flags;
 
 typedef struct s_flags {
-	int a;
-	int A;
-	int l;
-	int G;
-	int R;
+    int a;
+    int A;
+    int l;
+    int G;
+    int R;
     int S;
     int t;
     int h;
     int u;
     int r;
     int C;
-    int c;
     int one;
     int m;
     int g;
     int o;
     int T;
+    int d;
+    int p;
+    int F;
+    int f;
 } t_flags;
 
 typedef struct s_lens {
@@ -81,18 +84,18 @@ typedef struct s_sort {
 void mx_sort_S(char **files, int dir_count, char *file_name);
 char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags);
 int mx_get_ws();
-void mx_print_cols(char **arr, int count, t_flags *flags);
+void mx_print_cols(char **arr, int count, t_flags *flags, char *file_name);
 void mx_file_specified(char **files, t_flags *flags, char *file_name, int size);
 int mx_files_quantity(char **files, int trig);
 char **mx_dir_arr(char **files);
-char **mx_file_arr(char **files, int size);
+char **mx_file_arr(char **files, int size, t_flags *flag);
 char mx_file_mode_check(char *file, char *file_name);
 char *mx_str_copy(char *src);
-void mx_define_flags(char *file_name, t_flags *flags);
-void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags);
+void mx_define_flags(char *file_name, t_flags *flags, int trig);
+void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags, int trig);
 int mx_intlen(signed long long num);
 void mx_colour_out(char *file, char *file_name);
-void mx_flag_g(char **arr, int count, char *file_name);
+void mx_flag_g(char **arr, int count, char *file_name, t_flags *flags);
 void mx_recursion_call(char **obj, t_flags *flags, char *file_name);
 t_flags *mx_flags_filter(char *str);
 t_lens *mx_for_flagl_one(char **sort_arr, char *dir_name);
@@ -116,6 +119,8 @@ char *my_acl_line);
 void mx_print_name(char *sort_arr, t_flags *flags, char *dir_name);
 void mx_print_time(struct stat sb, t_flags *flags);
 char *mx_for_flag_h(long i);
-
+void mx_flag_p(char *obj, t_flags *flags, char *file_name);
+void mx_flag_d(char **files, t_flags *flags, char *name, int count);
+void mx_output_flags(char c, t_flags *flag);
 
 #endif

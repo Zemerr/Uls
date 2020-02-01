@@ -10,10 +10,12 @@ static int max_len(char **arr) {
     return len;
 }
 
-static void print_item(char *s, int sp) {
+static void print_item(char *s, int sp, t_flags *flags, char *file_name) {
     char c = '\t';
 
     write(1, s, mx_strlen(s));
+        if ((*flags).p == 1 || (*flags).F == 1)
+            mx_flag_p(s, flags, file_name);
         while (sp > 0) {
             write(1, &c, 1);
             sp -= 8;
@@ -41,7 +43,7 @@ static int get_rows(int count, int max_len, t_flags *flags) {
         return rows;
 }
 
-void mx_print_cols(char **arr, int count, t_flags *flags) {
+void mx_print_cols(char **arr, int count, t_flags *flags, char *file_name) {
     int m_l = max_len(arr);
     int spacing = 0;
     int rows = get_rows(count, m_l, flags);
@@ -54,7 +56,7 @@ void mx_print_cols(char **arr, int count, t_flags *flags) {
                 if ((i + rows) >= count) {
                     spacing = 0;
                 }
-            print_item(arr[i], spacing);
+            print_item(arr[i], spacing, flags, file_name);
         }
         write(1, "\n", 1);
     }

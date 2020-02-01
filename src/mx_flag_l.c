@@ -34,13 +34,14 @@ struct stat *sb) {
     return path_name_1;
 }
 
-void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags) {
+void mx_flag_l(char **sort_arr, char *dir_name, t_flags *flags, int trig) {
     struct stat sb;
     char my_acl_line[] = "-----------";
     t_lens *my_lens =  mx_for_flagl_one(sort_arr, dir_name);
     t_acl_trig *trigers = create_trig(my_acl_line);
 
-    print_block(my_lens);
+    if (trig == 1 && ((*flags).d == 0))
+        print_block(my_lens);
     for ( ; *sort_arr != NULL; sort_arr++) {
         char *path_name_1 = build_path(dir_name, trigers, *sort_arr, &sb);
         mx_for_flagl_two(sb, trigers, path_name_1, my_acl_line);

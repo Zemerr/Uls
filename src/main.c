@@ -11,17 +11,19 @@ int main(int argc, char **argv) {
     char **file = NULL;
     char *flag = NULL;
     int filec = 0;
+    t_flags *flags = NULL;
 
     mx_flag_file_valid(&file, &flag, argv, argc);
-    t_flags *flags = mx_flags_filter(flag);
+    flags = mx_flags_filter(flag);
     filec = count_arr_len(file);
         if (file[0] == NULL) {
-            mx_define_flags(".", flags);
+            mx_define_flags(".", flags, 1);
         }
         if (file[0] != NULL) {
-            
-            mx_file_specified(file, flags, ".", filec);
+            if ((*flags).d == 1)
+                mx_flag_d(file, flags, ".", filec);
+            else
+                mx_file_specified(file, flags, ".", filec);
         }
-    system("leaks -q uls");
-    return 0;
+        return 0;
 }

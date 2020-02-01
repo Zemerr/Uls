@@ -1,13 +1,14 @@
 #include "../inc/header.h"
 
-char **mx_file_arr(char **files, int size) {
+char **mx_file_arr(char **files, int size, t_flags *flag) {
     char **reg_file = NULL;
     int count = mx_files_quantity(files, 1);
     int i = 0;
     int q = 0;
     struct stat buf;
-   
-    mx_bubble_sort(files, size);
+
+    if ((*flag).f != 1)
+        mx_bubble_sort(files, size);
     reg_file = (char **)malloc(sizeof(char *) * (count + 1));
         for (i = 0; files[i]; i++) {
             if (lstat(files[i], &buf) < 0) {

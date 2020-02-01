@@ -33,6 +33,8 @@ void mx_print_name(char *sort_arr, t_flags *flags, char *dir_name) {
     }
     else
         mx_printstr(sort_arr);
+    if ((*flags).p == 1 || (*flags).F == 1)
+        mx_flag_p(sort_arr, flags, dir_name);
 }
 
 

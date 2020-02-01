@@ -82,9 +82,8 @@ char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags) {
                 arr = obj_arr(dirp, entry, arr, trig);
                 arr[count] = NULL;
                 closedir(dirp);
-                    if (count > 1) {
+                    if (count > 1 && (*flags).f == 0)
                         mx_flag_sort(dir_name, arr, count, flags);
-                    }
         }
         return arr;
 }

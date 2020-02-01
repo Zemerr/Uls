@@ -51,7 +51,7 @@ static void dir_out(char *str, char **dir, t_flags *flags) {
         write(1, path, mx_strlen(path));
         write(1, ":", 1);
         write(1, "\n", 1);
-        mx_define_flags(path, flags);
+        mx_define_flags(path, flags, 1);
         mx_strdel(&path);
     }
 }

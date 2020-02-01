@@ -34,7 +34,7 @@ static void spacing_print(int sp) {
     }
 }
 
-void mx_flag_g(char **arr, int count, char *file_name) {
+void mx_flag_g(char **arr, int count, char *file_name, t_flags *flags) {
     int m_l = max_len(arr);
     int rows = get_rows(count, m_l);
     int spacing = 0;
@@ -47,6 +47,8 @@ void mx_flag_g(char **arr, int count, char *file_name) {
                 if ((i + rows) >= count)
                     spacing = 0;
                 mx_colour_out(arr[i], file_name);
+                    if ((*flags).p == 1 || (*flags).F == 1)
+                        mx_flag_p(arr[i], flags, file_name);
                 spacing_print(spacing);
         }
         write(1, "\n", 1);
