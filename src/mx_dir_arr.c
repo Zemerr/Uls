@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 char **mx_dir_arr(char **files) {
     char **dir = NULL;

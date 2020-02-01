@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 int mx_intlen(signed long long num) {
     int len = 1;

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static long long sort_parametr(t_flags *flags, struct stat *info, int index) {
 	if ((*flags).S == 1)

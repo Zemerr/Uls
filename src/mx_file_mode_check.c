@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static char dir_check(struct stat buf) {
     char c = '-';

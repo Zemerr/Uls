@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void win_size(int size, int w_s) {
 	if (w_s < (size)) {

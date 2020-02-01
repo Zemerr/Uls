@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 
 static void acl_get_f(char *path_name_1, char *my_acl_line) {
@@ -18,7 +18,6 @@ static void acl_get_f(char *path_name_1, char *my_acl_line) {
     if (malloc_size(text_acl))
         free(text_acl);
 }
-
 
 char *mx_for_flagl_two(struct stat sb, t_acl_trig *trigers, char *path_name_1,
 char *my_acl_line) {

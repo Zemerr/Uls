@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void f_specifited_one(struct stat sb, t_acl_trig *trigers,
 char *my_acl_line) {

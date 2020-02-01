@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 static char *character_change(int start, int size, int n, char *c) {
     int rem = 0;

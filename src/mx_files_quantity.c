@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 int mx_files_quantity(char **files, int trig) {
     int count = 0;

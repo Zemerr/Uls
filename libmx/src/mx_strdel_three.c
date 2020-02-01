@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 void mx_strdel_three(char **str1, char **str2, char **str3) {
     if (*str1 != NULL){

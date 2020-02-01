@@ -1,95 +1,75 @@
 NAME = uls
 
-DIROBJ = obj
+ROOT_A = libmx.a \
 
-SRC = src/main.c \
-	src/mx_files_in_dir.c \
-	src/mx_get_ws.c \
-	src/mx_print_cols.c \
-	src/mx_file_specified.c \
-	src/mx_files_quantity.c \
-	src/mx_dir_arr.c \
-	src/mx_file_arr.c \
-	src/mx_file_mode_check.c \
-	src/mx_str_copy.c \
-	src/mx_define_flags.c \
-	src/mx_flag_l.c \
-	src/mx_intlen.c \
-	src/mx_colour_out.c \
-	src/mx_for_flagl_one.c \
-	src/mx_for_flagl_two.c \
-	src/mx_acl_line.c \
-	src/mx_print_size_mm.c \
-	src/mx_print_name_acl.c \
-	src/mx_print_link_update.c \
-	src/mx_flag_g.c \
-	src/mx_recursion_call.c \
-	src/mx_flags_filter.c \
-	src/mx_find_path.c \
-	src/mx_flag_sort.c \
-	src/mx_upgraded_sort.c \
-	src/mx_simple_out.c \
-	src/mx_error_check.c \
-	src/mx_flag_file_valid.c \
-	src/mx_print_time.c \
-	src/mx_for_flag_h.c \
+LIB_A = ./libmx/libmx.a \
 
-OUT = main.o \
-	mx_files_in_dir.o \
-	mx_get_ws.o \
-	mx_print_cols.o \
-	mx_file_specified.o \
-	mx_files_quantity.o \
-	mx_dir_arr.o \
-	mx_file_arr.o \
-	mx_file_mode_check.o \
-	mx_str_copy.o \
-	mx_define_flags.o \
-	mx_flag_l.o \
-	mx_intlen.o \
-	mx_colour_out.o \
-	mx_for_flagl_one.o \
-	mx_for_flagl_two.o \
-	mx_acl_line.o \
-	mx_print_size_mm.o \
-	mx_print_name_acl.o \
-	mx_print_link_update.o \
-	mx_flag_g.o \
-	mx_recursion_call.o \
-	mx_flags_filter.o \
-	mx_find_path.o \
-	mx_flag_sort.o \
-	mx_upgraded_sort.o \
-	mx_simple_out.o \
-	mx_error_check.o \
-	mx_flag_file_valid.o \
-	mx_print_time.o \
-	mx_for_flag_h.o \
+HEADERS = header.h \
 
-CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
+FILES = main \
+	mx_files_in_dir \
+	mx_get_ws \
+	mx_print_cols \
+	mx_file_specified \
+	mx_files_quantity \
+	mx_dir_arr \
+	mx_file_arr \
+	mx_file_mode_check \
+	mx_str_copy \
+	mx_define_flags \
+	mx_flag_l \
+	mx_intlen \
+	mx_colour_out \
+	mx_for_flagl_one \
+	mx_for_flagl_two \
+	mx_acl_line \
+	mx_print_size_mm \
+	mx_print_name_acl \
+	mx_print_link_update \
+	mx_flag_g \
+	mx_recursion_call \
+	mx_flags_filter \
+	mx_find_path \
+	mx_flag_sort \
+	mx_upgraded_sort \
+	mx_simple_out \
+	mx_error_check \
+	mx_flag_file_valid \
+	mx_print_time \
+	mx_for_flag_h \
 
-INC = inc/header.h
+INC_H = $(addprefix "inc/", $(HEADERS))
 
-LIBMX = libmx/libmx.a
+ROOT_C = $(addsuffix ".c", $(FILES))
 
-all: install
+SRC_C = $(addprefix "src/", $(ROOT_C))
 
-install: pathfinder
+ROOT_O = $(addsuffix ".o", $(FILES))
 
-pathfinder: $(SRC) $(INC)
-	@mkdir -p $(DIROBJ)
-	@clang $(CLANG) -c $(SRC) -I $(INC)
-	@mv $(OUT) $(DIROBJ)
-	@make all -C libmx
-	@clang $(CLANG) $(SRC) $(LIBMX) -o $(NAME) -I $(INC)
+CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
+
+all: install clean
+
+install:
+	@make -C libmx install
+	@cp $(SRC_C) .
+	@cp $(INC_H) .
+	@cp $(LIB_A) .
+	@clang $(CFLAGS) -c $(ROOT_C)
+	@clang $(CFLAGS) $(ROOT_O) $(ROOT_A) -o $(NAME)
+	@mkdir -p obj
+	@cp $(ROOT_O) obj/
+	@rm -rf $(ROOT_O)
 
 uninstall: clean
+	@make -C libmx uninstall
 	@rm -rf $(NAME)
-	@make uninstall -C libmx
 
 clean:
-	@rm -rf $(DIROBJ)
-	@rm -rf $(OUT)
-	@make clean -C libmx
+	@make -C libmx clean
+	@rm -rf $(ROOT_C)
+	@rm -rf $(ROOT_A)
+	@rm -rf $(HEADERS)
+	@rm -rf obj
 
 reinstall: uninstall install

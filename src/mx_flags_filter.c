@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 
 t_flags *mx_flags_filter(char *str) {

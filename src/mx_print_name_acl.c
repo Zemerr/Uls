@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void print_acl(struct stat sb, char *my_acl_line, t_lens *my_lens) {
     mx_printstr(my_acl_line);

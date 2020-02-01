@@ -1,79 +1,61 @@
 NAME = libmx.a
 
-DIROBJ = obj
+HEADERS = libmx.h \
 
-SRC = src/mx_del_strarr.c \
-  src/mx_file_to_str.c \
-  src/mx_itoa.c \
-  src/mx_strcmp.c \
-  src/mx_strdel.c \
-  src/mx_strlen.c \
-  src/mx_strnew.c \
-  src/mx_strsplit.c \
-  src/mx_count_words.c \
-  src/mx_bubble_sort.c \
-  src/mx_printstr.c \
-  src/mx_strjoin.c \
-  src/mx_strcat.c \
-  src/mx_nbr_to_hex.c \
-  src/mx_strndup.c \
-  src/mx_printint.c \
-  src/mx_printchar.c \
-  src/mx_strjoin_one.c \
-  src/mx_strjoin_two.c \
-  src/mx_strdel_three.c \
-  src/mx_del_two_arr.c \
-  src/mx_strdup.c \
-  src/mx_strcpy.c \
-  src/mx_strncpy.c \
-  src/mx_memset.c \
-  src/mx_printstr_err.c \
+FILES = mx_file_to_str \
+	mx_strlen \
+	mx_strsplit \
+	mx_strnew \
+	mx_strdel \
+	mx_strcmp \
+	mx_itoa \
+	mx_del_strarr \
+	mx_count_words \
+	mx_bubble_sort \
+	mx_printstr \
+	mx_strjoin \
+	mx_strcat \
+	mx_nbr_to_hex \
+	mx_strndup \
+	mx_printint \
+	mx_printchar \
+	mx_strjoin_one \
+	mx_strjoin_two \
+	mx_strdel_three \
+	mx_del_two_arr \
+	mx_strdup \
+	mx_strcpy \
+	mx_strncpy \
+	mx_memset \
+	mx_printstr_err \
 
-OUT = mx_file_to_str.o \
-  mx_strlen.o \
-  mx_strsplit.o \
-  mx_strnew.o \
-  mx_strdel.o \
-  mx_strcmp.o \
-  mx_itoa.o \
-  mx_del_strarr.o \
-  mx_count_words.o \
-  mx_bubble_sort.o \
-  mx_printstr.o \
-  mx_strjoin.o\
-  mx_strcat.o \
-  mx_nbr_to_hex.o \
-  mx_strndup.o \
-  mx_printint.o \
-  mx_printchar.o \
-  mx_strjoin_one.o \
-  mx_strjoin_two.o \
-  mx_strdel_three.o \
-  mx_del_two_arr.o \
-  mx_strdup.o \
-  mx_strcpy.o \
-  mx_strncpy.o \
-  mx_memset.o \
-  mx_printstr_err.o \
+INC_H = $(addprefix "inc/", $(HEADERS))
 
-CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
+ROOT_C = $(addsuffix ".c", $(FILES))
 
-INC = inc/libmx.h
+SRC_C = $(addprefix "src/", $(ROOT_C))
 
-all: install
+ROOT_O = $(addsuffix ".o", $(FILES))
+
+CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
+
+all: install clean
 
 install:
-	@mkdir -p $(DIROBJ)
-	@clang $(CLANG) -c $(SRC) -I $(INC)
-	@ar -rc $(NAME) $(OUT)
-	@mv $(OUT) $(DIROBJ)
+	@cp $(SRC_C) .
+	@cp $(INC_H) .
+	@clang $(CFLAGS) -c $(ROOT_C)
+	@mkdir -p obj
+	@cp $(ROOT_O) obj/
+	@ar -rc $(NAME) $(ROOT_O)
+	@rm -rf $(ROOT_O)
 
 uninstall: clean
 	@rm -rf $(NAME)
 
 clean:
-	@rm -rf $(DIROBJ)
-	@rm -rf $(OUT)
+	@rm -rf $(ROOT_C)
+	@rm -rf $(HEADERS)
+	@rm -rf obj
 
 reinstall: uninstall install
-

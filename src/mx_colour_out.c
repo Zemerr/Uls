@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void color_mode_two(char c) {
     switch(c)

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static int count_arr_len(char **arr) {
     int i = 0;
@@ -22,6 +22,6 @@ int main(int argc, char **argv) {
             
             mx_file_specified(file, flags, ".", filec);
         }
-    system("leaks -q uls");
+    //system("leaks -q uls");
     return 0;
 }

@@ -1,4 +1,4 @@
-#include "../inc/libmx.h"
+#include "libmx.h"
 
 
 static char *result_in(char *s1,  char *s2) {

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void files_simple_out(char **files) {
     int w_s = mx_get_ws();

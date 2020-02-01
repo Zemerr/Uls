@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 int mx_get_ws() {
 	struct winsize ws;

@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 static void print_major(t_lens *my_lens, t_acl_trig *trigers) {
     int j = 0;

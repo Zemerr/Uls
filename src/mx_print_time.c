@@ -1,4 +1,4 @@
-#include "../inc/header.h"
+#include "header.h"
 
 
 static void print_date(char **time_arr) {
