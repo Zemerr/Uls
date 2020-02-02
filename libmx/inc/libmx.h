@@ -23,7 +23,7 @@ void mx_del_strarr(char ***arr);
 char **mx_strsplit(const char *s, char c);
 char *mx_file_to_str(const char *file);
 int mx_count_words(const char *str, char c);
-int mx_bubble_sort(char **arr, int size);
+int mx_bubble_sort(char **arr);
 void mx_printstr(const char *s);
 char *mx_strjoin( char *s1,  char *s2);
 char *mx_strcat(char *restrict s1, const char *restrict s2);

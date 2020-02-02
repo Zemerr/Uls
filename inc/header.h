@@ -111,10 +111,11 @@ void mx_sort_S(char **files, int dir_count, char *file_name);
 char **mx_files_in_dir(char *dir_name, char trig, t_flags *flags);
 int mx_get_ws();
 void mx_print_cols(char **arr, int count, t_flags *flags, char *file_name);
-void mx_file_specified(char **files, t_flags *flags, char *file_name, int size);
-int mx_files_quantity(char **files, int trig);
-char **mx_dir_arr(char **files);
-char **mx_file_arr(char **files, int size, t_flags *flag);
+void mx_file_specified(char **files, t_flags *flags, char *file_name,
+int *error);
+int mx_files_quantity(char **files, int trig, t_flags *flag);
+char **mx_dir_arr(char **files, t_flags *flag);
+char **mx_file_arr(char **files, int *error, t_flags *flag);
 char mx_file_mode_check(char *file, char *file_name);
 char *mx_str_copy(char *src);
 void mx_define_flags(char *file_name, t_flags *flags, int trig);
@@ -138,7 +139,7 @@ char *mx_find_path(char *file, char *file_name);
 void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags);
 void mx_upgraded_sort(struct stat *info, t_flags *flags, char **files);
 void mx_simple_out(char **files, t_flags *flag, char *file_name);
-void mx_print_error_file(char *error_file);
+void mx_print_error_file(char *error_file, int *error);
 void mx_flag_file_valid(char ***file, char **flags, char **obj, int n);
 void mx_print_link_update(char *path_name_1, t_acl_trig *trigers,
 char *my_acl_line);
@@ -148,5 +149,8 @@ char *mx_for_flag_h(long i);
 void mx_flag_p(char *obj, t_flags *flags, char *file_name);
 void mx_flag_d(char **files, t_flags *flags, char *name, int count);
 void mx_output_flags(char c, t_flags *flag);
+int mx_link_check(char *file, t_flags *flag, struct stat *buf);
+void mx_for_flag_valid(char *obj, int *flag_priority, int *file_count,
+int *flag_count);
 
 #endif

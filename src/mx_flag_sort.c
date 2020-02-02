@@ -27,7 +27,7 @@ static struct stat *obj_info(char *file_name, char **files, int size) {
 void mx_flag_sort(char *file_name, char **files, int size, t_flags *flags) {
     struct stat *buf = NULL;
 
-    mx_bubble_sort(files, size);
+    mx_bubble_sort(files);
     buf = obj_info(file_name, files, size);
     mx_upgraded_sort(buf, flags, files);
     free(buf);

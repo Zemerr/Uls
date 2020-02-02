@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
     char *flag = NULL;
     int filec = 0;
     t_flags *flags = NULL;
+    int error = 0;
 
     mx_flag_file_valid(&file, &flag, argv, argc);
     flags = mx_flags_filter(flag);
@@ -23,7 +24,7 @@ int main(int argc, char **argv) {
             if ((*flags).d == 1)
                 mx_flag_d(file, flags, ".", filec);
             else
-                mx_file_specified(file, flags, ".", filec);
+                mx_file_specified(file, flags, ".", &error);
         }
-    return 0;
+    return error;
 }

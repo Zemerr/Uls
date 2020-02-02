@@ -40,6 +40,8 @@ FILES = main \
 	mx_flag_d \
 	mx_flag_p \
 	mx_output_flags \
+	mx_link_check \
+	mx_for_flag_valid \
 
 INC_H = $(addprefix "inc/", $(HEADERS))
 
@@ -49,7 +51,7 @@ SRC_C = $(addprefix "src/", $(ROOT_C))
 
 ROOT_O = $(addsuffix ".o", $(FILES))
 
-CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
+CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
 
 all: install clean
 

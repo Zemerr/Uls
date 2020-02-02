@@ -1,26 +1,6 @@
 #include "header.h"
 
 
-static void flag_check(char *str, int *flag_count) {
-    for (int i = 1; str[i] != '\0'; i++) {
-        if (str[i] == 'A' || str[i] == 'a' || str[i] == 'l' ||
-           str[i] == 'G' || str[i] == 'R' || str[i] == 'S' || str[i] == 't' ||
-           str[i] == 'h' || str[i] == 'u' || str[i] == 'r' || str[i] == 'C' ||
-           str[i] == '1' || str[i] == 'm' || str[i] == 'o' || str[i] == 'g' ||
-           str[i] == 'T' || str[i] == 'd' || str[i] == 'p' || str[i] == 'F' ||
-           str[i] == 'f') {
-            (*flag_count)++;
-           }
-        else {
-            write(2, "uls: illegal option -- ", 
-            mx_strlen("uls: illegal option -- "));
-            write(2, &str[i], 1);
-            write(2, "\nusage: uls [-AalGRSthurC1mogTdpFf] [file ...]\n", 48);
-            exit(1);
-        }
-    }
-}
-
 static void flag_write(char *str, char **flags, int *c) {
     int q = *c;
     for (int i = 1; str[i] != '\0'; i++ && q++) {
@@ -29,21 +9,16 @@ static void flag_write(char *str, char **flags, int *c) {
     }
 }
 
+
+
 static int count(int n, char **obj, char c) {
-    int flag_priority = 1;
+    int flag_priorit = 1;
     int flag_count = 0;
     int file_count = 0;
 
     for (int i = 1; i < n; i++) {
-        if (flag_priority == 1) {
-            if (mx_strcmp(obj[i], "--") == 0)
-                flag_priority = 0;
-            else if (obj[i][0] != '-') {
-                flag_priority = 0;
-                file_count++;
-            }
-            else
-                flag_check(obj[i], &flag_count);
+        if (flag_priorit == 1) {
+            mx_for_flag_valid(obj[i], &flag_priorit, &file_count, &flag_count);
         }
         else
             file_count++;

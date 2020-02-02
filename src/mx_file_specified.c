@@ -34,9 +34,9 @@ static void files_simple_out(char **files) {
     }
 }
 
-static int reg_file_out(char **files, t_flags *flags, char *name, int size) {
-    char **reg_file = mx_file_arr(files, size, flags);
-    int file_count = mx_files_quantity(files, 1);
+static int reg_file_out(char **files, t_flags *flags, char *name, int *error) {
+    char **reg_file = mx_file_arr(files, error, flags);
+    int file_count = mx_files_quantity(files, 1, flags);
 
     if (file_count != 0) {
         if (file_count > 1 && (*flags).f == 0) {
@@ -56,21 +56,21 @@ static int reg_file_out(char **files, t_flags *flags, char *name, int size) {
     return file_count;
 }
 
-void mx_file_specified(char **files, t_flags *flags, char *name, int size) {
+void mx_file_specified(char **files, t_flags *flags, char *name, int *error) {
     char **dir = NULL;
     int dir_count = 0;
-    int file_count = reg_file_out(files, flags, name, size);
+    int file_count = reg_file_out(files, flags, name, error);
     int trig;
 
-    dir = mx_dir_arr(files);
-    dir_count = mx_files_quantity(files, 2);
+    dir = mx_dir_arr(files, flags);
+    dir_count = mx_files_quantity(files, 2, flags);
         if (dir_count > 1 && (*flags).f == 0)
             mx_flag_sort(name, dir, dir_count, flags);
         for (int i = 0; dir[i]; i++) {
             if (i > 0 || file_count != 0)
                 trig = name_out(dir[i], 0);
             if (dir_count != 1 || (*flags).R == 1 ||
-                file_count > 0 || size > dir_count) {
+                file_count > 0) {
                 trig = name_out(dir[i], 1);
             }
             mx_define_flags(dir[i], flags, trig);
