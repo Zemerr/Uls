@@ -15,7 +15,7 @@ static void flag_check(char *str, int *flag_count) {
             write(2, "uls: illegal option -- ", 
             mx_strlen("uls: illegal option -- "));
             write(2, &str[i], 1);
-            write(2, "\nusage: uls [-AalGRSthurC1mogTdpFf] [file ...]\n", 49);
+            write(2, "\nusage: uls [-AalGRSthurC1mogTdpFf] [file ...]\n", 48);
             exit(1);
         }
     }
