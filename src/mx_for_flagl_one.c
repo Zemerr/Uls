@@ -49,7 +49,7 @@ static t_lens *create_struckt() {
 }
 
 static char *build_path_l(char *dir_name, int *flag, char *sort_arr) {
-     char *path_name_1 = NULL;
+    char *path_name_1 = NULL;
 
     if (sort_arr[0] != '/') {
         path_name_1 = mx_strjoin(dir_name, "/");

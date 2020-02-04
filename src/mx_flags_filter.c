@@ -78,8 +78,8 @@ t_flags *mx_flags_filter(char *str) {
         }
         if (isatty(1) == 0) {
             (*flag).G = 0;
-                if ((*flag).C == 0 && (*flag).m == 0)
-                    (*flag).one = 1;
+            if ((*flag).C == 0 && (*flag).m == 0)
+                (*flag).one = 1;
         }
         mx_strdel(&str);
         return flag;

@@ -6,13 +6,13 @@ static char dir_check(struct stat buf) {
     if ((buf.st_mode & S_IFMT) == S_IFDIR)
     {
         c = 'd';
-            if ((buf.st_mode & S_ISVTX) == S_ISVTX
-                && (buf.st_mode & S_IWOTH) == S_IWOTH)
-            {
-                c = 'x';
-            }
-            else if ((buf.st_mode & S_IWOTH) == S_IWOTH)
-                c = 'n';
+        if ((buf.st_mode & S_ISVTX) == S_ISVTX
+            && (buf.st_mode & S_IWOTH) == S_IWOTH)
+        {
+            c = 'x';
+        }
+        else if ((buf.st_mode & S_IWOTH) == S_IWOTH)
+            c = 'n';
     }
     return c;
 }
@@ -43,13 +43,13 @@ static char file_check(struct stat buf) {
     if ((buf.st_mode & S_IFMT) == S_IFREG)
     {
         c = 'f';
-            if ((buf.st_mode & S_IXUSR) == S_IXUSR) {
-                c = 'e';
-                    if ((buf.st_mode & S_ISUID) == S_ISUID)
-                        c = 'u';
-                    else if ((buf.st_mode & S_ISGID) == S_ISGID)
-                        c = 'g';
-            }
+        if ((buf.st_mode & S_IXUSR) == S_IXUSR) {
+            c = 'e';
+            if ((buf.st_mode & S_ISUID) == S_ISUID)
+                c = 'u';
+            else if ((buf.st_mode & S_ISGID) == S_ISGID)
+                c = 'g';
+        }
     }
     return c;
 }
@@ -78,9 +78,9 @@ char mx_file_mode_check(char *file, char *file_name) {
 
     lstat(filepath, &buf);
     c = one_mode_unit(buf);
-        if (c == '-')
-            c = second_mode_unit(buf);
-        if (mx_strcmp(file_name, ".") != 0)
-            mx_strdel(&filepath);
-        return c;
+    if (c == '-')
+        c = second_mode_unit(buf);
+    if (mx_strcmp(file_name, ".") != 0)
+        mx_strdel(&filepath);
+    return c;
 }

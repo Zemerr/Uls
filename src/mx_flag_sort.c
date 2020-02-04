@@ -7,8 +7,8 @@ static char *filepath(char *file_name, char *file) {
     if (mx_strcmp(file_name, "/") != 0)
         str = mx_strjoin(file_name, "/");
     path = mx_strjoin(str, file);
-        if (mx_strcmp(file_name, "/") != 0)
-            mx_strdel(&str);
+    if (mx_strcmp(file_name, "/") != 0)
+        mx_strdel(&str);
     return path;
 }
 

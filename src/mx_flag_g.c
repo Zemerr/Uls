@@ -20,9 +20,9 @@ static int get_rows(int count, int max_len) {
         return count;
     one_line = w_s / (max_len + 1);
     rows = count / one_line;
-        if (count % one_line != 0)
-            rows += 1;
-        return rows;
+    if (count % one_line != 0)
+        rows += 1;
+    return rows;
 }
 
 static void spacing_print(int sp) {
@@ -44,12 +44,12 @@ void mx_flag_g(char **arr, int count, char *file_name, t_flags *flags) {
             if (!arr[i])
                 break;
             spacing = m_l - mx_strlen(arr[i]) + 1;
-                if ((i + rows) >= count)
-                    spacing = 0;
-                mx_colour_out(arr[i], file_name);
-                    if ((*flags).p == 1 || (*flags).F == 1)
-                        mx_flag_p(arr[i], flags, file_name);
-                spacing_print(spacing);
+            if ((i + rows) >= count)
+                spacing = 0;
+            mx_colour_out(arr[i], file_name);
+            if ((*flags).p == 1 || (*flags).F == 1)
+                mx_flag_p(arr[i], flags, file_name);
+            spacing_print(spacing);
         }
         write(1, "\n", 1);
     }

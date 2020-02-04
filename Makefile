@@ -53,7 +53,7 @@ ROOT_O = $(addsuffix ".o", $(FILES))
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic #-g -fsanitize=address
 
-all: install clean
+all: install
 
 install:
 	@make -C libmx install
@@ -63,8 +63,7 @@ install:
 	@clang $(CFLAGS) -c $(ROOT_C)
 	@clang $(CFLAGS) $(ROOT_O) $(ROOT_A) -o $(NAME)
 	@mkdir -p obj
-	@cp $(ROOT_O) obj/
-	@rm -rf $(ROOT_O)
+	@mv $(ROOT_O) obj
 
 uninstall: clean
 	@make -C libmx uninstall

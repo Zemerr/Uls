@@ -6,9 +6,9 @@ char *mx_str_copy(char *src) {
     int i = 0;
 
     copy = (char *)malloc(sizeof(char) * (size + 1));
-        for (i = 0; i < size; i++) {
-            copy[i] = src[i];
-        }
-        copy[i] = '\0';
-        return copy;
+    for (i = 0; i < size; i++) {
+        copy[i] = src[i];
+    }
+    copy[i] = '\0';
+    return copy;
 }

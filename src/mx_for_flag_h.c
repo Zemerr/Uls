@@ -30,11 +30,11 @@ static char *neccesary_num(double n) {
     char *number_two = NULL;
 
     if (n >= 10) {
-            buf_one = n - my_num;
-            if (buf_one >= 0.5)
-                my_num = my_num + 1;
-            number = mx_itoa(my_num);
-        }
+        buf_one = n - my_num;
+        if (buf_one >= 0.5)
+            my_num = my_num + 1;
+        number = mx_itoa(my_num);
+    }
     else {
         buf_two = (n - (double) my_num) * 10;
         number = build_num(n, buf_one, buf_two, &number_two);

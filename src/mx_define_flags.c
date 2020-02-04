@@ -60,8 +60,8 @@ void mx_define_flags(char *file_name, t_flags *flags, int trig) {
     if (!obj_arr)
         return;
     print(flags, obj_arr, trig, file_name);
-        if ((*flags).R == 1) {
-                mx_recursion_call(obj_arr, flags, file_name);
-        }
-        mx_del_strarr(&obj_arr);
+    if ((*flags).R == 1) {
+            mx_recursion_call(obj_arr, flags, file_name);
+    }
+    mx_del_strarr(&obj_arr);
 }

@@ -40,18 +40,18 @@ void mx_upgraded_sort(struct stat *buf, t_flags *flags, char **files) {
 
     for (int j = 0; files[j + 1]; j++) {
         for (int i = j + 1; files[i]; i++) {
-                dif = difference(flags, buf, i, j);
-                    if (dif < 0)
+            dif = difference(flags, buf, i, j);
+            if (dif < 0)
+                swap(buf, files, i, j);
+            if (dif == 0) {
+                if ((*flags).r == 0) {
+                    if (mx_strcmp(files[i], files[j]) < 0)
                         swap(buf, files, i, j);
-                    if (dif == 0) {
-                        if ((*flags).r == 0) {
-                            if (mx_strcmp(files[i], files[j]) < 0)
-                                swap(buf, files, i, j);
-                        }
-                        else  if ((*flags).r == 1)
-                            if (mx_strcmp(files[i], files[j]) > 0)
-                                swap(buf, files, i, j);
-                    }
+                }
+                else if ((*flags).r == 1)
+                    if (mx_strcmp(files[i], files[j]) > 0)
+                        swap(buf, files, i, j);
+            }
         }
     }
 }

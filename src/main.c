@@ -17,14 +17,14 @@ int main(int argc, char **argv) {
     mx_flag_file_valid(&file, &flag, argv, argc);
     flags = mx_flags_filter(flag);
     filec = count_arr_len(file);
-        if (file[0] == NULL) {
-            mx_define_flags(".", flags, 1);
-        }
-        if (file[0] != NULL) {
-            if ((*flags).d == 1)
-                mx_flag_d(file, flags, ".", filec);
-            else
-                mx_file_specified(file, flags, ".", &error);
-        }
+    if (file[0] == NULL) {
+        mx_define_flags(".", flags, 1);
+    }
+    if (file[0] != NULL) {
+        if ((*flags).d == 1)
+            mx_flag_d(file, flags, ".", filec);
+        else
+            mx_file_specified(file, flags, ".", &error);
+    }
     return error;
 }

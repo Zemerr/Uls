@@ -14,12 +14,12 @@ static void print_item(char *s, int sp, t_flags *flags, char *file_name) {
     char c = '\t';
 
     write(1, s, mx_strlen(s));
-        if ((*flags).p == 1 || (*flags).F == 1)
-            mx_flag_p(s, flags, file_name);
-        while (sp > 0) {
-            write(1, &c, 1);
-            sp -= 8;
-        }
+    if ((*flags).p == 1 || (*flags).F == 1)
+        mx_flag_p(s, flags, file_name);
+    while (sp > 0) {
+        write(1, &c, 1);
+        sp -= 8;
+    }
 } 
 
 static int get_rows(int count, int max_len, t_flags *flags) {
@@ -36,11 +36,11 @@ static int get_rows(int count, int max_len, t_flags *flags) {
         return count;
     one_line = w_s / (((max_len / 8) * 8) + 8);
     rows = count / one_line;
-        if (isatty(1) != 0) {
-            if (count % one_line != 0)
-                rows += 1;
-        }
-        return rows;
+    if (isatty(1) != 0) {
+        if (count % one_line != 0)
+            rows += 1;
+    }
+    return rows;
 }
 
 void mx_print_cols(char **arr, int count, t_flags *flags, char *file_name) {
@@ -53,9 +53,9 @@ void mx_print_cols(char **arr, int count, t_flags *flags, char *file_name) {
             if (!arr[i])
                 break;
             spacing = ((m_l / 8) * 8) - mx_strlen(arr[i]) + 8;
-                if ((i + rows) >= count) {
-                    spacing = 0;
-                }
+            if ((i + rows) >= count) {
+                spacing = 0;
+            }
             print_item(arr[i], spacing, flags, file_name);
         }
         write(1, "\n", 1);

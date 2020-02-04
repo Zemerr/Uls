@@ -8,15 +8,15 @@ char **mx_dir_arr(char **files, t_flags *flag) {
     struct stat buf;
 
     dir = (char **)malloc(sizeof(char *) * (count + 1));
-        for (i = 0; files[i]; i++) {
-            count = mx_link_check(files[i], flag, &buf);
-                if (count >= 0) {
-                    if ((buf.st_mode & S_IFMT) == S_IFDIR) {
-                        dir[q] = mx_strdup(files[i]);
-                        q++;
-                    }
-                }
+    for (i = 0; files[i]; i++) {
+        count = mx_link_check(files[i], flag, &buf);
+        if (count >= 0) {
+            if ((buf.st_mode & S_IFMT) == S_IFDIR) {
+                dir[q] = mx_strdup(files[i]);
+                q++;
+            }
         }
-        dir[q] = NULL;
-        return dir;
+    }
+    dir[q] = NULL;
+    return dir;
 }

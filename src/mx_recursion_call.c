@@ -29,13 +29,13 @@ static char **dir_in(char **obj, char *str, int count) {
         if (mx_strcmp(obj[i], ".") != 0 && mx_strcmp(obj[i], "..") != 0) {
             path = mx_strjoin(str, obj[i]);
             lstat(path, &buff);
-                if ((buff.st_mode & S_IFLNK) != S_IFLNK) {
-                    if ((buff.st_mode & S_IFMT) == S_IFDIR) {
-                        dir[q] = mx_strdup(obj[i]);
-                        q++;
-                    }
+            if ((buff.st_mode & S_IFLNK) != S_IFLNK) {
+                if ((buff.st_mode & S_IFMT) == S_IFDIR) {
+                    dir[q] = mx_strdup(obj[i]);
+                    q++;
                 }
-                mx_strdel(&path);
+            }
+            mx_strdel(&path);
         }
     }
     dir[q] = NULL;
@@ -62,7 +62,7 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
     int count = 0;
 
     if (!obj) {
-        return;
+        return ;
     }
     if (mx_strcmp(file_name, "/") == 0)
         str = file_name;
@@ -72,6 +72,6 @@ void mx_recursion_call(char **obj, t_flags *flags, char *file_name) {
     dir = dir_in(obj, str, count);
     dir_out(str, dir, flags);
     mx_del_strarr(&dir);
-        if (mx_strcmp(file_name, "/") != 0)
-            mx_strdel(&str);
+    if (mx_strcmp(file_name, "/") != 0)
+        mx_strdel(&str);
 }

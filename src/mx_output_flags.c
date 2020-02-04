@@ -44,16 +44,16 @@ static void first_part(char c, t_flags *flag) {
 void mx_output_flags(char c, t_flags *flag) {
     first_part(c, flag);
     second_part(c, flag);
-        switch(c) {
-            case('l'):
-                (*flag).l = 1;
-                (*flag).m = 0;
-                break;
-            case('G'):
-                (*flag).G = 1;
-                break;
-            case('R'):
-                (*flag).R = 1;
-                break;
-        }
+    switch(c) {
+        case('l'):
+            (*flag).l = 1;
+            (*flag).m = 0;
+            break;
+        case('G'):
+            (*flag).G = 1;
+            break;
+        case('R'):
+            (*flag).R = 1;
+            break;
+    }
 }
